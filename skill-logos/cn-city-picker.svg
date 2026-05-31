@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="cn-city-picker logo">
+  <rect width="24" height="24" fill="#FFFFFF"/>
+  <path d="M7 5h3v2h2v2h3v2h2v3h-2v2h-3v2H9v-2H6v-3H4v-3h2V7h1z" fill="#2E7CF6"/>
+  <path d="M8 7h2v2H8zM6 11h2v2H6zM10 10h2v2h-2zM13 12h2v2h-2zM9 15h3v1H9z" fill="#FFFFFF"/>
+  <path d="M17 4c-2 0-4 2-4 4 0 3 4 7 4 7s4-4 4-7c0-2-2-4-4-4z" fill="#F64B3C"/>
+  <rect x="16" y="7" width="2" height="2" fill="#FFFFFF"/>
+</svg>
