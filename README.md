@@ -1,0 +1,213 @@
+<div align="center">
+
+# opc-skills-cn
+
+**面向中国市场的一人公司（OPC）AI Agent Skills 集合**
+
+让一个人借助 AI，搞定运营一家中国公司所需的全部事情：内容、流量、私域、收款、开票、税务、备案、合规。
+
+[English](./README.en.md) · [快速开始](#快速开始) · [Skills 列表](#已收录-skills) · [贡献指南](#贡献新-skill) · [Roadmap](./ROADMAP.md)
+
+</div>
+
+---
+
+## 这是什么
+
+`opc-skills-cn` 是 [ReScienceLab/opc-skills](https://github.com/ReScienceLab/opc-skills) 的中国生态对应物。原 repo 聚焦海外 indie hacker 工具链（Reddit / X / Product Hunt / Google SEO / Gemini），完全没有覆盖中国生态。本项目补齐这块空白：
+
+- **流量端**：微信公众号、小红书、抖音/视频号、B 站、知乎、即刻
+- **私域端**：企业微信 SCRM、视频号小店、微信小程序
+- **收款端**：微信支付、支付宝、电子发票（诺诺 / 百望）
+- **合规端**：个独/小规模税务申报、ICP/公安备案、PIPL 隐私政策
+- **协作端**：飞书 / 钉钉 OpenAPI
+- **AI 搜索 GEO**：豆包、Kimi、元宝、夸克、百度智能答案
+
+与原 repo **保持 100% 工程规范兼容**——同样的 `SKILL.md` frontmatter、同样的 `skills.json` 注册表、同样的 `npx skills add` 分发渠道，方便用户在两个 repo 之间无缝混用。
+
+## 已收录 Skills
+
+> 状态图例：✅ 已上线 · 🚧 开发中 · 📝 设计中 · ⏳ 待排期
+
+| Logo | Skill | 描述 | 状态 |
+|---|---|---|---|
+| | `cn-city-picker` | **创业城市选择决策**：八维评分（税收/生活成本/气候/政策/产业/人才/基建/行政）从 300+ 城市筛 Top 3-5，并给出落地 checklist | 📝 |
+| | `wechat-mp` | 微信公众号自动排版、图文生成、定时发布、菜单/客服消息 | 🚧 |
+| | `xiaohongshu-ops` | 小红书选题、笔记生成、关键词排名、热点追踪 | 📝 |
+| | `douyin-ops` | 抖音/视频号脚本→分镜→剪映工程→热点话题 | 📝 |
+| | `cn-geo` | 中文 AI 搜索 GEO（豆包/Kimi/元宝/夸克/百度智能答案） | 📝 |
+| | `wepay-alipay` | 微信支付/支付宝下单、退款、对账、自动开票 | ⏳ |
+| | `cn-tax` | 个独/小规模季度税务申报、核定征收测算 | ⏳ |
+| | `icp-domain-cn` | .cn 域名注册 + ICP/公安备案流程指引 | ⏳ |
+| | `feishu-ops` | 飞书多维表格 / IM 机器人 / 审批自动化 | ⏳ |
+| | `wecom-crm` | 企业微信 SCRM：加客户、群发、SOP、标签 | ⏳ |
+| | `cn-recruit` | Boss 直聘 / 拉勾 / 脉脉 / 猎聘职位与候选人 | ⏳ |
+| | `bilibili-zhihu` | B 站 / 知乎长内容分发与回答营销 | ⏳ |
+| | `cn-legal` | 个独章程、SaaS 服务协议、PIPL 隐私政策（法大大 / e 签宝） | ⏳ |
+| | `cn-cloud` | 阿里云 / 腾讯云 / 火山引擎：OSS、CDN、函数计算、解析 | ⏳ |
+| | `cn-requesthunt` | 跨小红书 / 知乎 / 即刻 / V2EX / 脉脉的需求挖掘 | ⏳ |
+
+完整路线图见 [ROADMAP.md](./ROADMAP.md)。
+
+## 快速开始
+
+### 通过 Claude Code Plugin Marketplace
+```bash
+/plugin marketplace add <YOUR_ORG>/opc-skills-cn
+/plugin install wechat-mp@opc-skills-cn
+```
+
+### 通过通用 CLI（支持 16+ AI 工具）
+```bash
+# 安装全部 skills
+npx skills add <YOUR_ORG>/opc-skills-cn
+
+# 只安装某一个
+npx skills add <YOUR_ORG>/opc-skills-cn --skill wechat-mp
+
+# 指定 AI 工具（claude / cursor / codex / droid / opencode / windsurf …）
+npx skills add <YOUR_ORG>/opc-skills-cn -a claude
+```
+
+## 工程规范（与 opc-skills 完全对齐）
+
+### 仓库结构
+```
+opc-skills-cn/
+├── skills/                      # 所有 skill 源码，一个目录一个 skill
+│   └── <skill-name>/
+│       ├── SKILL.md             # 必需：YAML frontmatter + 文档
+│       ├── scripts/             # 可选：Python 脚本（stdlib 优先）
+│       │   ├── credential.py    # 约定：读取环境变量
+│       │   └── *.py
+│       ├── examples/            # 推荐：使用示例 *.md
+│       └── references/          # 可选：API 文档 / schema
+├── skill-logos/                 # 每个 skill 一个 *.svg（像素风）
+├── template/SKILL.md            # 新 skill 起手模板
+├── .claude-plugin/marketplace.json   # Claude Code 插件注册表
+├── .factory/skills/add-new-skill/    # 新增 skill 的 checklist（作为一个 skill）
+├── scripts/                     # 仓库级工具脚本
+├── skills.json                  # 全局 skill 注册表（单一信息源）
+├── CHANGELOG.md
+├── LICENSE                      # Apache-2.0
+└── README.md
+```
+
+### SKILL.md frontmatter（只有两个必需字段）
+```yaml
+---
+name: wechat-mp
+description: 微信公众号自动排版、图文生成、定时发布、菜单/客服消息管理。
+             Use when 用户提到公众号、推文、图文消息、菜单配置、客服回复、定时群发。
+---
+```
+
+> ⚠️ 不要在 frontmatter 里写 version / license / tags / requires / env。
+> 这些字段统一在根目录 `skills.json` 中声明。
+
+### SKILL.md 正文章节（建议顺序）
+```
+# <Skill 中文名>
+## Prerequisites          ← 环境变量、账号要求
+## Quick Start            ← 30 秒最小可运行示例
+## Usage Examples         ← 3-5 个真实场景
+## Commands               ← 所有可调用脚本
+## Scripts                ← 每个脚本的输入/输出契约
+## API Info               ← Base URL / Rate Limits / Auth / Docs
+## Troubleshooting
+## References
+## Notes
+```
+
+### 运行时与依赖
+- **语言**：Python 3.10+，shebang 用 `#!/usr/bin/env python3`
+- **依赖**：**优先只用 stdlib**（`urllib.request`、`json`、`argparse`、`os`、`re`、`base64`、`time`）。需要第三方包必须在该 skill 的 SKILL.md `## Prerequisites` 章节显式声明 `pip install xxx`，不写 `requirements.txt`。
+- **调用约定**：从 skill 根目录调用，`python3 scripts/<name>.py "{input}"`
+- **跨脚本导入**：平铺，无 package：`from credential import get_xxx`
+- **凭证**：每个 skill 必须有 `scripts/credential.py`，统一从环境变量读取，**严禁硬编码**
+
+```python
+# scripts/credential.py 模板
+import os
+
+def get_wechat_mp_credentials() -> dict:
+    return {
+        "app_id":     os.environ.get("WECHAT_MP_APP_ID"),
+        "app_secret": os.environ.get("WECHAT_MP_APP_SECRET"),
+    }
+```
+
+### skills.json 注册项 schema
+```json
+{
+  "name": "wechat-mp",
+  "version": "0.1.0",
+  "description": "微信公众号自动排版、图文生成、定时发布。",
+  "logo": "https://raw.githubusercontent.com/<YOUR_ORG>/opc-skills-cn/main/skill-logos/wechat-mp.svg",
+  "icon": "wechat",
+  "color": "07C160",
+  "triggers": ["公众号", "推文", "图文消息", "菜单", "客服回复", "群发"],
+  "dependencies": {},
+  "auth": {
+    "required": true,
+    "type": "api_key",
+    "keys": [
+      { "env": "WECHAT_MP_APP_ID",     "url": "https://mp.weixin.qq.com", "optional": false },
+      { "env": "WECHAT_MP_APP_SECRET", "url": "https://mp.weixin.qq.com", "optional": false }
+    ]
+  },
+  "install": {
+    "user":    { "claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill wechat-mp -a claude" },
+    "project": { "claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill wechat-mp" }
+  },
+  "commands": ["python3 scripts/publish.py \"{input}\""],
+  "links": { "github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/wechat-mp" }
+}
+```
+
+## 贡献新 Skill
+
+> 完整 checklist 见 `.factory/skills/add-new-skill/SKILL.md`（这本身也是一个 skill）。
+
+1. 从 `develop` 分支切出 `feature/skill/<skill-name>`（kebab-case）
+2. 复制 `template/SKILL.md` 到 `skills/<skill-name>/SKILL.md`，按规范填写 frontmatter
+3. 在 `scripts/` 下实现脚本（stdlib 优先，凭证走 `credential.py`）
+4. 在 `skill-logos/` 添加 `<skill-name>.svg`（24x24 像素风，主色取自 `skills.json` 的 `color`）
+5. 在 `skills.json` 追加注册项
+6. 在 `.claude-plugin/marketplace.json` 追加插件项
+7. 在 `README.md` 的 Skills 表格新增一行
+8. 在 `CHANGELOG.md` 增加条目
+9. 校验：
+   ```bash
+   python3 -c "import json; json.load(open('skills.json')); print('skills.json valid')"
+   python3 -c "import json; json.load(open('.claude-plugin/marketplace.json')); print('marketplace.json valid')"
+   python3 -m pylint skills/<skill-name>/scripts/*.py
+   ```
+10. 提交 PR 到 `develop`，CI 通过后合入
+
+### Skill 设计原则（强约束）
+- **单一职责**：一个 skill 只解决一类问题；跨域能力拆成多个 skill
+- **零云依赖**：除目标平台 API 外，不引入额外 SaaS
+- **优雅降级**：未配置凭证时应给出清晰错误，而不是 crash
+- **中文优先**：所有 description / examples / 错误信息默认中文；可附英文
+- **合规第一**：涉及爬虫、私信群发、批量加好友的能力一律拒绝实现；只做平台**官方/开放 API** 包装
+- **不存储用户数据**：所有数据流过 skill 即焚，不落盘到 skill 目录外
+
+## Roadmap
+
+见 [ROADMAP.md](./ROADMAP.md)。
+
+| 阶段 | 时间 | 目标 |
+|---|---|---|
+| **P0** | M1–M2 | `cn-city-picker`（前置决策） · `wechat-mp` · `xiaohongshu-ops` · `douyin-ops` · `cn-geo` |
+| **P1** | M3–M4 | `wepay-alipay` · `cn-tax` · `icp-domain-cn` · `feishu-ops` |
+| **P2** | M5–M6 | `wecom-crm` · `cn-recruit` · `bilibili-zhihu` · `cn-legal` |
+| **P3** | M7+   | `cn-cloud` · `cn-requesthunt` · 出海回流 skill |
+
+## 许可
+
+Apache License 2.0 — 见 [LICENSE](./LICENSE)。
+
+## 致谢
+
+工程规范借鉴自 [ReScienceLab/opc-skills](https://github.com/ReScienceLab/opc-skills)，特此致谢。
