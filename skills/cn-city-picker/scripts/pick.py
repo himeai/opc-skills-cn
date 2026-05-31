@@ -161,7 +161,10 @@ def apply_filters(city: dict[str, Any], preferences: dict[str, Any]) -> tuple[bo
     return not reasons, reasons
 
 
-def soft_adjustments(city: dict[str, Any], preferences: dict[str, Any]) -> tuple[float, list[str], list[str]]:
+def soft_adjustments(
+    city: dict[str, Any],
+    preferences: dict[str, Any],
+) -> tuple[float, list[str], list[str]]:
     adjustment = 0.0
     highlights: list[str] = []
     concerns: list[str] = []
@@ -190,6 +193,7 @@ def soft_adjustments(city: dict[str, Any], preferences: dict[str, Any]) -> tuple
 
 
 def make_recommendations(text: str, top_n: int = 5) -> dict[str, Any]:
+    # pylint: disable=too-many-locals
     cities = load_json("references/cities.json")
     matrix = load_json("references/industry_city_matrix.json")
     preferences = parse_preferences(text)
