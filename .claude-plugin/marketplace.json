@@ -1,0 +1,15 @@
+{
+  "$schema": "https://example.invalid/opc-skills-cn/claude-plugin-marketplace.schema.json",
+  "name": "opc-skills-cn",
+  "displayName": "opc-skills-cn",
+  "description": "面向中国市场的一人公司 AI Agent Skills 集合。",
+  "version": "0.0.1",
+  "author": "opc-skills-cn contributors",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/<YOUR_ORG>/opc-skills-cn",
+  "repository": "https://github.com/<YOUR_ORG>/opc-skills-cn",
+  "_comment": {
+    "skills": "Claude Code 插件 marketplace 的 skill 条目数组；每项应与 skills.json 和 skills/<name>/ 目录保持一致。"
+  },
+  "skills": []
+}
