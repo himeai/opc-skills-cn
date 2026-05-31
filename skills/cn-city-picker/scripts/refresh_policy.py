@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Placeholder policy refresh command."""
+# pylint: disable=duplicate-code
 
 from __future__ import annotations
 
