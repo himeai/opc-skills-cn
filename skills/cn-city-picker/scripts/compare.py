@@ -57,13 +57,18 @@ def markdown_table(cities: list[dict[str, Any]]) -> str:
 
 def radar_data(cities: list[dict[str, Any]]) -> dict[str, dict[str, int]]:
     return {
-        city["city"]: {label: city["dimensions"][key]["score"] for key, label in DIMENSION_LABELS.items()}
+        city["city"]: {
+            label: city["dimensions"][key]["score"]
+            for key, label in DIMENSION_LABELS.items()
+        }
         for city in cities
     }
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Compare cities with Markdown table and radar data.")
+    parser = argparse.ArgumentParser(
+        description="Compare cities with Markdown table and radar data."
+    )
     parser.add_argument("cities", nargs="+", help="Chinese city names")
     args = parser.parse_args()
     lookup = city_lookup()
