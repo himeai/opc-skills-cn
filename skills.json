@@ -10,5 +10,34 @@
     "auth": "凭证需求说明，所有密钥必须来自环境变量。",
     "commands": "可执行命令模板，使用 {input} 接收用户输入。"
   },
-  "skills": []
+  "skills": [
+    {
+      "name": "cn-city-picker",
+      "version": "0.1.0",
+      "description": "中国创业城市智能选址：按预算、行业、气候、医疗、户籍、城市等级偏好输出 Top 3-5 推荐。",
+      "logo": "skill-logos/cn-city-picker.svg",
+      "icon": "map-pin",
+      "color": "2E7CF6",
+      "triggers": ["选城市", "创业去哪", "注册公司选址", "个独注册地", "城市对比", "税收洼地", "跨境电商综试区", "数字游民"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "api_key",
+        "keys": [
+          {"env": "TIANYANCHA_API_KEY", "url": "https://open.tianyancha.com", "optional": true},
+          {"env": "AMAP_API_KEY", "url": "https://lbs.amap.com", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-city-picker -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-city-picker"}
+      },
+      "commands": [
+        "python3 scripts/pick.py \"{input}\"",
+        "python3 scripts/profile.py \"{input}\"",
+        "python3 scripts/compare.py {input}"
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-city-picker"}
+    }
+  ]
 }
