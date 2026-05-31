@@ -1,0 +1,14 @@
+{
+  "$schema": "https://example.invalid/opc-skills-cn/skills.schema.json",
+  "_comment": {
+    "skills": "Skill 注册项数组；每项包含 name、version、description、logo、icon、color、triggers、dependencies、auth、install、commands、links 等字段。",
+    "name": "Skill 名称，必须与 skills/<name>/ 目录一致。",
+    "version": "Skill 版本，遵循语义化版本。",
+    "description": "一句话说明用途，中文优先。",
+    "logo": "Skill 图标 URL 或相对路径。",
+    "triggers": "用于 agent 路由的中文触发词。",
+    "auth": "凭证需求说明，所有密钥必须来自环境变量。",
+    "commands": "可执行命令模板，使用 {input} 接收用户输入。"
+  },
+  "skills": []
+}
