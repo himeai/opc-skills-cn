@@ -11,5 +11,21 @@
   "_comment": {
     "skills": "Claude Code 插件 marketplace 的 skill 条目数组；每项应与 skills.json 和 skills/<name>/ 目录保持一致。"
   },
-  "skills": []
+  "skills": [
+    {
+      "name": "cn-city-picker",
+      "displayName": "中国创业城市选址",
+      "description": "根据行业、预算、家庭、户籍、生活偏好，从中国重点城市中按八维评分筛选 Top 3-5 推荐城市。",
+      "version": "0.1.0",
+      "path": "skills/cn-city-picker",
+      "logo": "skill-logos/cn-city-picker.svg",
+      "color": "#2E7CF6",
+      "commands": [
+        "python3 scripts/pick.py \"{input}\"",
+        "python3 scripts/profile.py \"{input}\"",
+        "python3 scripts/compare.py {input}"
+      ],
+      "triggers": ["选城市", "创业去哪", "城市对比", "跨境电商", "数字游民", "惠州", "大理"]
+    }
+  ]
 }
