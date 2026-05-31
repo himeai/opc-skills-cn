@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install pylint
+        run: python3 -m pip install pylint
+
+      - name: Validate template frontmatter
+        run: python3 scripts/validate_skill_md.py template/SKILL.md
+
+      - name: Validate skill frontmatter
+        run: |
+          for file in skills/*/SKILL.md; do
+            [ -e "$file" ] || continue
+            python3 scripts/validate_skill_md.py "$file"
+          done
+
+      - name: Check registry consistency
+        run: python3 scripts/check_registry_consistency.py
+
+      - name: Run pylint
+        run: python3 -m pylint scripts/*.py --disable=C0114,C0115,C0116
