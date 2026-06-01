@@ -33,36 +33,126 @@
 
 > 状态图例：✅ 已上线 · 🚧 开发中 · 📝 设计中 · ⏳ 待排期
 
-| Logo | Skill | 描述 | 状态 |
-|---|---|---|---|
-| **🏛️ 创业前置** ||||
-| ![cn-city-picker](./skill-logos/cn-city-picker.svg) | `cn-city-picker` | **创业城市选择决策**：八维评分（税收/生活成本/气候/政策/产业/人才/基建/行政）从重点城市筛 Top 3-5，并给出落地 checklist | ✅ |
-| ![icp-domain-cn](./skill-logos/icp-domain-cn.svg) | `icp-domain-cn` | **中国大陆上线前置流程**：给定主体 / 域名 / 服务器位置，判断 ICP 备案 + 公安备案 + 域名实名 + 行业前置许可需求，输出分步指引（本地规则） | ✅ |
-| **📣 流量内容** ||||
-| ![wechat-ops](./skill-logos/wechat-ops.svg) | `wechat-ops` | 微信公众号 access_token 缓存、图文草稿、自定义菜单、客服文本回复（仅官方开放 API） | ✅ |
-| ![xiaohongshu-ops](./skill-logos/xiaohongshu-ops.svg) | `xiaohongshu-ops` | 小红书选题工厂、笔记结构化生成、关键词与 tag 推荐（本地种子库 + 规则模板） | ✅ |
-| ![douyin-ops](./skill-logos/douyin-ops.svg) | `douyin-ops` | 抖音/视频号 60 秒口播脚本、6 镜分镜表、剪映工程 JSON 骨架（本地模板 + 规则） | ✅ |
-| ![kuaishou-ops](./skill-logos/kuaishou-ops.svg) | `kuaishou-ops` | 快手老铁口播脚本、3 段式分镜、30 分钟直播带货话术（本地模板 + 规则） | ✅ |
-| ![bilibili-ops](./skill-logos/bilibili-ops.svg) | `bilibili-ops` | B 站 12 分钟三段式长视频脚本、6 章节大纲与时间码、动态/专栏文案与 tag 推荐（本地模板 + 规则） | ✅ |
-| **🧭 内容支撑** ||||
-| ![cn-content-compliance](./skill-logos/cn-content-compliance.svg) | `cn-content-compliance` | **中国内容合规自检**：广告法极限词 + 医疗/食品/化妆品/金融/教培行业红线 + 各平台禁用词，附改写建议（本地词库 + 规则） | ✅ |
-| ![cn-festival-calendar](./skill-logos/cn-festival-calendar.svg) | `cn-festival-calendar` | **节日内容决策引擎**：节日 / 节气 / 电商大促 / 监管敏感期 → 5 大平台错峰排期、内容角度、敏感期警告（本地数据） | ✅ |
-| ![cn-geo](./skill-logos/cn-geo.svg) | `cn-geo` | **中文 AI 搜索 GEO 优化**：给定品牌 / 品类 / 阶段，输出在豆包 / Kimi / 文心 / 元宝 / 秘塔等中文 AI 搜索里被引用的行动清单、品牌问答素材、内容覆盖矩阵（本地规则） | ✅ |
-| **💰 收款开票** ||||
-| ![wechatpay](./skill-logos/wechatpay.svg) | `wechatpay` | **微信支付 V3 商户接入**：JSAPI / Native / H5 / APP 下单、查询、关单、退款、回调验签 + AES-GCM 解密、平台证书管理（仅商户官方 API V3） | ✅ |
-| ![alipay](./skill-logos/alipay.svg) | `alipay` | **支付宝 OpenAPI 商户接入**：当面付 / PC / WAP / APP 下单、查询、关单、退款、异步通知 RSA2 验签（stdlib + cryptography） | ✅ |
-| ![cn-einvoice](./skill-logos/cn-einvoice.svg) | `cn-einvoice` | **中国电子发票开具**：诺诺 / 百望双供应商，覆盖普票 / 专票开具、查询、红冲，可被 wechatpay / alipay 复用 | ✅ |
-| **📊 税务合规** ||||
-| ![cn-tax](./skill-logos/cn-tax.svg) | `cn-tax` | **中国小微纳税人税务助手**：个体 / 个独 / 小规模 / 一般纳税人四种身份下的季度申报清单、税负近似测算、合规风险提醒（本地规则，不替代税务师） | ✅ |
-| **🤝 私域协作** ||||
-| ![wecom-crm](./skill-logos/wecom-crm.svg) | `wecom-crm` | **企业微信客户运营**：客户联系、客户标签、客户群、欢迎语、合规群发、企业朋友圈，仅包装企业微信官方 OpenAPI（禁止批量加好友/群发骚扰） | ✅ |
-| **🧑‍💼 招聘内容** ||||
-| ![cn-recruit](./skill-logos/cn-recruit.svg) | `cn-recruit` | **中国小公司招聘助手**：JD 生成、候选人筛选评分、结构化面试题库、招聘看板与 SLA 告警（本地规则推理，无外部 API） | ✅ |
-| ![zhihu-ops](./skill-logos/zhihu-ops.svg) | `zhihu-ops` | **知乎内容生产副驾驶**：长回答结构化生成（科普/干货/经验/对比/反驳）、专栏长文骨架、问题选题工厂、领域 tag 推荐（本地规则，不爬抓不刷量） | ✅ |
-| **⏳ 规划中** ||||
-| | `cn-legal` | 个独章程、SaaS 服务协议、PIPL 隐私政策（法大大 / e 签宝） | ⏳ |
-| | `cn-cloud` | 阿里云 / 腾讯云 / 火山引擎：OSS、CDN、函数计算、解析 | ⏳ |
-| | `cn-requesthunt` | 跨小红书 / 知乎 / 即刻 / V2EX / 脉脉的需求挖掘 | ⏳ |
+<table>
+  <thead>
+    <tr><th>Logo</th><th>Skill</th><th>描述</th><th>状态</th></tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="4"><b>🏛️ 创业前置</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/cn-city-picker.svg" alt="cn-city-picker" width="24"></td>
+      <td><code>cn-city-picker</code></td>
+      <td><b>创业城市选择决策</b>：八维评分（税收/生活成本/气候/政策/产业/人才/基建/行政）从重点城市筛 Top 3-5，并给出落地 checklist</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/icp-domain-cn.svg" alt="icp-domain-cn" width="24"></td>
+      <td><code>icp-domain-cn</code></td>
+      <td><b>中国大陆上线前置流程</b>：给定主体 / 域名 / 服务器位置，判断 ICP 备案 + 公安备案 + 域名实名 + 行业前置许可需求，输出分步指引（本地规则）</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4"><b>📣 流量内容</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/wechat-ops.svg" alt="wechat-ops" width="24"></td>
+      <td><code>wechat-ops</code></td>
+      <td>微信公众号 access_token 缓存、图文草稿、自定义菜单、客服文本回复（仅官方开放 API）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/xiaohongshu-ops.svg" alt="xiaohongshu-ops" width="24"></td>
+      <td><code>xiaohongshu-ops</code></td>
+      <td>小红书选题工厂、笔记结构化生成、关键词与 tag 推荐（本地种子库 + 规则模板）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/douyin-ops.svg" alt="douyin-ops" width="24"></td>
+      <td><code>douyin-ops</code></td>
+      <td>抖音/视频号 60 秒口播脚本、6 镜分镜表、剪映工程 JSON 骨架（本地模板 + 规则）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/kuaishou-ops.svg" alt="kuaishou-ops" width="24"></td>
+      <td><code>kuaishou-ops</code></td>
+      <td>快手老铁口播脚本、3 段式分镜、30 分钟直播带货话术（本地模板 + 规则）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/bilibili-ops.svg" alt="bilibili-ops" width="24"></td>
+      <td><code>bilibili-ops</code></td>
+      <td>B 站 12 分钟三段式长视频脚本、6 章节大纲与时间码、动态/专栏文案与 tag 推荐（本地模板 + 规则）</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4"><b>🧭 内容支撑</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/cn-content-compliance.svg" alt="cn-content-compliance" width="24"></td>
+      <td><code>cn-content-compliance</code></td>
+      <td><b>中国内容合规自检</b>：广告法极限词 + 医疗/食品/化妆品/金融/教培行业红线 + 各平台禁用词，附改写建议（本地词库 + 规则）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/cn-festival-calendar.svg" alt="cn-festival-calendar" width="24"></td>
+      <td><code>cn-festival-calendar</code></td>
+      <td><b>节日内容决策引擎</b>：节日 / 节气 / 电商大促 / 监管敏感期 → 5 大平台错峰排期、内容角度、敏感期警告（本地数据）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/cn-geo.svg" alt="cn-geo" width="24"></td>
+      <td><code>cn-geo</code></td>
+      <td><b>中文 AI 搜索 GEO 优化</b>：给定品牌 / 品类 / 阶段，输出在豆包 / Kimi / 文心 / 元宝 / 秘塔等中文 AI 搜索里被引用的行动清单、品牌问答素材、内容覆盖矩阵（本地规则）</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4"><b>💰 收款开票</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/wechatpay.svg" alt="wechatpay" width="24"></td>
+      <td><code>wechatpay</code></td>
+      <td><b>微信支付 V3 商户接入</b>：JSAPI / Native / H5 / APP 下单、查询、关单、退款、回调验签 + AES-GCM 解密、平台证书管理（仅商户官方 API V3）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/alipay.svg" alt="alipay" width="24"></td>
+      <td><code>alipay</code></td>
+      <td><b>支付宝 OpenAPI 商户接入</b>：当面付 / PC / WAP / APP 下单、查询、关单、退款、异步通知 RSA2 验签（stdlib + cryptography）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/cn-einvoice.svg" alt="cn-einvoice" width="24"></td>
+      <td><code>cn-einvoice</code></td>
+      <td><b>中国电子发票开具</b>：诺诺 / 百望双供应商，覆盖普票 / 专票开具、查询、红冲，可被 wechatpay / alipay 复用</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4"><b>📊 税务合规</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/cn-tax.svg" alt="cn-tax" width="24"></td>
+      <td><code>cn-tax</code></td>
+      <td><b>中国小微纳税人税务助手</b>：个体 / 个独 / 小规模 / 一般纳税人四种身份下的季度申报清单、税负近似测算、合规风险提醒（本地规则，不替代税务师）</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4"><b>🤝 私域协作</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/wecom-crm.svg" alt="wecom-crm" width="24"></td>
+      <td><code>wecom-crm</code></td>
+      <td><b>企业微信客户运营</b>：客户联系、客户标签、客户群、欢迎语、合规群发、企业朋友圈，仅包装企业微信官方 OpenAPI（禁止批量加好友/群发骚扰）</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4"><b>🧑‍💼 招聘内容</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/cn-recruit.svg" alt="cn-recruit" width="24"></td>
+      <td><code>cn-recruit</code></td>
+      <td><b>中国小公司招聘助手</b>：JD 生成、候选人筛选评分、结构化面试题库、招聘看板与 SLA 告警（本地规则推理，无外部 API）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/zhihu-ops.svg" alt="zhihu-ops" width="24"></td>
+      <td><code>zhihu-ops</code></td>
+      <td><b>知乎内容生产副驾驶</b>：长回答结构化生成（科普/干货/经验/对比/反驳）、专栏长文骨架、问题选题工厂、领域 tag 推荐（本地规则，不爬抓不刷量）</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4"><b>⏳ 规划中</b></td></tr>
+    <tr><td></td><td><code>cn-legal</code></td><td>个独章程、SaaS 服务协议、PIPL 隐私政策（法大大 / e 签宝）</td><td>⏳</td></tr>
+    <tr><td></td><td><code>cn-cloud</code></td><td>阿里云 / 腾讯云 / 火山引擎：OSS、CDN、函数计算、解析</td><td>⏳</td></tr>
+    <tr><td></td><td><code>cn-requesthunt</code></td><td>跨小红书 / 知乎 / 即刻 / V2EX / 脉脉的需求挖掘</td><td>⏳</td></tr>
+  </tbody>
+</table>
 
 完整路线图见 [ROADMAP.md](./ROADMAP.md)。
 
