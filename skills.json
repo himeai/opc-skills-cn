@@ -226,6 +226,115 @@
         "python3 scripts/blackout.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-festival-calendar"}
+    },
+    {
+      "name": "wechatpay",
+      "version": "0.1.0",
+      "description": "微信支付 V3 商户接入：JSAPI / Native / H5 / APP 下单、查询、关单、退款、回调验签 + AES-GCM 解密、平台证书管理。仅调用商户官方 API V3。",
+      "logo": "skill-logos/wechatpay.svg",
+      "icon": "credit-card",
+      "color": "07C160",
+      "triggers": ["微信支付", "wxpay", "wechatpay", "扫码支付", "JSAPI", "Native", "商户号", "mch_id", "APIv3", "退款", "对账", "回调", "notify", "商户证书", "平台证书"],
+      "dependencies": {"python": ["cryptography"]},
+      "auth": {
+        "required": true,
+        "type": "api_key",
+        "keys": [
+          {"env": "WECHATPAY_MCH_ID", "url": "https://pay.weixin.qq.com", "optional": false},
+          {"env": "WECHATPAY_APIV3_KEY", "url": "https://pay.weixin.qq.com", "optional": false},
+          {"env": "WECHATPAY_CERT_SERIAL_NO", "url": "https://pay.weixin.qq.com", "optional": false},
+          {"env": "WECHATPAY_PRIVATE_KEY_PATH", "url": "https://pay.weixin.qq.com", "optional": true},
+          {"env": "WECHATPAY_PRIVATE_KEY", "url": "https://pay.weixin.qq.com", "optional": true},
+          {"env": "WECHATPAY_APP_ID", "url": "https://mp.weixin.qq.com", "optional": true},
+          {"env": "WECHATPAY_NOTIFY_URL", "url": "", "optional": true},
+          {"env": "WECHATPAY_PLATFORM_CERT_PATH", "url": "", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill wechatpay -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill wechatpay"}
+      },
+      "commands": [
+        "python3 scripts/order.py \"{input}\"",
+        "python3 scripts/query.py \"{input}\"",
+        "python3 scripts/refund.py \"{input}\"",
+        "python3 scripts/notify.py \"{input}\"",
+        "python3 scripts/cert.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/wechatpay"}
+    },
+    {
+      "name": "alipay",
+      "version": "0.1.0",
+      "description": "支付宝 OpenAPI 商户接入：当面付 / PC 网站 / 手机网站 / APP 支付下单、查询、关单、退款、异步通知 RSA2 验签。stdlib + cryptography 实现，不依赖支付宝官方 SDK。",
+      "logo": "skill-logos/alipay.svg",
+      "icon": "credit-card",
+      "color": "1677FF",
+      "triggers": ["支付宝", "alipay", "当面付", "扫码支付", "PC 支付", "WAP 支付", "APP 支付", "退款", "对账", "return_url", "notify_url", "RSA2", "应用私钥", "支付宝公钥"],
+      "dependencies": {"python": ["cryptography"]},
+      "auth": {
+        "required": true,
+        "type": "api_key",
+        "keys": [
+          {"env": "ALIPAY_APP_ID", "url": "https://open.alipay.com", "optional": false},
+          {"env": "ALIPAY_APP_PRIVATE_KEY_PATH", "url": "https://open.alipay.com", "optional": true},
+          {"env": "ALIPAY_APP_PRIVATE_KEY", "url": "https://open.alipay.com", "optional": true},
+          {"env": "ALIPAY_PUBLIC_KEY_PATH", "url": "https://open.alipay.com", "optional": true},
+          {"env": "ALIPAY_PUBLIC_KEY", "url": "https://open.alipay.com", "optional": true},
+          {"env": "ALIPAY_NOTIFY_URL", "url": "", "optional": true},
+          {"env": "ALIPAY_RETURN_URL", "url": "", "optional": true},
+          {"env": "ALIPAY_SIGN_TYPE", "url": "", "optional": true},
+          {"env": "ALIPAY_SANDBOX", "url": "", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill alipay -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill alipay"}
+      },
+      "commands": [
+        "python3 scripts/order.py \"{input}\"",
+        "python3 scripts/query.py \"{input}\"",
+        "python3 scripts/refund.py \"{input}\"",
+        "python3 scripts/notify.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/alipay"}
+    },
+    {
+      "name": "cn-einvoice",
+      "version": "0.1.0",
+      "description": "中国电子发票开具：诺诺 / 百望 OpenAPI 双供应商支持，覆盖电子普票 / 专票开具、查询、红冲。可被 wechatpay / alipay 调用作为收款 → 开票链路最后一公里。",
+      "logo": "skill-logos/cn-einvoice.svg",
+      "icon": "receipt",
+      "color": "0EA572",
+      "triggers": ["开发票", "电子发票", "普票", "专票", "红冲", "抬头", "税号", "发票回调", "诺诺", "百望", "纸票电子化", "税控", "销项发票"],
+      "dependencies": {},
+      "auth": {
+        "required": true,
+        "type": "api_key",
+        "keys": [
+          {"env": "CN_EINVOICE_PROVIDER", "url": "", "optional": true},
+          {"env": "CN_EINVOICE_NUONUO_APP_KEY", "url": "https://open.nuonuo.com", "optional": true},
+          {"env": "CN_EINVOICE_NUONUO_APP_SECRET", "url": "https://open.nuonuo.com", "optional": true},
+          {"env": "CN_EINVOICE_NUONUO_TAX_NUM", "url": "https://open.nuonuo.com", "optional": true},
+          {"env": "CN_EINVOICE_NUONUO_TOKEN", "url": "https://open.nuonuo.com", "optional": true},
+          {"env": "CN_EINVOICE_BAIWANG_APP_KEY", "url": "https://open.baiwang.com", "optional": true},
+          {"env": "CN_EINVOICE_BAIWANG_APP_SECRET", "url": "https://open.baiwang.com", "optional": true},
+          {"env": "CN_EINVOICE_BAIWANG_TAX_NUM", "url": "https://open.baiwang.com", "optional": true},
+          {"env": "CN_EINVOICE_NOTIFY_URL", "url": "", "optional": true},
+          {"env": "CN_EINVOICE_DEFAULT_DRAWER", "url": "", "optional": true},
+          {"env": "CN_EINVOICE_SANDBOX", "url": "", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-einvoice -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-einvoice"}
+      },
+      "commands": [
+        "python3 scripts/issue.py \"{input}\"",
+        "python3 scripts/query.py \"{input}\"",
+        "python3 scripts/redflush.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-einvoice"}
     }
   ]
 }

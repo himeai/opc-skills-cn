@@ -132,6 +132,54 @@
         "python3 scripts/blackout.py \"{input}\""
       ],
       "triggers": ["节日营销", "节气", "电商大促", "618", "双11", "年货节", "春节", "中秋", "节日选题", "内容排期", "错峰发布", "两会", "清明", "敏感期", "节日日历"]
+    },
+    {
+      "name": "wechatpay",
+      "displayName": "微信支付 V3 商户接入",
+      "description": "微信支付 V3：JSAPI / Native / H5 / APP 下单、查询、关单、退款、回调验签 + AES-GCM 解密、平台证书管理。仅调用商户官方 API V3。",
+      "version": "0.1.0",
+      "path": "skills/wechatpay",
+      "logo": "skill-logos/wechatpay.svg",
+      "color": "#07C160",
+      "commands": [
+        "python3 scripts/order.py \"{input}\"",
+        "python3 scripts/query.py \"{input}\"",
+        "python3 scripts/refund.py \"{input}\"",
+        "python3 scripts/notify.py \"{input}\"",
+        "python3 scripts/cert.py \"{input}\""
+      ],
+      "triggers": ["微信支付", "wxpay", "wechatpay", "扫码支付", "JSAPI", "Native", "商户号", "mch_id", "APIv3", "退款", "回调", "notify", "商户证书", "平台证书"]
+    },
+    {
+      "name": "alipay",
+      "displayName": "支付宝 OpenAPI 商户接入",
+      "description": "支付宝 OpenAPI：当面付 / PC 网站 / 手机网站 / APP 支付下单、查询、关单、退款、异步通知 RSA2 验签。stdlib + cryptography 实现。",
+      "version": "0.1.0",
+      "path": "skills/alipay",
+      "logo": "skill-logos/alipay.svg",
+      "color": "#1677FF",
+      "commands": [
+        "python3 scripts/order.py \"{input}\"",
+        "python3 scripts/query.py \"{input}\"",
+        "python3 scripts/refund.py \"{input}\"",
+        "python3 scripts/notify.py \"{input}\""
+      ],
+      "triggers": ["支付宝", "alipay", "当面付", "扫码支付", "PC 支付", "WAP 支付", "APP 支付", "退款", "RSA2", "应用私钥", "支付宝公钥"]
+    },
+    {
+      "name": "cn-einvoice",
+      "displayName": "中国电子发票开具",
+      "description": "诺诺 / 百望双供应商电子发票开具：电子普票 / 专票开具、查询、红冲；可被 wechatpay / alipay 调用作为收款 → 开票链路最后一公里。",
+      "version": "0.1.0",
+      "path": "skills/cn-einvoice",
+      "logo": "skill-logos/cn-einvoice.svg",
+      "color": "#0EA572",
+      "commands": [
+        "python3 scripts/issue.py \"{input}\"",
+        "python3 scripts/query.py \"{input}\"",
+        "python3 scripts/redflush.py \"{input}\""
+      ],
+      "triggers": ["开发票", "电子发票", "普票", "专票", "红冲", "抬头", "税号", "发票回调", "诺诺", "百望", "税控", "销项发票"]
     }
   ]
 }

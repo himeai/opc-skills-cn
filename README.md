@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-8-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-11-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -44,8 +44,10 @@
 | ![bilibili-ops](./skill-logos/bilibili-ops.svg) | `bilibili-ops` | B 站 12 分钟三段式长视频脚本、6 章节大纲与时间码、动态/专栏文案与 tag 推荐（本地模板 + 规则） | ✅ |
 | ![cn-content-compliance](./skill-logos/cn-content-compliance.svg) | `cn-content-compliance` | **中国内容合规自检**：广告法极限词 + 医疗/食品/化妆品/金融/教培行业红线 + 各平台禁用词，附改写建议（本地词库 + 规则） | ✅ |
 | ![cn-festival-calendar](./skill-logos/cn-festival-calendar.svg) | `cn-festival-calendar` | **节日内容决策引擎**：节日 / 节气 / 电商大促 / 监管敏感期 → 5 大平台错峰排期、内容角度、敏感期警告（本地数据） | ✅ |
+| ![wechatpay](./skill-logos/wechatpay.svg) | `wechatpay` | **微信支付 V3 商户接入**：JSAPI / Native / H5 / APP 下单、查询、关单、退款、回调验签 + AES-GCM 解密、平台证书管理（仅商户官方 API V3） | ✅ |
+| ![alipay](./skill-logos/alipay.svg) | `alipay` | **支付宝 OpenAPI 商户接入**：当面付 / PC / WAP / APP 下单、查询、关单、退款、异步通知 RSA2 验签（stdlib + cryptography） | ✅ |
+| ![cn-einvoice](./skill-logos/cn-einvoice.svg) | `cn-einvoice` | **中国电子发票开具**：诺诺 / 百望双供应商，覆盖普票 / 专票开具、查询、红冲，可被 wechatpay / alipay 复用 | ✅ |
 | | `cn-geo` | 中文 AI 搜索 GEO（豆包/Kimi/元宝/夸克/百度智能答案） | 📝 |
-| | `wepay-alipay` | 微信支付/支付宝下单、退款、对账、自动开票 | ⏳ |
 | | `cn-tax` | 个独/小规模季度税务申报、核定征收测算 | ⏳ |
 | | `icp-domain-cn` | .cn 域名注册 + ICP/公安备案流程指引 | ⏳ |
 | | `feishu-ops` | 飞书多维表格 / IM 机器人 / 审批自动化 | ⏳ |
@@ -224,8 +226,8 @@ def get_wechat_mp_credentials() -> dict:
 
 ## 路线图快照
 
-- 当前已实现：[`cn-city-picker`](./skills/cn-city-picker/SKILL.md)、[`wechat-ops`](./skills/wechat-ops/SKILL.md)、[`xiaohongshu-ops`](./skills/xiaohongshu-ops/SKILL.md)、[`douyin-ops`](./skills/douyin-ops/SKILL.md)、[`kuaishou-ops`](./skills/kuaishou-ops/SKILL.md)、[`bilibili-ops`](./skills/bilibili-ops/SKILL.md)、[`cn-content-compliance`](./skills/cn-content-compliance/SKILL.md)
-- 下一批优先：`cn-geo`、`wepay-alipay`、`cn-tax`
+- 当前已实现：[`cn-city-picker`](./skills/cn-city-picker/SKILL.md)、[`wechat-ops`](./skills/wechat-ops/SKILL.md)、[`xiaohongshu-ops`](./skills/xiaohongshu-ops/SKILL.md)、[`douyin-ops`](./skills/douyin-ops/SKILL.md)、[`kuaishou-ops`](./skills/kuaishou-ops/SKILL.md)、[`bilibili-ops`](./skills/bilibili-ops/SKILL.md)、[`cn-content-compliance`](./skills/cn-content-compliance/SKILL.md)、[`cn-festival-calendar`](./skills/cn-festival-calendar/SKILL.md)、[`wechatpay`](./skills/wechatpay/SKILL.md)、[`alipay`](./skills/alipay/SKILL.md)、[`cn-einvoice`](./skills/cn-einvoice/SKILL.md)
+- 下一批优先：`cn-geo`、`cn-tax`、`feishu-ops`
 - 详细分期与风险评估：见 [ROADMAP.md](./ROADMAP.md)
 
 | 阶段 | 时间 | 目标 |

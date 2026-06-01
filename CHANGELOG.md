@@ -11,6 +11,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - cn-festival-calendar v0.1.0：中国节日 / 节气 / 电商大促 / 监管敏感期内容决策引擎——给定日期或节日，输出 5 大平台（小红书/抖音/快手/B站/公众号）的发布角度、错峰排期、敏感期警告（本地数据，覆盖 2024–2030 年农历对照）
 
+## [0.0.6] - 2026-06-01
+
+### Added
+
+- wechatpay v0.1.0：微信支付 V3 商户接入（JSAPI/Native/H5/APP 下单、查询、关单、退款、回调验签 + AES-GCM 解密、平台证书管理；仅 stdlib + cryptography）
+- alipay v0.1.0：支付宝 OpenAPI 商户接入（当面付 / PC / WAP / APP 下单、查询、关单、退款、异步通知 RSA2 验签；不依赖支付宝官方 SDK）
+- cn-einvoice v0.1.0：中国电子发票开具（诺诺 / 百望双供应商，普票 / 专票开具、查询、红冲；可被 wechatpay / alipay 复用）
+
 ## [0.0.5] - 2026-06-01
 
 ### Added
