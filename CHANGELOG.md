@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.11] - 2026-06-01
+
+### Added
+
+- opc-property v0.1.0：一人公司「成功篇·置业」副驾驶——1000 万起步的高净值置业决策；国内 S/A/B 三级顶豪盘（汤臣一品 / 深圳湾一号 / 钓鱼台七号院 / 翠湖天地 / 霞公府 / 麓湖等）、海外 10 大豪宅市场（纽约 / 伦敦 / 巴黎 / 悉尼 / 新加坡 / 迪拜 / 东京 / 洛杉矶 / 温哥华 / 葡萄牙）、5 年持有成本测算（含进场印花税 + 年度税 + 物业 + 净租金 + 退出 CGT）、买房送身份程序对照、跨境资金合规清单。完全本地推理；不构成投资 / 移民 / 税务建议；不教任何规避外汇管制的办法
+
 ## [0.0.10] - 2026-06-01
 
 ### Added

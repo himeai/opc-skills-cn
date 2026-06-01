@@ -552,6 +552,33 @@
         "python3 scripts/restart.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-plan-b"}
+    },
+    {
+      "name": "opc-property",
+      "version": "0.1.0",
+      "description": "一人公司「成功篇·置业」副驾驶（本地规则版）：1000 万起步的高净值置业决策——国内顶豪盘（汤臣一品 / 深圳湾一号 / 钓鱼台七号院 / 翠湖天地等）、海外 10 大豪宅市场（纽约 / 伦敦 / 巴黎 / 悉尼 / 新加坡 / 迪拜 / 东京 / 洛杉矶 / 温哥华 / 葡萄牙）、5 年持有成本测算、跨境资金合规清单。本地推理，不构成投资 / 移民 / 税务建议，不推荐任何具体楼盘 / 中介。",
+      "logo": "skill-logos/opc-property.svg",
+      "icon": "home",
+      "color": "D4AF37",
+      "triggers": ["置业", "买房", "豪宅", "顶豪", "神盘", "汤臣一品", "深圳湾一号", "钓鱼台七号院", "海外置业", "买房送身份", "Golden Visa", "迪拜金签", "伦敦买房", "纽约公寓", "第二居所", "家族信托", "CRS", "ODI", "外汇额度", "5 万美元", "跨境资金"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-property -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-property"}
+      },
+      "commands": [
+        "python3 scripts/match.py \"{input}\"",
+        "python3 scripts/cn_city.py \"{input}\"",
+        "python3 scripts/global_market.py \"{input}\"",
+        "python3 scripts/holding_cost.py \"{input}\"",
+        "python3 scripts/compliance.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-property"}
     }
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "_comment": "国内 10 大重点城市豪宅维度评分（限购 / 流动性 / 学区 / 远期供给 / 持有税费 / 租售比 / 文化偏好），1-10 分制；用于本地排序。",
+  "_disclaimer": "评分为静态规则，不构成投资建议。",
+  "weights": {
+    "purchase_restriction_friendly": 0.15,
+    "liquidity": 0.20,
+    "school_district": 0.15,
+    "long_term_supply_scarcity": 0.15,
+    "holding_cost_low": 0.10,
+    "rental_yield": 0.10,
+    "culture_brand": 0.15
+  },
+  "cities": [
+    {
+      "name": "上海",
+      "scores": {"purchase_restriction_friendly": 4, "liquidity": 9, "school_district": 9, "long_term_supply_scarcity": 9, "holding_cost_low": 7, "rental_yield": 5, "culture_brand": 10},
+      "headline": "顶豪流动性 + 学区 + 文化最强综合体；外环内供给极稀缺",
+      "buyer_fit": ["金融", "外贸", "二代", "海归"]
+    },
+    {
+      "name": "北京",
+      "scores": {"purchase_restriction_friendly": 3, "liquidity": 8, "school_district": 9, "long_term_supply_scarcity": 9, "holding_cost_low": 7, "rental_yield": 4, "culture_brand": 10},
+      "headline": "央企 + 政策资源 + 文化老钱区；二环内供给孤品稀缺",
+      "buyer_fit": ["央企", "传媒", "互联网创始人", "政策相关"]
+    },
+    {
+      "name": "深圳",
+      "scores": {"purchase_restriction_friendly": 5, "liquidity": 8, "school_district": 7, "long_term_supply_scarcity": 8, "holding_cost_low": 7, "rental_yield": 6, "culture_brand": 8},
+      "headline": "科技新贵 + 港资接驳；深圳湾豪宅成全国新地标",
+      "buyer_fit": ["科技创始人", "金融新贵", "港资买家"]
+    },
+    {
+      "name": "杭州",
+      "scores": {"purchase_restriction_friendly": 7, "liquidity": 7, "school_district": 7, "long_term_supply_scarcity": 7, "holding_cost_low": 7, "rental_yield": 6, "culture_brand": 7},
+      "headline": "民营经济 + 西湖文化双扇；浙商一代二代主导",
+      "buyer_fit": ["浙商", "电商创始人", "直播电商"]
+    },
+    {
+      "name": "广州",
+      "scores": {"purchase_restriction_friendly": 7, "liquidity": 6, "school_district": 6, "long_term_supply_scarcity": 6, "holding_cost_low": 8, "rental_yield": 6, "culture_brand": 7},
+      "headline": "广府老钱 + 珠江新城 + 越秀学区",
+      "buyer_fit": ["广府家族", "外贸"]
+    },
+    {
+      "name": "成都",
+      "scores": {"purchase_restriction_friendly": 8, "liquidity": 6, "school_district": 5, "long_term_supply_scarcity": 5, "holding_cost_low": 9, "rental_yield": 7, "culture_brand": 7},
+      "headline": "麓湖生态城代表的新成都改善样本，性价比天花板",
+      "buyer_fit": ["新川人", "数字游民富裕一代"]
+    },
+    {
+      "name": "苏州",
+      "scores": {"purchase_restriction_friendly": 8, "liquidity": 6, "school_district": 6, "long_term_supply_scarcity": 6, "holding_cost_low": 8, "rental_yield": 6, "culture_brand": 8},
+      "headline": "上海卫星 + 江南文化定制盘",
+      "buyer_fit": ["长三角科技创始人", "文化偏好家庭"]
+    },
+    {
+      "name": "厦门",
+      "scores": {"purchase_restriction_friendly": 6, "liquidity": 5, "school_district": 5, "long_term_supply_scarcity": 7, "holding_cost_low": 7, "rental_yield": 5, "culture_brand": 7},
+      "headline": "海岛城市 + 海外华人聚集地",
+      "buyer_fit": ["海外华人", "气候改善买家"]
+    },
+    {
+      "name": "三亚",
+      "scores": {"purchase_restriction_friendly": 5, "liquidity": 5, "school_district": 3, "long_term_supply_scarcity": 7, "holding_cost_low": 6, "rental_yield": 8, "culture_brand": 7},
+      "headline": "海南自贸港 + 气候资产 + 酒店托管现金流",
+      "buyer_fit": ["北方候鸟", "海南自贸港落户家庭"]
+    },
+    {
+      "name": "大理",
+      "scores": {"purchase_restriction_friendly": 9, "liquidity": 4, "school_district": 3, "long_term_supply_scarcity": 6, "holding_cost_low": 9, "rental_yield": 5, "culture_brand": 9},
+      "headline": "数字游民 + 院落改造 + 文化第二居所",
+      "buyer_fit": ["数字游民", "退休改善", "文化偏好"]
+    }
+  ]
+}

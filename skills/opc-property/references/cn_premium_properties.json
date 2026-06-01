@@ -1,0 +1,202 @@
+{
+  "_comment": "国内顶豪盘静态名录，仅为公开信息整理，本工具不做交易撮合、不替代不动产顾问，价格区间为公开成交参考，时效性请以当前市场为准。",
+  "_disclaimer": "数据来源：链家、贝壳、中原、易居公开成交记录与媒体报道，最终以实际备案 / 网签 / 中介披露为准。本工具不构成投资建议。",
+  "tier_S": {
+    "label": "S 级（神盘 / 顶级豪宅，单价 ¥30 万 / m² 以上）",
+    "min_total_cny": 80000000,
+    "properties": [
+      {
+        "name": "汤臣一品",
+        "city": "上海",
+        "district": "浦东陆家嘴",
+        "type": "公寓 / 江景顶豪",
+        "unit_price_cny_per_sqm_range": [350000, 450000],
+        "typical_total_cny_range": [100000000, 300000000],
+        "highlights": ["首个万元美金级豪宅", "陆家嘴金融城核心", "外滩对岸一线江景"],
+        "buyer_profile": "顶级企业家 / 跨境家族办公室",
+        "liquidity": "低（年成交 < 20 套）"
+      },
+      {
+        "name": "深圳湾一号",
+        "city": "深圳",
+        "district": "南山后海",
+        "type": "公寓 / 海景豪宅",
+        "unit_price_cny_per_sqm_range": [200000, 350000],
+        "typical_total_cny_range": [60000000, 250000000],
+        "highlights": ["深圳塔尖名片", "深圳湾一线海景", "私享会所 + 城市观景"],
+        "buyer_profile": "科技新贵 / 港资 / 私募合伙人",
+        "liquidity": "低-中"
+      },
+      {
+        "name": "翠湖天地（御苑 / 雅苑 / 隽园）",
+        "city": "上海",
+        "district": "黄浦人民广场",
+        "type": "公寓 / 内环顶豪",
+        "unit_price_cny_per_sqm_range": [180000, 280000],
+        "typical_total_cny_range": [50000000, 200000000],
+        "highlights": ["内环里子人民广场", "石库门改造老钱区", "瑞安系作品"],
+        "buyer_profile": "传统老钱 / 律所合伙人",
+        "liquidity": "中"
+      },
+      {
+        "name": "华润悬铃 9 号",
+        "city": "上海",
+        "district": "徐汇衡复",
+        "type": "类独栋 / 精装豪宅",
+        "unit_price_cny_per_sqm_range": [200000, 300000],
+        "typical_total_cny_range": [80000000, 180000000],
+        "highlights": ["衡复风貌区", "极低密度", "梧桐区天花板"],
+        "buyer_profile": "上海老钱 / 文化偏好买家",
+        "liquidity": "极低"
+      },
+      {
+        "name": "建国府 / 钓鱼台七号院",
+        "city": "北京",
+        "district": "海淀玉渊潭",
+        "type": "类独栋 / 院落别墅",
+        "unit_price_cny_per_sqm_range": [200000, 350000],
+        "typical_total_cny_range": [80000000, 250000000],
+        "highlights": ["京城西部豪宅天花板", "钓鱼台北侧", "新中式合院"],
+        "buyer_profile": "央企领导 / 京城传统老钱",
+        "liquidity": "极低"
+      },
+      {
+        "name": "霞公府",
+        "city": "北京",
+        "district": "东城王府井",
+        "type": "公寓 / 文物级豪宅",
+        "unit_price_cny_per_sqm_range": [180000, 260000],
+        "typical_total_cny_range": [50000000, 150000000],
+        "highlights": ["王府井 1 公里内孤品", "王府井文化带", "酒店式管家"],
+        "buyer_profile": "文化偏好 / 港澳台买家",
+        "liquidity": "低"
+      },
+      {
+        "name": "壹号院（融创）",
+        "city": "北京",
+        "district": "朝阳奥森",
+        "type": "公寓 / 改善顶豪",
+        "unit_price_cny_per_sqm_range": [180000, 250000],
+        "typical_total_cny_range": [40000000, 120000000],
+        "highlights": ["奥森一线", "新中式系列", "互联网新贵聚集地"],
+        "buyer_profile": "互联网创始人 / 体育明星",
+        "liquidity": "中"
+      },
+      {
+        "name": "华润润府（深圳湾畔）",
+        "city": "深圳",
+        "district": "南山深圳湾",
+        "type": "公寓 / 改善豪宅",
+        "unit_price_cny_per_sqm_range": [150000, 220000],
+        "typical_total_cny_range": [30000000, 80000000],
+        "highlights": ["深圳湾大平层", "学位 + 海景双优", "国央企开发"],
+        "buyer_profile": "粤港澳大湾区科技高管",
+        "liquidity": "中"
+      },
+      {
+        "name": "九树公寓 / 御涛园（杭州）",
+        "city": "杭州",
+        "district": "上城西湖",
+        "type": "公寓 / 别墅",
+        "unit_price_cny_per_sqm_range": [120000, 200000],
+        "typical_total_cny_range": [30000000, 100000000],
+        "highlights": ["西湖一线", "杭州顶豪标杆", "民营大佬聚集"],
+        "buyer_profile": "浙商一代 / 直播电商新贵",
+        "liquidity": "低"
+      }
+    ]
+  },
+  "tier_A": {
+    "label": "A 级（核心改善盘，¥10-20 万 / m²）",
+    "min_total_cny": 20000000,
+    "properties": [
+      {
+        "name": "前滩天悦 / 前滩 11 街区",
+        "city": "上海",
+        "district": "浦东前滩",
+        "unit_price_cny_per_sqm_range": [120000, 180000],
+        "typical_total_cny_range": [25000000, 70000000],
+        "highlights": ["上海第二个陆家嘴", "新建强学区", "有限名额次新"]
+      },
+      {
+        "name": "麓湖生态城（蓝花屿等）",
+        "city": "成都",
+        "district": "天府新区",
+        "unit_price_cny_per_sqm_range": [50000, 120000],
+        "typical_total_cny_range": [20000000, 60000000],
+        "highlights": ["麓客社区", "新天府人聚集", "生态 + 教育双优"]
+      },
+      {
+        "name": "招商蛇口·太子湾湾玺",
+        "city": "深圳",
+        "district": "南山蛇口",
+        "unit_price_cny_per_sqm_range": [120000, 180000],
+        "typical_total_cny_range": [30000000, 80000000],
+        "highlights": ["港口湾区", "前海 + 香港双扇", "国资稀缺"]
+      },
+      {
+        "name": "中海·甲叁号院",
+        "city": "北京",
+        "district": "朝阳东三环",
+        "unit_price_cny_per_sqm_range": [150000, 220000],
+        "typical_total_cny_range": [30000000, 80000000],
+        "highlights": ["国贸 + 朝阳公园", "新一代央企标准", "深度第二居所"]
+      },
+      {
+        "name": "翡翠滨江 / 之江九里",
+        "city": "杭州",
+        "district": "滨江 / 之江",
+        "unit_price_cny_per_sqm_range": [80000, 130000],
+        "typical_total_cny_range": [15000000, 40000000],
+        "highlights": ["钱江 + 之江双扇", "新贵聚集", "杭州改善天花板"]
+      }
+    ]
+  },
+  "tier_B": {
+    "label": "B 级（高端商业 / 旅居 / 公寓投资，¥1000w-2000w）",
+    "min_total_cny": 10000000,
+    "properties": [
+      {
+        "name": "三亚·海棠湾鲁能 / 万达瑰丽 / 半山半岛",
+        "city": "三亚",
+        "district": "海棠湾 / 半山半岛",
+        "unit_price_cny_per_sqm_range": [60000, 150000],
+        "typical_total_cny_range": [10000000, 50000000],
+        "highlights": ["海南自贸港", "酒店托管现金流", "气候资产"]
+      },
+      {
+        "name": "苏州·桃花源 / 御湖熙岸",
+        "city": "苏州",
+        "district": "金鸡湖 / 太湖",
+        "unit_price_cny_per_sqm_range": [50000, 100000],
+        "typical_total_cny_range": [10000000, 40000000],
+        "highlights": ["江南文化定制", "高尔夫社区", "上海卫星私宅"]
+      },
+      {
+        "name": "厦门·世茂海峡 / 五缘湾顶豪",
+        "city": "厦门",
+        "district": "思明湾 / 五缘湾",
+        "unit_price_cny_per_sqm_range": [80000, 130000],
+        "typical_total_cny_range": [10000000, 30000000],
+        "highlights": ["海岛城市", "对台口岸", "低密度品质"]
+      },
+      {
+        "name": "大理·古城 / 银桥老钱区",
+        "city": "大理",
+        "district": "古城 / 苍洱",
+        "unit_price_cny_per_sqm_range": [20000, 50000],
+        "typical_total_cny_range": [10000000, 30000000],
+        "highlights": ["数字游民第二居所", "院落改造", "气候 + 文化资产"]
+      }
+    ]
+  },
+  "buyer_segmentation": {
+    "comment": "按可投入置业资金（不含主住房 + 流动备用金）分层",
+    "segments": [
+      {"min_cny": 10000000, "max_cny": 30000000, "label": "千万级", "fit_tiers": ["B", "A"], "fit_overseas": ["东京", "曼谷", "吉隆坡", "葡萄牙"]},
+      {"min_cny": 30000000, "max_cny": 80000000, "label": "三千万级", "fit_tiers": ["A", "S"], "fit_overseas": ["新加坡", "迪拜", "悉尼", "温哥华", "洛杉矶"]},
+      {"min_cny": 80000000, "max_cny": 200000000, "label": "亿级", "fit_tiers": ["S"], "fit_overseas": ["伦敦", "纽约", "巴黎", "新加坡乌节路"]},
+      {"min_cny": 200000000, "max_cny": 9999999999, "label": "超亿级 / 家族办公室", "fit_tiers": ["S"], "fit_overseas": ["纽约第五大道", "伦敦 Mayfair", "巴黎左岸", "摩纳哥"]}
+    ]
+  }
+}

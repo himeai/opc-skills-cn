@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-19-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-20-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -159,6 +159,13 @@
       <td><img src="./skill-logos/opc-plan-b.svg" alt="opc-plan-b" width="24"></td>
       <td><code>opc-plan-b</code></td>
       <td><b>一人公司 Plan B 副驾驶</b>：注销公司（4 类主体）、跑外卖 / 网约车 / 跑腿 / 众包（10 平台打分排序）、摆摊（10 城政策 + 5 大品类 ROI）、续社保 + 领失业金 + 跑道体检、半年后复业决策树（本地规则，不替代律师 / 税务师 / 心理咨询师）。让你亲眼看见——人生的容错率大得可怕</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4"><b>🎉 成功篇</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/opc-property.svg" alt="opc-property" width="24"></td>
+      <td><code>opc-property</code></td>
+      <td><b>一人公司置业副驾驶</b>：1000 万起步的高净值置业决策——国内顶豪盘（汤臣一品 / 深圳湾一号 / 钓鱼台七号院 / 翠湖天地等 S/A/B 三级清单）、海外 10 大豪宅市场（纽约 / 伦敦 / 巴黎 / 悉尼 / 新加坡 / 迪拜 / 东京 / 洛杉矶 / 温哥华 / 葡萄牙）、5 年持有成本测算、跨境资金合规清单（本地规则，不构成投资 / 移民 / 税务建议）</td>
       <td>✅</td>
     </tr>
     <tr><td colspan="4"><b>⏳ 规划中</b></td></tr>

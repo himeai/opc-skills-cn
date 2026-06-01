@@ -1,0 +1,196 @@
+{
+  "_comment": "海外置业 10 大热门市场静态信息，用于本地推理；价格 / 政策 / 税率以当地最新官方公告为准。",
+  "_disclaimer": "本工具不构成投资 / 移民 / 税务建议；不推荐具体楼盘 / 中介 / 移民顾问。",
+  "markets": [
+    {
+      "city": "纽约",
+      "country": "美国",
+      "iso": "US-NY",
+      "buyer_total_budget_cny_range": [30000000, 800000000],
+      "core_areas": ["Upper East Side", "Tribeca", "Central Park West", "Hudson Yards", "Billionaire's Row 57th"],
+      "trophy_buildings": ["432 Park Avenue", "One57", "220 Central Park South", "111 W 57th"],
+      "typical_unit_price_usd_per_sqft": [3000, 8000],
+      "tax": {
+        "stamp_duty": "Mansion Tax 1%-3.9%（>$1M）",
+        "annual_property_tax": "市政评估值 0.9%-1.4%",
+        "income_tax_on_rent": "联邦 + 州 + 市三级，约 35%-45%",
+        "capital_gains": "联邦 20% + NY 州 8.82%"
+      },
+      "ownership_path": "外国人可全权购买；现金购房 / LLC 持有常见；贷款门槛 30%-40% 首付",
+      "residency_link": "购房不直接给身份；建议配合 EB-5 / E-2 / O-1",
+      "highlights": ["全球流动性最强豪宅市场之一", "中央公园朝向是终极指标", "曼哈顿 / 长岛分级"],
+      "risks": ["共管公寓 board 审核可能拒外国买家", "州税 + 市税叠加吃收益", "Co-op 历来不接受外国全款"]
+    },
+    {
+      "city": "伦敦",
+      "country": "英国",
+      "iso": "GB-LDN",
+      "buyer_total_budget_cny_range": [25000000, 1000000000],
+      "core_areas": ["Mayfair", "Knightsbridge", "Belgravia", "Chelsea", "Kensington", "St John's Wood"],
+      "trophy_buildings": ["One Hyde Park", "The OWO Residences", "Chelsea Barracks", "20 Grosvenor Square"],
+      "typical_unit_price_gbp_per_sqft": [2500, 6000],
+      "tax": {
+        "stamp_duty": "SDLT 阶梯，外国买家附加 2%，第二套附加 5%，最高约 17%",
+        "annual_property_tax": "Council Tax + ATED（公司持有 >£500k）",
+        "income_tax_on_rent": "20%-45% 阶梯",
+        "capital_gains": "Non-resident CGT 18%-28%"
+      },
+      "ownership_path": "Freehold（永久产权）/ Leasehold（≥125 年）；外国人可全权购买；公司持有常见",
+      "residency_link": "Investor Visa 已废，可走 Innovator Founder / Skilled Worker / Global Talent",
+      "highlights": ["产权清晰、法治成熟", "GBP 资产分散", "传家性强"],
+      "risks": ["SDLT 17% 进场成本高", "Leasehold 续期与服务费", "Non-dom 税改持续收紧"]
+    },
+    {
+      "city": "巴黎",
+      "country": "法国",
+      "iso": "FR-PAR",
+      "buyer_total_budget_cny_range": [20000000, 500000000],
+      "core_areas": ["7e（左岸 Invalides）", "8e（Champs-Élysées）", "16e（Trocadéro / Auteuil）", "6e（Saint-Germain）", "4e（Marais）"],
+      "trophy_buildings": ["Avenue Montaigne 沿线", "Place Vendôme 周边", "Île Saint-Louis 老贵族公寓"],
+      "typical_unit_price_eur_per_sqm": [18000, 60000],
+      "tax": {
+        "stamp_duty": "Notaire 费用 + 登记税 ~7.5%",
+        "annual_property_tax": "Taxe foncière + Taxe d'habitation（已逐步减免）",
+        "income_tax_on_rent": "20%-30% Non-resident scheme",
+        "capital_gains": "19% + 17.2% 社保税，长期持有递减"
+      },
+      "ownership_path": "外国人可全权购买；银行贷款对外国人 50%-60% LTV",
+      "residency_link": "购房不直接给身份；可配合 Passeport Talent / Carte de Séjour 投资类",
+      "highlights": ["巴黎奥运后核心区强劲", "EUR 资产", "文化与生活方式资产"],
+      "risks": ["租金管制（encadrement des loyers）", "Notaire 费用前置", "继承税最高 60%（非直系）"]
+    },
+    {
+      "city": "悉尼",
+      "country": "澳大利亚",
+      "iso": "AU-SYD",
+      "buyer_total_budget_cny_range": [15000000, 200000000],
+      "core_areas": ["Point Piper", "Vaucluse", "Bellevue Hill", "Mosman", "CBD Barangaroo"],
+      "trophy_buildings": ["Crown Residences One Barangaroo", "Opera Residences"],
+      "typical_unit_price_aud_per_sqm": [25000, 80000],
+      "tax": {
+        "stamp_duty": "Foreign Investor 附加 8%，自住附加 2%（年税）",
+        "annual_property_tax": "Land tax + Foreign owner surcharge 4%",
+        "income_tax_on_rent": "32.5%-45%",
+        "capital_gains": "外国人无 50% 折扣，全额征税"
+      },
+      "ownership_path": "FIRB 审批必备；外国人原则上只能买新房 / 楼花",
+      "residency_link": "188C SIV 投资移民已废止；可走 Subclass 858 Global Talent",
+      "highlights": ["英语国家 + 教育", "AUD 资产", "夏季气候"],
+      "risks": ["FIRB 政策频繁收紧", "外国人买二手限制", "全额 CGT"]
+    },
+    {
+      "city": "新加坡",
+      "country": "新加坡",
+      "iso": "SG",
+      "buyer_total_budget_cny_range": [25000000, 600000000],
+      "core_areas": ["Orchard 乌节路", "Sentosa Cove", "District 9/10/11", "Marina Bay"],
+      "trophy_buildings": ["Marina One Residences", "Wallich Residence", "Les Maisons Nassim"],
+      "typical_unit_price_sgd_per_sqft": [3500, 7500],
+      "tax": {
+        "stamp_duty": "ABSD 外国人 60%（2023 起）",
+        "annual_property_tax": "Property Tax 10%-32% 累进",
+        "income_tax_on_rent": "22%-24% Non-resident",
+        "capital_gains": "无 CGT，但 SSD 持有 < 3 年阶梯卖方印花税"
+      },
+      "ownership_path": "Condo 外国人可买；Landed 仅圣淘沙湾对外开放；HDB 不可买",
+      "residency_link": "GIP 全球投资者计划 1000 万新币起；EP/SP/Tech.Pass 通道",
+      "highlights": ["亚洲家族办公室首选", "SGD + 英美法体系", "教育 + 安全 + 医疗"],
+      "risks": ["ABSD 60% 进场成本极高", "Landed 限制极严", "需 SC/PR 才能买 HDB"]
+    },
+    {
+      "city": "迪拜",
+      "country": "阿联酋",
+      "iso": "AE-DXB",
+      "buyer_total_budget_cny_range": [10000000, 300000000],
+      "core_areas": ["Downtown Burj Khalifa", "Palm Jumeirah", "Emirates Hills", "Dubai Marina", "Bluewaters"],
+      "trophy_buildings": ["Bvlgari Residences", "Atlantis The Royal Residences", "One Palm", "Jumeirah Bay Island"],
+      "typical_unit_price_aed_per_sqft": [3000, 12000],
+      "tax": {
+        "stamp_duty": "DLD 4% 一次性",
+        "annual_property_tax": "无",
+        "income_tax_on_rent": "无个税",
+        "capital_gains": "无"
+      },
+      "ownership_path": "外国人可购买 Freehold 区域；现金 / 信用证常见",
+      "residency_link": "金签 Golden Visa：购房 ≥ AED 200 万（约 ¥390 万）即可申请 10 年签证",
+      "highlights": ["零税环境", "买房送身份", "高净值聚集 + 强流动性"],
+      "risks": ["供给放量周期", "服务费 / 物业费高", "短租 Airbnb 政策摇摆"]
+    },
+    {
+      "city": "东京",
+      "country": "日本",
+      "iso": "JP-TYO",
+      "buyer_total_budget_cny_range": [10000000, 300000000],
+      "core_areas": ["港区（六本木 / 麻布）", "千代田番町", "涩谷神宫前", "中央区银座"],
+      "trophy_buildings": ["The Park House Grand Minamiazabu", "Toranomon Hills Residential", "Park Court Akasaka"],
+      "typical_unit_price_jpy_per_sqm": [2500000, 8000000],
+      "tax": {
+        "stamp_duty": "登录免许税 + 不动产取得税合计约 4%",
+        "annual_property_tax": "固定资产税 1.4% + 都市计划税 0.3%",
+        "income_tax_on_rent": "20.42% Non-resident 源泉征收",
+        "capital_gains": "短期 39%、长期 20%"
+      },
+      "ownership_path": "外国人可全权购买，无国籍限制；本地银行贷款需在日工作签证",
+      "residency_link": "经营管理签证 ¥500 万以上投资 + 实体经营",
+      "highlights": ["JPY 避险 + 历史性低利率", "无外国人附加税", "永久产权"],
+      "risks": ["地震 + 老龄化", "二手公寓贷款年限受限", "汇率波动"]
+    },
+    {
+      "city": "洛杉矶",
+      "country": "美国",
+      "iso": "US-LA",
+      "buyer_total_budget_cny_range": [20000000, 500000000],
+      "core_areas": ["Bel Air", "Beverly Hills 90210", "Holmby Hills", "Pacific Palisades", "Malibu Colony"],
+      "trophy_buildings": ["The One Bel Air", "Hidden Hills Estates", "Carbon Beach Malibu"],
+      "typical_unit_price_usd_per_sqft": [1500, 5000],
+      "tax": {
+        "stamp_duty": "Documentary Transfer + LA Mansion Tax（>$5M 4%，>$10M 5.5%，2023 起）",
+        "annual_property_tax": "约 1.25%（Prop 13）",
+        "income_tax_on_rent": "联邦 + 加州合计 35%-50%",
+        "capital_gains": "联邦 20% + 加州 13.3%"
+      },
+      "ownership_path": "外国人可全权购买；LLC 持有常见",
+      "residency_link": "EB-5 / O-1 / E-2",
+      "highlights": ["华人富裕阶层第一目的地", "教育 + 气候", "USD 资产"],
+      "risks": ["LA Mansion Tax 4%-5.5% 进场成本", "加州税重", "山火 / 地震保险费高企"]
+    },
+    {
+      "city": "温哥华",
+      "country": "加拿大",
+      "iso": "CA-VAN",
+      "buyer_total_budget_cny_range": [15000000, 200000000],
+      "core_areas": ["Point Grey", "Shaughnessy", "West Vancouver British Properties"],
+      "tax": {
+        "stamp_duty": "Property Transfer Tax + Foreign Buyer Tax 20%（BC 省）",
+        "annual_property_tax": "Empty Homes Tax 3% + Speculation Tax 0.5%-2%",
+        "income_tax_on_rent": "25% Non-resident 源泉",
+        "capital_gains": "Non-resident 25% 预扣"
+      },
+      "ownership_path": "外国人买房禁令 2023 起延至 2027，仅工签 / PR / 学签可买",
+      "residency_link": "BC PNP / Start-Up Visa",
+      "highlights": ["华人社区成熟", "教育 + 自然环境"],
+      "risks": ["外国人禁令", "空置税 + 投机税", "进场窗口受限"]
+    },
+    {
+      "city": "葡萄牙（里斯本 / 波尔图）",
+      "country": "葡萄牙",
+      "iso": "PT",
+      "buyer_total_budget_cny_range": [4000000, 50000000],
+      "core_areas": ["Lisbon Príncipe Real / Lapa", "Cascais", "Comporta", "Porto Foz"],
+      "tax": {
+        "stamp_duty": "IMT 阶梯最高 6% + Stamp 0.8%",
+        "annual_property_tax": "IMI 0.3%-0.45%",
+        "income_tax_on_rent": "Non-resident 28%",
+        "capital_gains": "28%（外国人）"
+      },
+      "ownership_path": "外国人可全权购买；银行贷款 60%-70% LTV",
+      "residency_link": "黄金签证 2023 起取消房产路径，转为基金 / 创业 / 文化路径",
+      "highlights": ["欧盟身份跳板", "气候 + 安全", "成本相对低"],
+      "risks": ["黄金签证房产路径关闭", "里斯本短租政策收紧", "市场流动性较低"]
+    }
+  ],
+  "outflow_quota": {
+    "annual_personal_quota_usd": 50000,
+    "comment": "中国大陆居民每年个人购汇额度 5 万美元，购汇用途不得用于境外购房（结售汇规定）；超额购房需走 ODI / 个人合规通道，本工具不提供任何规避汇管的办法。"
+  }
+}

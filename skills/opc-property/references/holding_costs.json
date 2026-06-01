@@ -1,0 +1,40 @@
+{
+  "_comment": "5 年持有成本静态参数（按城市 / 国家），用于本地估算，不考虑通胀与汇率。",
+  "_disclaimer": "估算结果仅作量级参考，最终以税务师 / 评估师测算为准。",
+  "fx_to_cny": {
+    "USD": 7.2,
+    "GBP": 9.1,
+    "EUR": 7.8,
+    "AUD": 4.7,
+    "SGD": 5.3,
+    "AED": 1.96,
+    "JPY": 0.047,
+    "CAD": 5.3,
+    "CNY": 1.0
+  },
+  "city_params": {
+    "上海": {"transaction_tax_pct": 4.0, "annual_property_tax_pct": 0.0, "annual_management_pct": 0.6, "rental_yield_pct": 1.5, "income_tax_on_rent_pct": 20, "exit_tax_pct": 1.0},
+    "北京": {"transaction_tax_pct": 4.0, "annual_property_tax_pct": 0.0, "annual_management_pct": 0.6, "rental_yield_pct": 1.4, "income_tax_on_rent_pct": 20, "exit_tax_pct": 1.0},
+    "深圳": {"transaction_tax_pct": 4.0, "annual_property_tax_pct": 0.0, "annual_management_pct": 0.5, "rental_yield_pct": 1.6, "income_tax_on_rent_pct": 20, "exit_tax_pct": 1.0},
+    "杭州": {"transaction_tax_pct": 4.0, "annual_property_tax_pct": 0.0, "annual_management_pct": 0.5, "rental_yield_pct": 1.6, "income_tax_on_rent_pct": 20, "exit_tax_pct": 1.0},
+    "成都": {"transaction_tax_pct": 3.5, "annual_property_tax_pct": 0.0, "annual_management_pct": 0.4, "rental_yield_pct": 2.0, "income_tax_on_rent_pct": 20, "exit_tax_pct": 1.0},
+    "三亚": {"transaction_tax_pct": 3.5, "annual_property_tax_pct": 0.0, "annual_management_pct": 1.5, "rental_yield_pct": 2.5, "income_tax_on_rent_pct": 20, "exit_tax_pct": 1.0},
+    "纽约": {"transaction_tax_pct": 5.0, "annual_property_tax_pct": 1.2, "annual_management_pct": 1.5, "rental_yield_pct": 3.0, "income_tax_on_rent_pct": 40, "exit_tax_pct": 8.0},
+    "洛杉矶": {"transaction_tax_pct": 5.5, "annual_property_tax_pct": 1.25, "annual_management_pct": 1.0, "rental_yield_pct": 2.8, "income_tax_on_rent_pct": 40, "exit_tax_pct": 13.3},
+    "伦敦": {"transaction_tax_pct": 17.0, "annual_property_tax_pct": 0.6, "annual_management_pct": 1.5, "rental_yield_pct": 3.0, "income_tax_on_rent_pct": 40, "exit_tax_pct": 28.0},
+    "巴黎": {"transaction_tax_pct": 7.5, "annual_property_tax_pct": 1.0, "annual_management_pct": 1.2, "rental_yield_pct": 2.8, "income_tax_on_rent_pct": 30, "exit_tax_pct": 36.2},
+    "悉尼": {"transaction_tax_pct": 13.0, "annual_property_tax_pct": 1.6, "annual_management_pct": 1.0, "rental_yield_pct": 3.0, "income_tax_on_rent_pct": 32.5, "exit_tax_pct": 12.5},
+    "新加坡": {"transaction_tax_pct": 65.0, "annual_property_tax_pct": 1.5, "annual_management_pct": 1.2, "rental_yield_pct": 3.0, "income_tax_on_rent_pct": 24, "exit_tax_pct": 0},
+    "迪拜": {"transaction_tax_pct": 4.0, "annual_property_tax_pct": 0.0, "annual_management_pct": 1.5, "rental_yield_pct": 6.5, "income_tax_on_rent_pct": 0, "exit_tax_pct": 0},
+    "东京": {"transaction_tax_pct": 4.0, "annual_property_tax_pct": 1.7, "annual_management_pct": 1.0, "rental_yield_pct": 4.0, "income_tax_on_rent_pct": 20.42, "exit_tax_pct": 20.0},
+    "温哥华": {"transaction_tax_pct": 23.0, "annual_property_tax_pct": 0.6, "annual_management_pct": 1.0, "rental_yield_pct": 3.0, "income_tax_on_rent_pct": 25, "exit_tax_pct": 25.0},
+    "葡萄牙": {"transaction_tax_pct": 7.0, "annual_property_tax_pct": 0.4, "annual_management_pct": 1.0, "rental_yield_pct": 4.0, "income_tax_on_rent_pct": 28, "exit_tax_pct": 28.0}
+  },
+  "default_params": {"transaction_tax_pct": 5.0, "annual_property_tax_pct": 0.5, "annual_management_pct": 1.0, "rental_yield_pct": 2.5, "income_tax_on_rent_pct": 25, "exit_tax_pct": 5.0},
+  "tips": [
+    "国内目前对住宅普遍不征房产税，但持有成本需算物业 / 维修 / 装修折旧",
+    "纽约 / 伦敦 / 悉尼的进场印花税已经吃掉一年涨幅，要按持有 5 年以上来摊",
+    "迪拜零税但物业费 + 服务费偏高，约占年总价 1.5%-2.5%",
+    "新加坡 ABSD 60% 是外国人最贵的进场税，建议先 PR / 公司架构再考虑"
+  ]
+}

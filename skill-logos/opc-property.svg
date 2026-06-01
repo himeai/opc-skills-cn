@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="opc-property logo">
+  <rect width="24" height="24" rx="4" fill="#D4AF37" fill-opacity="0.12"/>
+  <path d="M3 11l9-7 9 7v9a2 2 0 0 1-2 2h-3v-7H8v7H5a2 2 0 0 1-2-2z" fill="#D4AF37" stroke="#8B6F1A" stroke-width="1.2" stroke-linejoin="round"/>
+  <rect x="10" y="14" width="4" height="8" fill="#8B6F1A"/>
+  <circle cx="12" cy="9" r="1.2" fill="#FFFFFF"/>
+</svg>

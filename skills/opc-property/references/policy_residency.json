@@ -1,0 +1,116 @@
+{
+  "_comment": "买房与身份的对照表，仅作信息整理，最终以各国移民局最新公告为准。",
+  "_disclaimer": "本工具不提供移民咨询服务，不推荐任何中介机构。",
+  "programs": [
+    {
+      "country": "阿联酋",
+      "name": "迪拜 Golden Visa",
+      "min_property_cny": 3900000,
+      "min_property_local": "AED 2,000,000",
+      "visa_years": 10,
+      "renewable": true,
+      "physical_residency_required": false,
+      "notes": "最受欢迎的买房送身份方案，速度快（4-8 周），含家属",
+      "as_of": "2026-06"
+    },
+    {
+      "country": "希腊",
+      "name": "Golden Visa（房产路径仍开放）",
+      "min_property_cny": 6500000,
+      "min_property_local": "EUR 800,000（雅典 / 圣岛 / 米岛 / 塞萨洛尼基）/ EUR 400,000（其他区域）",
+      "visa_years": 5,
+      "renewable": true,
+      "physical_residency_required": false,
+      "notes": "2024 起核心区门槛上调；非欧盟身份跳板，居住要求宽松",
+      "as_of": "2026-06"
+    },
+    {
+      "country": "葡萄牙",
+      "name": "Golden Visa",
+      "min_property_cny": null,
+      "min_property_local": "房产路径 2023 已关闭",
+      "visa_years": 5,
+      "renewable": true,
+      "physical_residency_required": "每年 7 天",
+      "notes": "目前仅基金（EUR 50 万）/ 创业 / 文化 / 科研路径，不能再买房送身份",
+      "as_of": "2026-06"
+    },
+    {
+      "country": "西班牙",
+      "name": "Golden Visa",
+      "min_property_cny": null,
+      "min_property_local": "房产路径 2025 已关闭",
+      "visa_years": 0,
+      "renewable": false,
+      "physical_residency_required": null,
+      "notes": "西班牙 2025 起取消房产路径，仅保留股票 / 基金 / 政府债",
+      "as_of": "2026-06"
+    },
+    {
+      "country": "马来西亚",
+      "name": "MM2H（My Second Home，2024 新政）",
+      "min_property_cny": 0,
+      "min_property_local": "无强制购房，但定存 USD 150K-1M（按 Silver/Gold/Platinum 三档）",
+      "visa_years": 5,
+      "renewable": true,
+      "physical_residency_required": "每年 90 天",
+      "notes": "三档分级，可附带购房（房产 ≥ MYR 60-200 万），适合东南亚第二居所",
+      "as_of": "2026-06"
+    },
+    {
+      "country": "泰国",
+      "name": "Thailand Elite / LTR Visa",
+      "min_property_cny": 0,
+      "min_property_local": "Elite 卡 THB 90 万-500 万 / LTR 投资 USD 50 万",
+      "visa_years": 10,
+      "renewable": true,
+      "physical_residency_required": false,
+      "notes": "外国人可买公寓（项目外资比例 ≤ 49%），不能直接买地",
+      "as_of": "2026-06"
+    },
+    {
+      "country": "新加坡",
+      "name": "GIP 全球投资者计划",
+      "min_property_cny": null,
+      "min_property_local": "投资 SGD 1000 万-2500 万（公司 / 基金 / 家办）",
+      "visa_years": 5,
+      "renewable": true,
+      "physical_residency_required": "续签需达到本地经营要求",
+      "notes": "GIP 不直接对应购房；ABSD 60% 让外国买房成本极高",
+      "as_of": "2026-06"
+    },
+    {
+      "country": "美国",
+      "name": "EB-5 投资移民",
+      "min_property_cny": null,
+      "min_property_local": "USD 80 万（TEA 区域）/ USD 105 万（普通）",
+      "visa_years": 10,
+      "renewable": true,
+      "physical_residency_required": "绿卡需维持居住 / 报税",
+      "notes": "EB-5 项目通常不是直接买房，而是投资指定项目；获绿卡后可自由购房",
+      "as_of": "2026-06"
+    },
+    {
+      "country": "加拿大",
+      "name": "Start-Up Visa / 联邦企业家",
+      "min_property_cny": null,
+      "min_property_local": "无房产门槛；2023-2027 外国人买房禁令仍在",
+      "visa_years": 5,
+      "renewable": true,
+      "physical_residency_required": "PR 5 年内 730 天",
+      "notes": "外国人买房禁令延至 2027，仅 PR / 工签 / 学签可买",
+      "as_of": "2026-06"
+    },
+    {
+      "country": "英国",
+      "name": "Innovator Founder / Global Talent",
+      "min_property_cny": null,
+      "min_property_local": "无房产门槛",
+      "visa_years": 3,
+      "renewable": true,
+      "physical_residency_required": true,
+      "notes": "Investor Visa 已废；房产仅作资产持有，与签证脱钩",
+      "as_of": "2026-06"
+    }
+  ]
+}
