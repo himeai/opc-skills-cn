@@ -1,0 +1,107 @@
+{
+  "_comment": "中国天使轮 / Pre-A 投资条款（Term Sheet）解读。仅作谈判参考，所有正式条款必须由律师起草和审核。",
+  "clauses": {
+    "优先清算权": {
+      "key": "liquidation_preference",
+      "what": "公司清算 / 出售 / IPO 不达预期时，优先股按倍数 + 是否参与分配优先拿钱。",
+      "market_standard": "1x 非参与（投资人在「拿回本金」和「按股比分配」之间二选一）",
+      "aggressive": "2x 完全参与（拿回 2 倍本金后再按股比分钱）",
+      "negotiation_room": "天使轮坚持 1x 非参与；超过 1.5x 或参与型直接拒绝",
+      "warn_level": "high"
+    },
+    "反稀释条款": {
+      "key": "anti_dilution",
+      "what": "下轮估值低于本轮（down round）时，本轮投资人价格自动下调以保护持股价值。",
+      "market_standard": "Broad-based weighted average（加权平均反稀释）",
+      "aggressive": "Full-ratchet（完全棘轮，按最低价格全部追溯调整）",
+      "negotiation_room": "坚持 broad-based weighted average；可同意 carve-out 排除员工期权和正常融资",
+      "warn_level": "medium"
+    },
+    "回购权": {
+      "key": "redemption",
+      "what": "若约定时间未 IPO / 退出，投资人有权要求公司或创始人按本金 + 利息回购股权。",
+      "market_standard": "通常约定 5-7 年内未 IPO 触发，年化 8% 单利，公司回购为主",
+      "aggressive": "3 年触发 + 创始人个人无限连带责任 + 年化 12% 复利",
+      "negotiation_room": "天使轮要拒绝创始人个人无限连带；公司回购可接受但金额上限 = 投资本金 + 单利 8%",
+      "warn_level": "high"
+    },
+    "对赌（业绩承诺）": {
+      "key": "vam_performance",
+      "what": "未达约定财务 / 业务指标时，触发估值调整 / 股权补偿 / 现金补偿。",
+      "market_standard": "天使轮不应有对赌；早期估值调整对创业者风险过大",
+      "aggressive": "未达 ARR / GMV 触发股权补偿 + 创始人个人补偿",
+      "negotiation_room": "原则上拒绝；如必须，仅接受'估值调整型'，绝不接受现金 / 个人无限补偿",
+      "warn_level": "danger"
+    },
+    "董事会席位": {
+      "key": "board_seat",
+      "what": "投资人提名董事 / 观察员的权利。",
+      "market_standard": "天使轮通常 1 个观察员席位（非董事），不参与日常决策投票",
+      "aggressive": "1 个有表决权董事 + 重大事项一票否决",
+      "negotiation_room": "坚持观察员；如必须给董事席位，确保创始人方席位 ≥ 投资人方 2 倍",
+      "warn_level": "medium"
+    },
+    "保护性条款": {
+      "key": "protective_provisions",
+      "what": "重大事项需要优先股股东 / 投资人代表同意（增发、分红、出售、修改章程等）。",
+      "market_standard": "5-7 项核心事项保护，且单一投资人持股 < 5% 不享受",
+      "aggressive": "20+ 项细枝末节都需同意，导致公司日常运营被卡",
+      "negotiation_room": "限制在重大事项；员工期权池调整、500 万以下采购不应需要同意",
+      "warn_level": "medium"
+    },
+    "ROFR_共同出售": {
+      "key": "rofr_cosale",
+      "what": "创始人转让股权时投资人有优先购买权 + 跟售权。",
+      "market_standard": "标准条款，正常签署",
+      "aggressive": "扩展到员工股权 + 配偶离婚分割",
+      "negotiation_room": "标准接受；扩展条款需具体审视",
+      "warn_level": "low"
+    },
+    "拖售权（Drag-along）": {
+      "key": "drag_along",
+      "what": "多数股东决定出售公司时，可强制少数股东共同出售。",
+      "market_standard": "需要持股 ≥ 50% + 创始人多数同意 + 价格不低于最近一轮",
+      "aggressive": "持股 25% 即可触发 + 无价格保护 + 无创始人否决",
+      "negotiation_room": "坚持双重门槛（股比 + 创始人同意）+ 价格底线保护",
+      "warn_level": "high"
+    },
+    "信息权": {
+      "key": "information_rights",
+      "what": "定期获取财务报表 / 经营数据 / 重大事项通知的权利。",
+      "market_standard": "季度 + 年度财报 + 年度预算，单一投资人持股 ≥ 5% 享受",
+      "aggressive": "月度详细数据 + 实时仪表盘 + 任意时间审计权",
+      "negotiation_room": "标准条款；月度仅在持股 ≥ 10% 给",
+      "warn_level": "low"
+    },
+    "员工期权池 ESOP": {
+      "key": "esop",
+      "what": "用于激励员工的期权预留池，通常在投前估值里预留。",
+      "market_standard": "本轮投资前预留 10-15% ESOP（投前预留 = 创始人稀释，对投资人更友好）",
+      "aggressive": "要求投前预留 20%+",
+      "negotiation_room": "10-15% 是标准；如要 20%+，需同步上调投前估值补偿",
+      "warn_level": "medium"
+    },
+    "竞业限制": {
+      "key": "non_compete",
+      "what": "创始人 / 核心员工任职期间 + 离职后一定期限内不得从事同业。",
+      "market_standard": "在职 + 离职后 1-2 年同行业，地理范围明确",
+      "aggressive": "离职后 5 年 + 全球 + 任何相关行业",
+      "negotiation_room": "1-2 年合理；超过需要补偿（不低于离职前年薪 30-50%）",
+      "warn_level": "medium"
+    },
+    "独家锁定期": {
+      "key": "exclusivity_lockup",
+      "what": "签 TS 后一段时间内不得与其他投资人接触 / 谈判。",
+      "market_standard": "30-45 天独家锁定，期间投资人需推进 DD 和 SPA",
+      "aggressive": "90 天 + 投资人可单方延期 + 创始人违约赔偿",
+      "negotiation_room": "30-45 天合理，可加'若投资人未按里程碑推进自动失效'",
+      "warn_level": "low"
+    }
+  },
+  "warn_level_meaning": {
+    "low": "标准条款，正常接受",
+    "medium": "中性条款，建议谈判到合理区间",
+    "high": "高风险条款，谈判失败建议拒签",
+    "danger": "红线条款，签了等于把命交出去，强烈建议拒绝"
+  }
+}

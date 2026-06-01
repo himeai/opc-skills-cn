@@ -1,0 +1,120 @@
+{
+  "_comment": "中国天使轮 BP 骨架模板：10 页结构化大纲 + 8 大赛道差异化要点 + 反例陷阱。完全本地推理，不构成投资意见。",
+  "deck_skeleton": [
+    {
+      "page": 1,
+      "section": "封面",
+      "must_have": ["公司中英文名", "一句话定位（X 行业的 Y）", "本轮金额 + 用途", "Logo + 联系方式"],
+      "common_pitfalls": ["LOGO 模糊", "一句话定位太长（> 25 字）", "把愿景写成 slogan"]
+    },
+    {
+      "page": 2,
+      "section": "痛点 / 机会",
+      "must_have": ["目标用户画像（具体到角色 + 场景）", "现状用什么方式解决（替代品）", "为什么现在（why now）"],
+      "common_pitfalls": ["把 macro 数据当痛点（如 GDP）", "缺 why now 时间窗解释", "用'用户体验差'这种空话"]
+    },
+    {
+      "page": 3,
+      "section": "解决方案",
+      "must_have": ["产品截图 / Demo 视频链接", "核心价值主张（30 字内）", "与替代品的差异（节省时间 / 成本 / 提效几倍）"],
+      "common_pitfalls": ["技术堆砌而无用户视角", "差异是 feature 不是 advantage", "无可量化效果"]
+    },
+    {
+      "page": 4,
+      "section": "市场（TAM-SAM-SOM）",
+      "must_have": ["TAM 总盘子（公开数据 + 来源）", "SAM 可服务市场", "SOM 3 年可拿份额", "市场增速"],
+      "common_pitfalls": ["拿千亿盘子讲故事但 SOM 不算", "数据无来源", "中国市场假设套用海外报告"]
+    },
+    {
+      "page": 5,
+      "section": "产品 / 技术",
+      "must_have": ["核心功能 1-3 个", "技术壁垒（专利 / 数据 / 网络效应）", "Roadmap 6-12 个月"],
+      "common_pitfalls": ["所有 feature 都列出来", "把'用了 GPT-4'当壁垒", "Roadmap 太详细暴露不确定性"]
+    },
+    {
+      "page": 6,
+      "section": "商业模式",
+      "must_have": ["收入来源（订阅 / 抽佣 / 广告 / 一次性）", "客单价", "毛利率假设", "LTV / CAC（如有）"],
+      "common_pitfalls": ["写'未来探索'而无当下假设", "毛利无依据", "免费模式但回避变现路径"]
+    },
+    {
+      "page": 7,
+      "section": "数据 / 进展",
+      "must_have": ["关键指标 north_star_metric", "增长曲线 3-6 个月", "Top 客户 logo（B 端）/ 留存（C 端）"],
+      "common_pitfalls": ["截图的 KPI 看板像伪造（少量异常值）", "把注册数当 DAU", "数据维度乱跳"]
+    },
+    {
+      "page": 8,
+      "section": "竞争",
+      "must_have": ["竞争象限图（2 轴）", "和直接对手的差异", "和大厂边界（为什么巨头不会做）"],
+      "common_pitfalls": ["写'我们没有竞争对手'", "象限轴随便选避开强对手", "无大厂差异说明"]
+    },
+    {
+      "page": 9,
+      "section": "团队",
+      "must_have": ["创始人 + 核心 2-3 人 + 头像 + 简历", "为什么这个组合能做这件事", "顾问 / 早期投资人"],
+      "common_pitfalls": ["简历堆砌头衔无产品成绩", "无 founder-market-fit 解释", "成员太多稀释焦点"]
+    },
+    {
+      "page": 10,
+      "section": "融资计划",
+      "must_have": ["本轮金额 + 估值（投前/投后）", "用途分配（人 / 产品 / 营销 %）", "12-18 个月里程碑"],
+      "common_pitfalls": ["金额拍脑袋", "用途有'扩张全国'这种黑箱项", "里程碑无可验证 KPI"]
+    }
+  ],
+  "industry_focus": {
+    "SaaS": {
+      "north_star_metric_examples": ["MRR", "净收入留存 NRR", "付费转化率"],
+      "key_metrics": ["客单价 ARPA", "回收期 Payback", "Churn 月度流失率"],
+      "extra_pages": ["销售漏斗", "Top 10 客户名单"],
+      "prefer_investor": ["美元 SaaS VC", "人民币 toB VC", "战略 CVC"]
+    },
+    "消费": {
+      "north_star_metric_examples": ["月销 GMV", "复购率", "DAU"],
+      "key_metrics": ["客单价 AOV", "毛利率", "ROI 投流"],
+      "extra_pages": ["供应链 / 工厂", "渠道矩阵（线上 + 线下）"],
+      "prefer_investor": ["人民币消费基金", "天图 / 加华 / 红杉消费", "天使个人 KOL"]
+    },
+    "硬科技": {
+      "north_star_metric_examples": ["量产能力", "良率", "客户订单"],
+      "key_metrics": ["BOM 成本", "专利数", "测试报告"],
+      "extra_pages": ["核心专利", "对标海外 benchmark"],
+      "prefer_investor": ["国资基金", "政府引导基金", "硬科技专项基金", "深创投 / 中科创星"]
+    },
+    "文娱": {
+      "north_star_metric_examples": ["MAU", "时长", "付费率"],
+      "key_metrics": ["CPI 单获客", "次留 7 留 30 留", "充值 ARPU"],
+      "extra_pages": ["IP 储备", "团队代表作"],
+      "prefer_investor": ["腾讯 CVC", "字节 CVC", "B 站 CVC", "人民币文娱基金"]
+    },
+    "教育": {
+      "north_star_metric_examples": ["完课率", "续费率", "付费用户数"],
+      "key_metrics": ["客单价", "退费率", "教研团队规模"],
+      "extra_pages": ["课程体系", "合规边界（不涉学科类）"],
+      "prefer_investor": ["职业教育基金", "蓝象 / 好未来 CVC", "人才发展基金"]
+    },
+    "医疗": {
+      "north_star_metric_examples": ["医院落地数", "手术量", "处方量"],
+      "key_metrics": ["客单价", "医保覆盖", "审批进度"],
+      "extra_pages": ["注册证 / NMPA 进展", "临床数据"],
+      "prefer_investor": ["医疗专项基金", "礼来亚洲", "国资生物医药"]
+    },
+    "出海": {
+      "north_star_metric_examples": ["海外 MRR / GMV", "海外 DAU"],
+      "key_metrics": ["主战场 ARPU", "本地化进度", "合规牌照"],
+      "extra_pages": ["核心市场（北美 / 中东 / 东南亚）", "团队海外背景"],
+      "prefer_investor": ["GGV", "源码出海基金", "美元出海 VC"]
+    },
+    "AI 应用": {
+      "north_star_metric_examples": ["付费 ARR", "API 调用量", "DAU"],
+      "key_metrics": ["毛利率（扣 token 成本）", "数据飞轮证据", "差异化 vs GPT 直接调用"],
+      "extra_pages": ["数据壁垒", "评测榜单成绩"],
+      "prefer_investor": ["AI 专项基金", "智谱 / 月之暗面前 LP", "字节 / 美团 CVC"]
+    }
+  },
+  "stage_focus": {
+    "种子": ["重点讲清 founder-market-fit + 产品 PMF 假设", "数据可空，但需给出验证计划"],
+    "天使": ["要有 3-6 个月数据 + 早期 PMF 信号", "估值通常 200 万 - 2000 万"],
+    "Pre-A": ["要有 6-12 个月数据 + 商业化跑通信号", "估值通常 2000 万 - 1 亿"]
+  }
+}

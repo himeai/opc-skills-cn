@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.9] - 2026-06-01
+
+### Added
+
+- cn-angel v0.1.0：中国天使轮融资副驾驶（本地规则版）——10 页 BP 骨架（含 8 行业 / 3 阶段焦点）、4 法估值平均（Berkus / Scorecard / VC method / 行业倍数）与稀释表、Term Sheet 12 条关键条款解读（含 warn_level）、8 类投资人画像匹配（不提供具体联系方式）、12 周融资时间表与 SLA 告警，全部本地推理；不替代律师 / FA / 投资顾问，不构成投资意见
+
 ## [0.0.8] - 2026-06-01
 
 ### Added

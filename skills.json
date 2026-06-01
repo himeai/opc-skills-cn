@@ -498,6 +498,33 @@
         "python3 scripts/tag.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/zhihu-ops"}
+    },
+    {
+      "name": "cn-angel",
+      "version": "0.1.0",
+      "description": "中国天使轮融资副驾驶（本地规则版）：BP 10 页骨架、4 法估值平均与稀释表、Term Sheet 关键条款解读、投资人画像匹配、12 周融资时间表。本地推理，不替代律师 / FA / 投资顾问，不提供具体投资人联系方式，不构成投资意见。",
+      "logo": "skill-logos/cn-angel.svg",
+      "icon": "trending-up",
+      "color": "F59E0B",
+      "triggers": ["融资", "天使轮", "Pre-A", "BP", "商业计划书", "估值", "Term Sheet", "TS", "对赌", "回购", "反稀释", "优先清算", "投资人对接", "FA", "cap table", "稀释", "SPA", "SHA", "ODI", "加速器", "孵化器", "尽职调查", "DD"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-angel -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-angel"}
+      },
+      "commands": [
+        "python3 scripts/bp.py \"{input}\"",
+        "python3 scripts/valuation.py \"{input}\"",
+        "python3 scripts/ts.py \"{input}\"",
+        "python3 scripts/match.py \"{input}\"",
+        "python3 scripts/timeline.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-angel"}
     }
   ]
 }

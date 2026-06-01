@@ -1,0 +1,66 @@
+{
+  "_comment": "天使轮估值参考模型：4 种估值法的简化中国版 + 主流区间。仅作教学和谈判参考，不构成投资建议。",
+  "models": {
+    "berkus": {
+      "_about": "Berkus 法：5 项各加 0-200 万，最高 1000 万估值。适用于 pre-revenue 项目。",
+      "axes": [
+        {"key": "idea_quality", "label": "想法质量与市场需求", "max_value_cny_w": 200},
+        {"key": "prototype", "label": "可运行原型 / 技术降低风险", "max_value_cny_w": 200},
+        {"key": "team_quality", "label": "团队质量（创始人 + 核心 2-3 人）", "max_value_cny_w": 200},
+        {"key": "strategic_relations", "label": "战略关系 / 早期客户 LOI", "max_value_cny_w": 200},
+        {"key": "rollout_or_sales", "label": "已有产品上线或首批付费", "max_value_cny_w": 200}
+      ],
+      "scoring": "每项 0-1 打分，乘以 max_value_cny_w 求和，得到投前估值（万元）"
+    },
+    "scorecard": {
+      "_about": "Scorecard 法：以本地天使轮中位估值为 baseline，按 6 项加权调整。",
+      "baseline_pre_money_cny_w": 800,
+      "axes": [
+        {"key": "team", "label": "团队", "weight": 0.30},
+        {"key": "opportunity", "label": "市场机会大小", "weight": 0.25},
+        {"key": "product_tech", "label": "产品 / 技术", "weight": 0.15},
+        {"key": "competition", "label": "竞争格局", "weight": 0.10},
+        {"key": "channel_partnership", "label": "渠道 / 合作", "weight": 0.10},
+        {"key": "additional_factors", "label": "其他（PR / 监管红利 / 国资关系）", "weight": 0.10}
+      ],
+      "scoring": "每项打分 0.5-1.5（1.0 = 行业平均），加权求和得到 multiplier，乘以 baseline 得估值"
+    },
+    "vc_method": {
+      "_about": "VC 反推法：从退出估值反推现在估值。",
+      "default_exit_multiple": 5,
+      "default_required_irr": 0.30,
+      "default_years_to_exit": 5,
+      "default_dilution_to_exit": 0.50,
+      "scoring": "investor_share = required_return / projected_exit_value; pre_money = (round_size / investor_share) - round_size"
+    },
+    "industry_multiple": {
+      "_about": "行业倍数法：用同行业近期可比 case 的 ARR / GMV / DAU 倍数估算。",
+      "industry_default_multiple": {
+        "SaaS": {"axis": "ARR 倍数", "value": 8},
+        "消费": {"axis": "年 GMV 倍数", "value": 1.2},
+        "硬科技": {"axis": "PS 收入倍数", "value": 12},
+        "文娱": {"axis": "DAU × 元", "value": 80},
+        "教育": {"axis": "PS 收入倍数", "value": 4},
+        "医疗": {"axis": "PS 收入倍数", "value": 10},
+        "出海": {"axis": "ARR 倍数", "value": 6},
+        "AI 应用": {"axis": "ARR 倍数", "value": 12}
+      },
+      "scoring": "用对应 axis 的最近 12 个月数据 × multiplier，再按团队/壁垒打 0.6-1.4 折扣"
+    }
+  },
+  "stage_typical_ranges_cny_w": {
+    "种子": {"pre_money_min": 200, "pre_money_max": 800, "round_size_min": 50, "round_size_max": 300},
+    "天使": {"pre_money_min": 500, "pre_money_max": 3000, "round_size_min": 200, "round_size_max": 1500},
+    "Pre-A": {"pre_money_min": 2000, "pre_money_max": 10000, "round_size_min": 800, "round_size_max": 4000}
+  },
+  "dilution_targets": {
+    "_comment": "天使轮总稀释通常 10-25%，超过 25% 后续融资会被卡。",
+    "healthy_max_pct": 0.20,
+    "warning_threshold_pct": 0.25,
+    "danger_threshold_pct": 0.30
+  },
+  "round_size_to_share_table": {
+    "_comment": "以投前估值 P 为基准，round R 对应稀释 = R / (P + R)",
+    "shares_to_evaluate": [0.05, 0.08, 0.10, 0.12, 0.15, 0.18, 0.20]
+  }
+}

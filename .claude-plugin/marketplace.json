@@ -275,6 +275,23 @@
         "python3 scripts/tag.py \"{input}\""
       ],
       "triggers": ["知乎", "zhihu", "回答", "长答", "专栏", "知乎选题", "知乎话题", "领域 tag", "盐选", "好评率", "高赞回答", "知乎 SEO"]
+    },
+    {
+      "name": "cn-angel",
+      "displayName": "中国天使轮融资副驾驶",
+      "description": "中国天使轮融资副驾驶（本地规则版）：BP 10 页骨架、4 法估值平均与稀释表、Term Sheet 关键条款解读、投资人画像匹配、12 周融资时间表。本地推理，不替代律师 / FA / 投资顾问，不提供具体投资人联系方式，不构成投资意见。",
+      "version": "0.1.0",
+      "path": "skills/cn-angel",
+      "logo": "skill-logos/cn-angel.svg",
+      "color": "#F59E0B",
+      "commands": [
+        "python3 scripts/bp.py \"{input}\"",
+        "python3 scripts/valuation.py \"{input}\"",
+        "python3 scripts/ts.py \"{input}\"",
+        "python3 scripts/match.py \"{input}\"",
+        "python3 scripts/timeline.py \"{input}\""
+      ],
+      "triggers": ["融资", "天使轮", "Pre-A", "BP", "商业计划书", "估值", "Term Sheet", "TS", "对赌", "回购", "反稀释", "优先清算", "投资人对接", "FA", "cap table", "稀释", "SPA", "SHA", "ODI", "加速器", "孵化器", "尽职调查", "DD"]
     }
   ]
 }

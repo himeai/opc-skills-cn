@@ -1,0 +1,108 @@
+{
+  "_comment": "中国早期投资人画像匹配。仅给类型 + 出手特征 + 接洽节奏；不给具体机构 / 个人联系方式（PIPL + 适当性合规）。",
+  "personas": {
+    "美元 VC": {
+      "key": "usd_vc",
+      "typical_check_cny_w": [800, 5000],
+      "typical_stage": ["天使", "Pre-A", "A"],
+      "decision_weeks": [4, 8],
+      "care_about": ["市场天花板", "团队海外背景", "可对标硅谷标的", "退出路径（含港股 / 美股）"],
+      "good_fit": ["SaaS", "AI 应用", "出海", "硬科技（部分）"],
+      "bad_fit": ["国资概念项目", "纯内需牌照型项目"],
+      "approach_style": "BP + 30 分钟 Pitch + 双方深聊；偏好结构化数据，看重创始人英文沟通",
+      "red_flags": ["LP 多为美元 LP，受地缘政治影响大", "近年人民币结构 ODI 出资变难"]
+    },
+    "人民币 VC": {
+      "key": "rmb_vc",
+      "typical_check_cny_w": [500, 3000],
+      "typical_stage": ["天使", "Pre-A", "A"],
+      "decision_weeks": [6, 12],
+      "care_about": ["收入 / 利润可见性", "国内退出路径（北交所 / 主板）", "国资股东背景"],
+      "good_fit": ["消费", "硬科技", "医疗", "教育（职业向）", "AI 应用（toB）"],
+      "bad_fit": ["纯出海项目", "中后期亏损巨大的故事股"],
+      "approach_style": "BP + 多轮访谈 + 业务侧 DD；流程长，决策权下沉到合伙人会",
+      "red_flags": ["IC 决策慢", "合规审查严（创始人征信 / 历史诉讼 / 关联方）"]
+    },
+    "CVC（战略投资）": {
+      "key": "cvc_strategic",
+      "typical_check_cny_w": [1000, 8000],
+      "typical_stage": ["天使（少）", "Pre-A", "A", "B"],
+      "decision_weeks": [8, 16],
+      "care_about": ["战略协同（数据 / 流量 / 渠道）", "未来收购可能", "技术互补"],
+      "good_fit": ["与字节 / 腾讯 / 美团 / 阿里 / B 站 主业相关项目", "AI 应用", "文娱"],
+      "bad_fit": ["与 CVC 母公司主业有冲突", "想保持独立性的项目"],
+      "approach_style": "通过事业部业务对接人 → 战投团队转接；多重 BD",
+      "red_flags": ["可能要求战略限制条款（不投母公司竞品）", "决策受母公司业务调整影响"]
+    },
+    "国资 / 政府引导基金": {
+      "key": "government_lp",
+      "typical_check_cny_w": [500, 5000],
+      "typical_stage": ["天使", "Pre-A", "A"],
+      "decision_weeks": [12, 24],
+      "care_about": ["落地本地（注册 / 纳税 / 就业）", "符合产业目录（硬科技 / 半导体 / 新能源 / AI / 生物医药）", "国资合规"],
+      "good_fit": ["硬科技", "新能源", "高端制造", "生物医药", "AI 算力 / 大模型"],
+      "bad_fit": ["纯互联网消费", "短视频 / 直播带货", "无落地产能项目"],
+      "approach_style": "通过当地园区 / 招商局 / 财政局对接；政务语言、流程严谨",
+      "red_flags": ["要求注册地落户 / 纳税承诺", "返投比例（基金返还到本地的投资金额）", "解锁条件多"]
+    },
+    "个人天使（KOL / 已退出创业者）": {
+      "key": "angel_individual",
+      "typical_check_cny_w": [50, 500],
+      "typical_stage": ["种子", "天使"],
+      "decision_weeks": [1, 4],
+      "care_about": ["创始人本人", "项目方向是否兴奋", "是否能给 portfolio 带来协同"],
+      "good_fit": ["所有早期项目，尤其和天使本人背景强相关的赛道"],
+      "bad_fit": ["重资产硬科技（个人 ticket size 撑不起）", "强监管行业"],
+      "approach_style": "熟人引荐 + 深度聊天 + 快速决策；条款相对宽松",
+      "red_flags": ["跟投资源有限", "签字进度可能慢（个人事务繁忙）", "退出诉求可能不明"]
+    },
+    "FA（财务顾问）": {
+      "key": "fa_intermediary",
+      "typical_check_cny_w": [0, 0],
+      "typical_stage": ["天使后期", "Pre-A", "A", "之后"],
+      "decision_weeks": [2, 6],
+      "care_about": ["项目可投资性", "成功收佣概率（通常 3-5% 融资额）"],
+      "good_fit": ["数据基础 OK 但缺投资人资源的项目", "Pre-A 之后"],
+      "bad_fit": ["种子期（FA 一般不接太早）", "故事弱无数据项目"],
+      "approach_style": "提交 BP → FA 评估 → 签 EA 独家服务协议 → 推介投资人",
+      "red_flags": ["条款上 FA 通常要 success fee + retainer，注意是否独家", "天使轮通常不需要 FA"]
+    },
+    "孵化器 / 加速器": {
+      "key": "accelerator",
+      "typical_check_cny_w": [10, 200],
+      "typical_stage": ["种子前", "种子"],
+      "decision_weeks": [2, 6],
+      "care_about": ["团队", "项目早期可塑性", "是否适合加速营服务"],
+      "good_fit": ["有想法但产品早 / 团队早期的项目"],
+      "bad_fit": ["已 Pre-A 体量项目"],
+      "approach_style": "申请 + 路演 + 入营；通常占股 5-7% 换钱 + 服务",
+      "red_flags": ["占股比例过高（>10% 警惕）", "服务承诺打折扣", "锁定后续融资优先权过强"]
+    },
+    "盈利型/小生意天使": {
+      "key": "profit_oriented_angel",
+      "typical_check_cny_w": [50, 500],
+      "typical_stage": ["种子", "天使"],
+      "decision_weeks": [1, 3],
+      "care_about": ["现金流回收 vs 高估值退出", "可分红"],
+      "good_fit": ["小而美 SaaS", "工具", "本地服务"],
+      "bad_fit": ["烧钱抢市场型项目"],
+      "approach_style": "看可持续盈利模型，通常更接近债权 + 少量股权",
+      "red_flags": ["可能要求季度分红", "对快速烧钱不耐受"]
+    }
+  },
+  "stage_persona_recommendations": {
+    "种子": ["个人天使（KOL / 已退出创业者）", "盈利型/小生意天使", "孵化器 / 加速器"],
+    "天使": ["个人天使（KOL / 已退出创业者）", "美元 VC", "人民币 VC", "国资 / 政府引导基金"],
+    "Pre-A": ["美元 VC", "人民币 VC", "CVC（战略投资）", "国资 / 政府引导基金", "FA（财务顾问）"]
+  },
+  "industry_persona_recommendations": {
+    "SaaS": ["美元 VC", "CVC（战略投资）", "盈利型/小生意天使"],
+    "消费": ["人民币 VC", "个人天使（KOL / 已退出创业者）"],
+    "硬科技": ["国资 / 政府引导基金", "人民币 VC", "CVC（战略投资）"],
+    "文娱": ["CVC（战略投资）", "美元 VC"],
+    "教育": ["人民币 VC", "CVC（战略投资）"],
+    "医疗": ["人民币 VC", "国资 / 政府引导基金"],
+    "出海": ["美元 VC"],
+    "AI 应用": ["美元 VC", "人民币 VC", "CVC（战略投资）", "国资 / 政府引导基金"]
+  }
+}

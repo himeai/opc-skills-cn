@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-17-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-18-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -145,6 +145,13 @@
       <td><img src="./skill-logos/zhihu-ops.svg" alt="zhihu-ops" width="24"></td>
       <td><code>zhihu-ops</code></td>
       <td><b>知乎内容生产副驾驶</b>：长回答结构化生成（科普/干货/经验/对比/反驳）、专栏长文骨架、问题选题工厂、领域 tag 推荐（本地规则，不爬抓不刷量）</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4"><b>💸 融资资金</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/cn-angel.svg" alt="cn-angel" width="24"></td>
+      <td><code>cn-angel</code></td>
+      <td><b>中国天使轮融资副驾驶</b>：BP 10 页骨架、4 法估值平均（Berkus / Scorecard / VC / 行业倍数）与稀释表、Term Sheet 12 条关键条款解读、投资人画像匹配、12 周融资时间表与 SLA 告警（本地规则，不替代律师 / FA / 投资顾问，不提供具体投资人联系方式）</td>
       <td>✅</td>
     </tr>
     <tr><td colspan="4"><b>⏳ 规划中</b></td></tr>
@@ -330,6 +337,7 @@ def get_wechat_mp_credentials() -> dict:
   - **税务合规**：[`cn-tax`](./skills/cn-tax/SKILL.md)
   - **私域协作**：[`wecom-crm`](./skills/wecom-crm/SKILL.md)
   - **招聘内容**：[`cn-recruit`](./skills/cn-recruit/SKILL.md)、[`zhihu-ops`](./skills/zhihu-ops/SKILL.md)
+  - **融资资金**：[`cn-angel`](./skills/cn-angel/SKILL.md)
 - 下一批优先：`cn-legal`、`cn-cloud`、`cn-requesthunt`
 - 详细分期与风险评估：见 [ROADMAP.md](./ROADMAP.md)
 
