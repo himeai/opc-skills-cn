@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="wechat-ops logo">
+  <rect width="24" height="24" fill="#FFFFFF"/>
+  <path d="M5 5h11v9H9l-3 3v-3H5z" fill="#07C160"/>
+  <rect x="8" y="8" width="2" height="2" fill="#FFFFFF"/>
+  <rect x="12" y="8" width="2" height="2" fill="#FFFFFF"/>
+  <path d="M11 12h10v6h-3l-2 2v-2h-5z" fill="#06AD56"/>
+  <rect x="13" y="14" width="2" height="2" fill="#FFFFFF"/>
+  <rect x="17" y="14" width="2" height="2" fill="#FFFFFF"/>
+</svg>

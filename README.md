@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-1-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-2-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -37,7 +37,7 @@
 | Logo | Skill | 描述 | 状态 |
 |---|---|---|---|
 | ![cn-city-picker](./skill-logos/cn-city-picker.svg) | `cn-city-picker` | **创业城市选择决策**：八维评分（税收/生活成本/气候/政策/产业/人才/基建/行政）从重点城市筛 Top 3-5，并给出落地 checklist | ✅ |
-| | `wechat-mp` | 微信公众号自动排版、图文生成、定时发布、菜单/客服消息（`mp` 指微信公众号公众平台，不指小程序） | 🚧 |
+| ![wechat-ops](./skill-logos/wechat-ops.svg) | `wechat-ops` | 微信公众号 access_token 缓存、图文草稿、自定义菜单、客服文本回复（仅官方开放 API） | ✅ |
 | | `xiaohongshu-ops` | 小红书选题、笔记生成、关键词排名、热点追踪 | 📝 |
 | | `douyin-ops` | 抖音/视频号脚本→分镜→剪映工程→热点话题 | 📝 |
 | | `cn-geo` | 中文 AI 搜索 GEO（豆包/Kimi/元宝/夸克/百度智能答案） | 📝 |
@@ -59,7 +59,7 @@
 ### 通过 Claude Code Plugin Marketplace
 ```bash
 /plugin marketplace add <YOUR_ORG>/opc-skills-cn
-/plugin install wechat-mp@opc-skills-cn
+/plugin install wechat-ops@opc-skills-cn
 ```
 
 ### 通过通用 CLI（支持 16+ AI 工具）
@@ -68,7 +68,7 @@
 npx skills add <YOUR_ORG>/opc-skills-cn
 
 # 只安装某一个
-npx skills add <YOUR_ORG>/opc-skills-cn --skill wechat-mp
+npx skills add <YOUR_ORG>/opc-skills-cn --skill wechat-ops
 
 # 指定 AI 工具（claude / cursor / codex / droid / opencode / windsurf …）
 npx skills add <YOUR_ORG>/opc-skills-cn -a claude
@@ -220,8 +220,8 @@ def get_wechat_mp_credentials() -> dict:
 
 ## 路线图快照
 
-- 当前已实现：[`cn-city-picker`](./skills/cn-city-picker/SKILL.md)
-- 下一批优先：`wechat-mp`、`xiaohongshu-ops`、`douyin-ops`、`cn-geo`
+- 当前已实现：[`cn-city-picker`](./skills/cn-city-picker/SKILL.md)、[`wechat-ops`](./skills/wechat-ops/SKILL.md)
+- 下一批优先：`xiaohongshu-ops`、`douyin-ops`、`cn-geo`
 - 详细分期与风险评估：见 [ROADMAP.md](./ROADMAP.md)
 
 | 阶段 | 时间 | 目标 |

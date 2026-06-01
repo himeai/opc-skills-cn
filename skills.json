@@ -38,6 +38,36 @@
         "python3 scripts/compare.py {input}"
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-city-picker"}
+    },
+    {
+      "name": "wechat-ops",
+      "version": "0.1.0",
+      "description": "微信公众号运营自动化：access_token 缓存、图文草稿、自定义菜单、客服文本回复，全部走公众平台官方 API。",
+      "logo": "skill-logos/wechat-ops.svg",
+      "icon": "wechat",
+      "color": "07C160",
+      "triggers": ["公众号", "推文", "图文消息", "菜单", "客服回复", "草稿", "access_token", "订阅号", "服务号"],
+      "dependencies": {},
+      "auth": {
+        "required": true,
+        "type": "api_key",
+        "keys": [
+          {"env": "WECHAT_MP_APP_ID", "url": "https://mp.weixin.qq.com", "optional": false},
+          {"env": "WECHAT_MP_APP_SECRET", "url": "https://mp.weixin.qq.com", "optional": false},
+          {"env": "WECHAT_MP_TOKEN_CACHE", "url": "https://mp.weixin.qq.com", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill wechat-ops -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill wechat-ops"}
+      },
+      "commands": [
+        "python3 scripts/mp_token.py",
+        "python3 scripts/publish.py \"{input}\"",
+        "python3 scripts/menu.py \"{input}\"",
+        "python3 scripts/reply.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/wechat-ops"}
     }
   ]
 }

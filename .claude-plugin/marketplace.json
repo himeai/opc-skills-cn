@@ -26,6 +26,22 @@
         "python3 scripts/compare.py {input}"
       ],
       "triggers": ["选城市", "创业去哪", "城市对比", "跨境电商", "数字游民", "惠州", "大理"]
+    },
+    {
+      "name": "wechat-ops",
+      "displayName": "微信公众号运营",
+      "description": "微信公众号 access_token 缓存、图文草稿、自定义菜单、客服文本回复，仅调用公众平台官方开放 API。",
+      "version": "0.1.0",
+      "path": "skills/wechat-ops",
+      "logo": "skill-logos/wechat-ops.svg",
+      "color": "#07C160",
+      "commands": [
+        "python3 scripts/mp_token.py",
+        "python3 scripts/publish.py \"{input}\"",
+        "python3 scripts/menu.py \"{input}\"",
+        "python3 scripts/reply.py \"{input}\""
+      ],
+      "triggers": ["公众号", "推文", "图文消息", "菜单", "客服回复", "草稿", "订阅号", "服务号"]
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "button": [
+    {
+      "type": "view",
+      "name": "最新文章",
+      "url": "https://example.com/latest"
+    },
+    {
+      "name": "联系我们",
+      "sub_button": [
+        {"type": "view", "name": "加微信", "url": "https://example.com/wechat"},
+        {"type": "click", "name": "在线咨询", "key": "ASK_NOW"}
+      ]
+    },
+    {
+      "type": "view",
+      "name": "关于",
+      "url": "https://example.com/about"
+    }
+  ]
+}
