@@ -2,11 +2,16 @@
 
 # opc-skills-cn
 
+[![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
+[![Skills](https://img.shields.io/badge/Skills-1-2E7CF6)](./skills.json)
+[![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
+
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
 
 让一个人借助 AI，搞定运营一家中国公司所需的全部事情：内容、流量、私域、收款、开票、税务、备案、合规。
 
-[English](./README.en.md) · [快速开始](#快速开始) · [Skills 列表](#已收录-skills) · [贡献指南](#贡献新-skill) · [Roadmap](./ROADMAP.md)
+[快速开始](#快速开始) · [Skills 列表](#已收录-skills) · [贡献指南](#贡献新-skill) · [路线图快照](#路线图快照) · [Roadmap](./ROADMAP.md)
 
 </div>
 
@@ -169,6 +174,12 @@ def get_wechat_mp_credentials() -> dict:
 
 > 完整 checklist 见 `.factory/skills/add-new-skill/SKILL.md`（这本身也是一个 skill）。
 
+### 快速贡献
+
+- 第一次参与：先看 [5 分钟快速开始](./docs/quickstart.md)
+- 需要长版开发说明：看 [Skill 开发手册](./docs/skill-authoring.md)
+- 需要确认中国合规边界：看 [合规说明](./docs/compliance.md)
+
 1. 从 `develop` 分支切出 `feature/skill/<skill-name>`（kebab-case）
 2. 复制 `template/SKILL.md` 到 `skills/<skill-name>/SKILL.md`，按规范填写 frontmatter
 3. 在 `scripts/` 下实现脚本（stdlib 优先，凭证走 `credential.py`）
@@ -196,6 +207,12 @@ def get_wechat_mp_credentials() -> dict:
 ## Roadmap
 
 见 [ROADMAP.md](./ROADMAP.md)。
+
+## 路线图快照
+
+- 当前已实现：[`cn-city-picker`](./skills/cn-city-picker/SKILL.md)
+- 下一批优先：`wechat-mp`、`xiaohongshu-ops`、`douyin-ops`、`cn-geo`
+- 详细分期与风险评估：见 [ROADMAP.md](./ROADMAP.md)
 
 | 阶段 | 时间 | 目标 |
 |---|---|---|
