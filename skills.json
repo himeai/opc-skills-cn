@@ -579,6 +579,33 @@
         "python3 scripts/compliance.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-property"}
+    },
+    {
+      "name": "opc-travel",
+      "version": "0.1.0",
+      "description": "一人公司「成功篇·环球旅行」副驾驶（本地规则版）：根据主题 / 时长 / 预算 / 出发月份生成路线，覆盖 7 大洲 80+ 国 200+ 城市；4 档预算（穷游 / 舒适 / 商务 / 奢华）；中国普通护照签证矩阵 + 办理时间轴；月份反查目的地；跨气候打包清单。本地推理，不推荐具体航司 / 酒店 / 旅行社，不爬抓任何机票数据。",
+      "logo": "skill-logos/opc-travel.svg",
+      "icon": "globe",
+      "color": "0EA5E9",
+      "triggers": ["环球旅行", "Round the World", "RTW", "长途旅行", "gap year", "间隔年", "签证规划", "出行预算", "欧洲游", "亚洲游", "北美游", "南美游", "非洲游", "大洋洲", "极地", "南极", "北极", "米其林之旅", "海岛", "潜水", "极光", "行李清单", "最佳季节", "申根签", "蜜月"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-travel -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-travel"}
+      },
+      "commands": [
+        "python3 scripts/route.py \"{input}\"",
+        "python3 scripts/budget.py \"{input}\"",
+        "python3 scripts/visa.py \"{input}\"",
+        "python3 scripts/season.py \"{input}\"",
+        "python3 scripts/pack.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-travel"}
     }
   ]
 }

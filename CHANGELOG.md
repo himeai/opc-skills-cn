@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.12] - 2026-06-01
+
+### Added
+
+- opc-travel v0.1.0：一人公司「成功篇·环球旅行」副驾驶（本地规则版）——按主题 / 时长 / 预算 / 出发月份生成路线（覆盖 7 大洲 80+ 国 200+ 城市）；4 档预算（穷游 / 舒适 / 商务 / 奢华）含食宿 + 机票 + 保险 + 签证 + 15% 应急；中国普通护照对 40+ 主流国家签证矩阵 + 办理 leadtime 时间轴；月份反查目的地（含半球切换 + 8 大节庆日历）；6 类气候 + 6 类主题打包清单 + TSA 红线。完全本地推理，不推荐具体航司 / 酒店 / 旅行社；不爬抓任何机票 / 酒店 / 签证数据；不绕过任何外汇 / 出入境规则
+
 ## [0.0.11] - 2026-06-01
 
 ### Added

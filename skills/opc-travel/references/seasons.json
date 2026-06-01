@@ -1,0 +1,29 @@
+{
+  "_comment": "全球目的地最佳出行月份索引，按月份反查推荐目的地。",
+  "_disclaimer": "气候 / 季节为多年统计趋势；极端天气需查目的地实时预报。",
+  "by_month": {
+    "1": {"name": "1 月", "northern_hemisphere": "深冬", "southern_hemisphere": "盛夏", "recommended": ["巴塔哥尼亚", "新西兰", "澳大利亚", "南极半岛", "马尔代夫", "迪拜", "曼谷", "斐济", "塔希提"], "avoid": ["北欧白昼极短地区（除追极光）", "冰岛部分山路封闭"], "themes_strong": ["海岛", "极地（南极）"]},
+    "2": {"name": "2 月", "northern_hemisphere": "深冬", "southern_hemisphere": "盛夏", "recommended": ["巴塔哥尼亚", "新西兰", "澳大利亚", "马尔代夫", "迪拜", "曼谷", "威尼斯（面具节）", "里约（狂欢节）"], "avoid": ["欧洲大部分户外景点", "尼泊尔 EBC（雪季）"], "themes_strong": ["海岛", "节庆"]},
+    "3": {"name": "3 月", "northern_hemisphere": "初春", "southern_hemisphere": "初秋", "recommended": ["东京（樱花）", "京都", "摩洛哥", "迪拜", "马尔代夫", "新西兰", "巴塔哥尼亚（末季）", "南极（末季）"], "avoid": ["东南亚泼水节前高温区", "印度雨季临近"], "themes_strong": ["樱花", "文化"]},
+    "4": {"name": "4 月", "northern_hemisphere": "春", "southern_hemisphere": "秋", "recommended": ["东京", "京都", "巴黎", "罗马", "巴塞罗那", "里斯本", "纽约", "巴厘岛", "马丘比丘"], "avoid": ["撒哈拉部分时段沙暴"], "themes_strong": ["城市", "文化", "古迹"]},
+    "5": {"name": "5 月", "northern_hemisphere": "暮春初夏", "southern_hemisphere": "晚秋", "recommended": ["巴黎", "罗马", "伦敦", "伊斯坦布尔", "圣托里尼", "纽约", "夏威夷", "肯尼亚（迁徙前段）", "马丘比丘"], "avoid": ["东南亚雨季", "印度高温"], "themes_strong": ["欧洲城市", "美食"]},
+    "6": {"name": "6 月", "northern_hemisphere": "初夏", "southern_hemisphere": "初冬", "recommended": ["挪威 / 冰岛 / 瑞典（午夜阳光）", "瑞士少女峰", "新西兰（雪季）", "黄石公园", "塔希提", "斐济", "南非（淡季）"], "avoid": ["地中海暑热抬头"], "themes_strong": ["北欧极昼", "高山"]},
+    "7": {"name": "7 月", "northern_hemisphere": "盛夏", "southern_hemisphere": "深冬", "recommended": ["挪威 / 冰岛", "瑞士", "肯尼亚迁徙", "塞伦盖蒂", "黄石", "阿拉斯加", "新西兰滑雪", "塔希提"], "avoid": ["地中海酷暑 + 人潮", "东京高温"], "themes_strong": ["大迁徙", "高山", "极昼"]},
+    "8": {"name": "8 月", "northern_hemisphere": "盛夏末", "southern_hemisphere": "深冬", "recommended": ["爱丁堡（艺术节）", "挪威", "肯尼亚 / 坦桑（迁徙巅峰）", "黄石", "阿拉斯加", "塔希提"], "avoid": ["欧洲南部 35°C+", "申根使馆休假"], "themes_strong": ["艺术节", "动物迁徙"]},
+    "9": {"name": "9 月", "northern_hemisphere": "初秋", "southern_hemisphere": "初春", "recommended": ["巴黎", "纽约", "罗马", "伊斯坦布尔", "卡帕多奇亚（热气球）", "肯尼亚", "南非（春）", "新西兰", "悉尼"], "avoid": ["加勒比飓风季"], "themes_strong": ["秋季城市", "热气球"]},
+    "10": {"name": "10 月", "northern_hemisphere": "深秋", "southern_hemisphere": "春", "recommended": ["京都（红叶前）", "纽约（秋叶）", "黄石（末季）", "卡帕多奇亚", "马德里", "雅典", "新西兰", "墨西哥（亡灵节准备）"], "avoid": ["北欧高纬度极夜临近"], "themes_strong": ["红叶", "古迹"]},
+    "11": {"name": "11 月", "northern_hemisphere": "初冬", "southern_hemisphere": "晚春", "recommended": ["东京（红叶）", "京都（红叶巅峰）", "马尔代夫", "迪拜", "曼谷", "清迈（天灯节）", "南极启程", "摩洛哥"], "avoid": ["欧洲多雨阴冷"], "themes_strong": ["红叶", "海岛"]},
+    "12": {"name": "12 月", "northern_hemisphere": "深冬", "southern_hemisphere": "盛夏", "recommended": ["瑞士滑雪", "冰岛极光", "马尔代夫", "迪拜", "曼谷", "南极", "新西兰", "里约", "维也纳圣诞市集"], "avoid": ["北欧极夜白昼极短", "欧洲圣诞期间博物馆停开"], "themes_strong": ["滑雪", "极光", "圣诞市集"]}
+  },
+  "hemisphere_swap_tip": "北半球冬天太冷？反向去南半球夏天（澳新 / 南美 / 非洲南部）。北半球夏天太挤？反向去南半球冬天（巴塔哥尼亚 / 新西兰滑雪）。",
+  "festival_calendar": [
+    {"month": 2, "name": "威尼斯面具节", "country": "意大利"},
+    {"month": 2, "name": "里约狂欢节", "country": "巴西"},
+    {"month": 3, "name": "京都樱花", "country": "日本"},
+    {"month": 4, "name": "西班牙圣周", "country": "西班牙"},
+    {"month": 8, "name": "爱丁堡艺术节", "country": "英国"},
+    {"month": 10, "name": "墨西哥亡灵节", "country": "墨西哥"},
+    {"month": 11, "name": "清迈水灯节 / 天灯节", "country": "泰国"},
+    {"month": 12, "name": "维也纳 / 慕尼黑圣诞市集", "country": "欧洲"}
+  ]
+}

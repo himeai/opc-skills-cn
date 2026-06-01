@@ -326,6 +326,23 @@
         "python3 scripts/compliance.py \"{input}\""
       ],
       "triggers": ["置业", "买房", "豪宅", "顶豪", "神盘", "汤臣一品", "深圳湾一号", "钓鱼台七号院", "海外置业", "买房送身份", "Golden Visa", "迪拜金签", "伦敦买房", "纽约公寓", "第二居所", "家族信托", "CRS", "ODI", "外汇额度", "跨境资金"]
+    },
+    {
+      "name": "opc-travel",
+      "displayName": "一人公司环球旅行副驾驶",
+      "description": "一人公司「成功篇·环球旅行」副驾驶（本地规则版）：80+ 国 200+ 城市路线生成 + 4 档预算 + 中国普通护照签证矩阵 + 月份反查目的地 + 跨气候打包清单。本地推理，不推荐具体航司 / 酒店 / 旅行社，不爬抓任何机票数据。",
+      "version": "0.1.0",
+      "path": "skills/opc-travel",
+      "logo": "skill-logos/opc-travel.svg",
+      "color": "#0EA5E9",
+      "commands": [
+        "python3 scripts/route.py \"{input}\"",
+        "python3 scripts/budget.py \"{input}\"",
+        "python3 scripts/visa.py \"{input}\"",
+        "python3 scripts/season.py \"{input}\"",
+        "python3 scripts/pack.py \"{input}\""
+      ],
+      "triggers": ["环球旅行", "Round the World", "RTW", "长途旅行", "gap year", "间隔年", "签证规划", "出行预算", "欧洲游", "亚洲游", "北美游", "南美游", "非洲游", "大洋洲", "极地", "南极", "北极", "米其林之旅", "海岛", "潜水", "极光", "行李清单", "最佳季节", "申根签", "蜜月"]
     }
   ]
 }

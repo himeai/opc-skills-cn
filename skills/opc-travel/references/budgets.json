@@ -1,0 +1,72 @@
+{
+  "_comment": "环球旅行 4 档预算结构。daily_cny 为目的地中位线倍率（1.0 表示按 destinations.json 的 avg_daily_cny_mid）。intl_flight_cny 为国际段往返人均估算。",
+  "_disclaimer": "实际花费取决于汇率、航班季节、酒店选择。本表仅作分档参考。",
+  "tiers": [
+    {
+      "tier": "穷游",
+      "tier_en": "shoestring",
+      "daily_multiplier": 0.4,
+      "lodging": "青旅多人间 / 家庭旅馆 / Hostelworld 评分 8.5+",
+      "transport": "地铁 / 公交 / 长途巴士 / 红眼经济舱",
+      "food": "本地小馆 / 街边摊 / 自煮",
+      "experience": "免费博物馆日 / 城市徒步 / 一项付费活动 / 国",
+      "applicable_to": ["东南亚", "南欧", "拉美", "北非"],
+      "warnings": ["申根 / 美澳签经常需要资金证明，过度穷游签证审核反而难过", "保险绝对不能省"],
+      "intl_flight_cny_round": 6000,
+      "tier_remark": "60-80% 预算花在飞行 + 食宿，体验靠走腿"
+    },
+    {
+      "tier": "舒适",
+      "tier_en": "comfort",
+      "daily_multiplier": 1.0,
+      "lodging": "三星 / 精品民宿 / Booking 8.0+",
+      "transport": "地铁 + Uber + 经济舱",
+      "food": "中档餐厅 / 偶尔米其林一星",
+      "experience": "每地 1-2 项付费体验（巴黎卢浮宫导览 / 罗马跳过排队票 / 迪拜冲沙 + 沙漠营地）",
+      "applicable_to": ["全球任何目的地"],
+      "warnings": ["这是大多数家庭出行的舒适基准"],
+      "intl_flight_cny_round": 12000,
+      "tier_remark": "性价比之王，体验完整不憋屈"
+    },
+    {
+      "tier": "商务",
+      "tier_en": "business",
+      "daily_multiplier": 2.0,
+      "lodging": "四五星 / 万豪 IHG 钻金 / 当地精品酒店",
+      "transport": "商务舱 / 含司导专车 / 头等火车",
+      "food": "米其林一二星 / 高端江浙菜 / 当地名厨私厨",
+      "experience": "每地 2-3 项 VIP 体验（巴黎私人导览 / 凡尔赛闭馆参观 / 卡帕多奇亚私享热气球）",
+      "applicable_to": ["欧美 / 日本 / 中东", "适合一人公司创始人级别"],
+      "warnings": ["旺季机票翻倍，建议提前 90+ 天 booking", "酒店积分会籍可省 30%"],
+      "intl_flight_cny_round": 35000,
+      "tier_remark": "绝大部分体验顶配 + 商务舱，30 天约 30-50w / 人"
+    },
+    {
+      "tier": "奢华",
+      "tier_en": "luxury",
+      "daily_multiplier": 4.5,
+      "lodging": "Aman / Six Senses / Rosewood / Bvlgari / Mandarin Oriental",
+      "transport": "头等舱 / 私人包机 / 司机 + 兰博基尼",
+      "food": "米其林三星 / 主厨私厨 / 城堡晚宴",
+      "experience": "私享 + 闭馆 + 直升机 + 水屋别墅 / 南极游艇 / 大堡礁包船 / 库克群岛包岛",
+      "applicable_to": ["全球顶级地点", "亿级高净值家庭"],
+      "warnings": ["热门 Aman 提前 12 个月才能订上", "南极包船需提前 18 个月"],
+      "intl_flight_cny_round": 100000,
+      "tier_remark": "30 天单人 100-300w 量级，全程白手套服务"
+    }
+  ],
+  "auxiliary_costs": {
+    "insurance_cny_per_month": {"shoestring": 200, "comfort": 400, "business": 800, "luxury": 1500},
+    "visa_avg_cny_per_country": 500,
+    "intl_data_cny_per_month": {"esim": 200, "roaming": 1000, "pocket_wifi": 600},
+    "currency_exchange_loss_pct": 1.5,
+    "vaccine_misc_cny": 800
+  },
+  "tips": [
+    "环球预算应留 15% 应急金（机票改签 / 医疗 / 突发取消）",
+    "信用卡积分（visa platinum / 万豪美卡 / 国航凤凰知音）能省 20-40% 商务以上酒店",
+    "穷游档不要省签证保险——拒签 / 拒入境损失远大于保险费",
+    "境外消费请走合规外汇渠道：每人每年 5w 美元购汇额度 + 境外信用卡刷卡。任何「换汇 / 蚂蚁搬家 / 地下钱庄」都是违法的",
+    "申根 90 / 180 规则：任意 180 天内累计停留 ≤ 90 天，长期环游必须算清"
+  ]
+}

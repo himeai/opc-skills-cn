@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-20-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-21-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -166,6 +166,12 @@
       <td><img src="./skill-logos/opc-property.svg" alt="opc-property" width="24"></td>
       <td><code>opc-property</code></td>
       <td><b>一人公司置业副驾驶</b>：1000 万起步的高净值置业决策——国内顶豪盘（汤臣一品 / 深圳湾一号 / 钓鱼台七号院 / 翠湖天地等 S/A/B 三级清单）、海外 10 大豪宅市场（纽约 / 伦敦 / 巴黎 / 悉尼 / 新加坡 / 迪拜 / 东京 / 洛杉矶 / 温哥华 / 葡萄牙）、5 年持有成本测算、跨境资金合规清单（本地规则，不构成投资 / 移民 / 税务建议）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/opc-travel.svg" alt="opc-travel" width="24"></td>
+      <td><code>opc-travel</code></td>
+      <td><b>一人公司环球旅行副驾驶</b>：80+ 国 200+ 城市路线生成（按主题 / 时长 / 预算 / 出发月份）、4 档预算（穷游 / 舒适 / 商务 / 奢华）、中国普通护照签证矩阵 + 办理时间轴、月份反查目的地（含半球切换 + 节庆日历）、跨气候打包清单（本地规则，不推荐具体航司 / 酒店 / 旅行社，不爬抓任何机票数据）</td>
       <td>✅</td>
     </tr>
     <tr><td colspan="4"><b>⏳ 规划中</b></td></tr>
