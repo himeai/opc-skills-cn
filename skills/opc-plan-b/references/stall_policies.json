@@ -1,0 +1,158 @@
+{
+  "_comment": "中国 10 城地摊 / 夜市政策 + 选品 ROI 估算（2024+ 政策口径）。本地静态数据，最新政策以当地城管 / 市场监管局公告为准。",
+  "cities": {
+    "上海": {
+      "policy_summary": "2023 年取消「外摆禁令」，划定 92 处「设摊开放区」",
+      "open_areas": ["安义夜巷", "BFC 外滩枫径", "大学路", "瑞金二路 9 号花园", "永平里"],
+      "registration": "无需办营业执照（地摊新政），但食品类需办《小食品摊贩备案卡》",
+      "operating_hours": "多数夜市 17:00-23:00",
+      "fee_per_day_cny": [50, 200],
+      "warnings": [
+        "禁设区域（人民广场 / 陆家嘴金融区核心）严查",
+        "食品类需要健康证 + 备案卡 + 餐厨垃圾签约处置"
+      ]
+    },
+    "北京": {
+      "policy_summary": "「夜京城」政策开放部分商圈外摆，但居民区内严控",
+      "open_areas": ["三里屯太古里", "亮马河风情水岸", "首钢园 + 石景山", "北苑路口夜市"],
+      "registration": "正规市集进场需申请，路边摊基本不允许",
+      "operating_hours": "18:00-22:00（部分商圈延至 24:00）",
+      "fee_per_day_cny": [100, 400],
+      "warnings": [
+        "二环内、地铁出入口 50 米内禁止",
+        "城管 / 街道办巡查严格，建议进合规市集"
+      ]
+    },
+    "广州": {
+      "policy_summary": "2020 年率先开放，目前是国内最友好的一线城市之一",
+      "open_areas": ["北京路", "上下九", "江南西", "客村", "番禺市桥"],
+      "registration": "进场夜市无需执照；固定摊位需办流动摊贩备案",
+      "operating_hours": "17:00-次日 02:00",
+      "fee_per_day_cny": [30, 150],
+      "warnings": [
+        "夏季高温 + 雨季影响出摊率",
+        "食品类必须健康证 + 不锈钢操作台 + 一次性手套"
+      ]
+    },
+    "深圳": {
+      "policy_summary": "2023 年起允许特定区域设摊，但住宅区禁止",
+      "open_areas": ["华强北财富广场夜市", "蛇口海上世界", "南头古城", "甘坑客家小镇"],
+      "registration": "进场市集向运营方报备，无需执照",
+      "operating_hours": "18:00-23:00",
+      "fee_per_day_cny": [80, 300],
+      "warnings": ["租金 + 摊位费偏高，需精算 ROI"]
+    },
+    "成都": {
+      "policy_summary": "全国地摊经济标杆，常态化开放",
+      "open_areas": ["玉林夜市", "建设路夜市", "锦里 / 春熙路外围", "九眼桥", "金沙夜市"],
+      "registration": "首选进场夜市；流动摊贩需备案",
+      "operating_hours": "17:00-次日 03:00（成都夜生活常长至凌晨）",
+      "fee_per_day_cny": [30, 120],
+      "warnings": ["夜市竞争激烈（小吃同质化严重），建议差异化选品"]
+    },
+    "杭州": {
+      "policy_summary": "「外摆」纳入正规化管理，划定夜市经营区",
+      "open_areas": ["武林夜市", "胜利河美食街", "拱宸桥夜市", "运河夜市"],
+      "registration": "进场夜市需提前 1-3 个月申请",
+      "operating_hours": "17:30-23:00",
+      "fee_per_day_cny": [60, 250],
+      "warnings": ["申请排队 1-3 月，热门市集 6 个月以上"]
+    },
+    "重庆": {
+      "policy_summary": "山城夜经济活跃，主要在江北 / 渝中 / 南岸",
+      "open_areas": ["洪崖洞外围", "解放碑八一路", "南滨路", "观音桥步行街"],
+      "registration": "夜市进场报备",
+      "operating_hours": "17:00-次日 02:00",
+      "fee_per_day_cny": [40, 180],
+      "warnings": ["上坡下坎地形需推车 / 折叠摊位偏好"]
+    },
+    "武汉": {
+      "policy_summary": "「江城夜经济」开放保成路 / 户部巷 / 吉庆街等",
+      "open_areas": ["保成路夜市", "户部巷", "吉庆街", "万松园"],
+      "registration": "进场夜市运营方报备",
+      "operating_hours": "17:00-23:00",
+      "fee_per_day_cny": [30, 150],
+      "warnings": ["夏季武汉气温 35°+，对冷饮 / 轻食有利，对热食不利"]
+    },
+    "西安": {
+      "policy_summary": "回民街 + 永兴坊带动夜市经济",
+      "open_areas": ["回民街", "永兴坊", "大唐不夜城外围", "曲江夜市"],
+      "registration": "夜市进场报备",
+      "operating_hours": "17:00-23:00",
+      "fee_per_day_cny": [40, 180],
+      "warnings": ["旅游城市游客占比高，淡旺季差异大"]
+    },
+    "长沙": {
+      "policy_summary": "网红夜市经济强，太平街 / 坡子街 / 文和友辐射",
+      "open_areas": ["扬帆夜市", "渔人码头", "解放西路", "梅溪湖夜市"],
+      "registration": "进场夜市报备",
+      "operating_hours": "17:30-次日 02:00",
+      "fee_per_day_cny": [50, 200],
+      "warnings": ["小吃赛道极度内卷，建议差异化或轻饮品类"]
+    }
+  },
+  "categories": {
+    "小吃热食": {
+      "examples": ["烤冷面", "炒粉", "煎饼果子", "铁板鱿鱼", "炸串", "土豆塔"],
+      "startup_cost_cny": [3000, 8000],
+      "ingredients_cost_per_unit_cny": [2, 6],
+      "selling_price_cny": [10, 25],
+      "gross_margin_pct": [55, 75],
+      "daily_orders_typical": [80, 200],
+      "license_required": ["健康证", "小食品摊贩备案卡", "部分城市需餐厨垃圾签约"],
+      "pros": ["毛利高", "客单价稳定", "夜市刚需"],
+      "cons": ["油烟大", "出摊重劳动", "同质化严重"]
+    },
+    "饮品冷食": {
+      "examples": ["手打柠檬茶", "鲜榨果汁", "刨冰", "冰粉", "酸梅汤", "冷泡茶"],
+      "startup_cost_cny": [2000, 6000],
+      "ingredients_cost_per_unit_cny": [1, 4],
+      "selling_price_cny": [8, 20],
+      "gross_margin_pct": [60, 80],
+      "daily_orders_typical": [60, 150],
+      "license_required": ["健康证", "小食品摊贩备案卡"],
+      "pros": ["夏季旺季毛利高", "操作简单", "出摊轻"],
+      "cons": ["冬季淡季", "天气依赖", "保鲜成本"]
+    },
+    "文创手作": {
+      "examples": ["手作饰品", "钩织玩偶", "手写春联 / 福字", "捏面人", "皮具刻字"],
+      "startup_cost_cny": [1000, 4000],
+      "ingredients_cost_per_unit_cny": [3, 30],
+      "selling_price_cny": [20, 200],
+      "gross_margin_pct": [50, 85],
+      "daily_orders_typical": [10, 40],
+      "license_required": ["无（非食品 / 非药品）"],
+      "pros": ["毛利高", "差异化", "客单价高", "可复用做小红书内容"],
+      "cons": ["客流转化慢", "依赖夜市人流", "节假日效应明显"]
+    },
+    "二手好物": {
+      "examples": ["二手书", "二手衣物", "盲盒玩具", "vintage 配饰", "胶片相机"],
+      "startup_cost_cny": [500, 3000],
+      "ingredients_cost_per_unit_cny": [2, 50],
+      "selling_price_cny": [10, 200],
+      "gross_margin_pct": [40, 70],
+      "daily_orders_typical": [10, 30],
+      "license_required": ["无"],
+      "pros": ["几乎零起步", "去库存兼营", "适合内容化"],
+      "cons": ["客流转化慢", "需要选品眼光", "有些品类冷门"]
+    },
+    "轻服务": {
+      "examples": ["AI 算命 / 塔罗牌", "现场写真", "宠物拍照", "代写手帐", "手机贴膜"],
+      "startup_cost_cny": [500, 3000],
+      "ingredients_cost_per_unit_cny": [0, 5],
+      "selling_price_cny": [20, 100],
+      "gross_margin_pct": [80, 95],
+      "daily_orders_typical": [10, 25],
+      "license_required": ["无（非医疗 / 非金融建议）"],
+      "pros": ["几乎零材料成本", "毛利极高", "话题性强"],
+      "cons": ["技能要求", "客流转化慢", "易被同行模仿"]
+    }
+  },
+  "general_warnings": [
+    "食品类必须办健康证（社区医院 30-50 元）+ 小食品摊贩备案卡（市监局）",
+    "禁止售卖：医疗 / 药品 / 烟草 / 易燃易爆 / 仿冒商标 / 处方器材",
+    "推车 + 折叠桌 + 灯具 + 收款码物料 = 起步硬件",
+    "首月 ROI 测算：扣除摊位费 + 损耗 + 通勤后日均净 100-300 元属正常",
+    "本数据仅作选品起点，最终以当地市集运营方政策与实际客流为准"
+  ]
+}

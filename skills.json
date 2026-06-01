@@ -525,6 +525,33 @@
         "python3 scripts/timeline.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-angel"}
+    },
+    {
+      "name": "opc-plan-b",
+      "version": "0.1.0",
+      "description": "一人公司「下车—回血—再上路」副驾驶（本地规则版）：注销公司、跑外卖、摆摊、续社保、领失业金、半年后再上路。让你亲眼看见——人生的容错率大得可怕。本地推理，不替代律师 / 税务师 / 心理咨询师。",
+      "logo": "skill-logos/opc-plan-b.svg",
+      "icon": "life-buoy",
+      "color": "EF4444",
+      "triggers": ["破产", "关门", "注销", "停业", "下车", "回血", "外卖", "摆摊", "网约车", "Plan B", "东山再起", "复业", "失业金", "社保断缴", "个独注销", "灵活就业", "地摊", "跑腿", "众包"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-plan-b -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-plan-b"}
+      },
+      "commands": [
+        "python3 scripts/shutdown.py \"{input}\"",
+        "python3 scripts/runway.py \"{input}\"",
+        "python3 scripts/gig.py \"{input}\"",
+        "python3 scripts/stall.py \"{input}\"",
+        "python3 scripts/restart.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-plan-b"}
     }
   ]
 }

@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.10] - 2026-06-01
+
+### Added
+
+- opc-plan-b v0.1.0：一人公司「下车—回血—再上路」副驾驶（本地规则版）——4 类主体注销路径（个体 / 个独 / 一人有限 / 有限公司）、10 家零工平台 5 维加权打分（earn/barrier/insurance/vehicle_fit/stability）、10 城地摊政策 + 5 大品类 ROI 估算、个人跑道 4 档危险阈值 + 失业金估算 + 灵活就业社保金额、6 类轻资产复业方向 + 4 维决策树。完全本地推理，不替代律师 / 税务师 / 心理咨询师；不推荐 P2P / 网贷 / 高利贷；不做「逃废债」/「征信修复」攻略
+
+### Changed
+
+- 命名规约新增第 4 档「OPC 生命周期专属能力 → `opc-` 前缀」（AGENTS.md §2）
+
 ## [0.0.9] - 2026-06-01
 
 ### Added

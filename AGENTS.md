@@ -30,17 +30,19 @@
 ### 仓库命名
 本仓库名 `opc-skills-cn`（国别后缀，对标上游 opc-skills）。**禁止**把 `-cn` 后缀传染到单个 skill 名。
 
-### Skill 命名规约（三档，选其一，禁止混用）
+### Skill 命名规约（四档，选其一，禁止混用）
 | 场景 | 命名风格 | 例子 |
 |---|---|---|
 | 中国平台专属能力 | 平台名直接做前缀 | `wechat-mp` / `xiaohongshu-ops` / `douyin-ops` / `bilibili-zhihu` / `wecom-crm` |
 | 中国通用/跨平台能力 | `cn-` 语义前缀 | `cn-city-picker` / `cn-tax` / `cn-geo` / `cn-recruit` / `cn-legal` |
+| OPC 生命周期专属能力 | `opc-` 语义前缀 | `opc-plan-b`（创业失败下车回血） |
 | 海外/全球通用 | 无前缀 | `feishu-ops`（飞书海外即 Lark） / `stripe-paddle` |
 
 判定规则：
 1. **能用一个明确的中文平台名命名？** → 用平台前缀（`wechat-*` / `xiaohongshu-*` / `douyin-*` …）
 2. **是"中国特色"但不绑定单一平台？** → 用 `cn-` 前缀
-3. **海外也能用、产品方也面向海外？** → 不加任何前缀
+3. **绑定一人公司生命周期场景（下车 / 重启 / 复盘等），不强中国特色？** → 用 `opc-` 前缀
+4. **海外也能用、产品方也面向海外？** → 不加任何前缀
 
 ### 通用约束
 - Skill 名一律 **kebab-case**，长度 ≤ 24 字符，全小写

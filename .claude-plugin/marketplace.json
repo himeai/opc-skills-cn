@@ -292,6 +292,23 @@
         "python3 scripts/timeline.py \"{input}\""
       ],
       "triggers": ["融资", "天使轮", "Pre-A", "BP", "商业计划书", "估值", "Term Sheet", "TS", "对赌", "回购", "反稀释", "优先清算", "投资人对接", "FA", "cap table", "稀释", "SPA", "SHA", "ODI", "加速器", "孵化器", "尽职调查", "DD"]
+    },
+    {
+      "name": "opc-plan-b",
+      "displayName": "一人公司 Plan B 副驾驶",
+      "description": "一人公司「下车—回血—再上路」副驾驶（本地规则版）：注销公司、跑外卖、摆摊、续社保、领失业金、半年后再上路。让你亲眼看见——人生的容错率大得可怕。本地推理，不替代律师 / 税务师 / 心理咨询师。",
+      "version": "0.1.0",
+      "path": "skills/opc-plan-b",
+      "logo": "skill-logos/opc-plan-b.svg",
+      "color": "#EF4444",
+      "commands": [
+        "python3 scripts/shutdown.py \"{input}\"",
+        "python3 scripts/runway.py \"{input}\"",
+        "python3 scripts/gig.py \"{input}\"",
+        "python3 scripts/stall.py \"{input}\"",
+        "python3 scripts/restart.py \"{input}\""
+      ],
+      "triggers": ["破产", "关门", "注销", "停业", "下车", "回血", "外卖", "摆摊", "网约车", "Plan B", "东山再起", "复业", "失业金", "社保断缴", "个独注销", "灵活就业", "地摊", "跑腿", "众包"]
     }
   ]
 }

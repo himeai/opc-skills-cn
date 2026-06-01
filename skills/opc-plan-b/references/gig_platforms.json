@@ -1,0 +1,153 @@
+{
+  "_comment": "中国主流零工平台 2024+ 调研口径，仅供选择参考。抽成/收入/五险随城市 / 阶段 / 政策动态变化，本地静态数据，不构成劳动雇佣建议。",
+  "platforms": [
+    {
+      "name": "美团骑手",
+      "category": "外卖",
+      "modes": ["专送（站点合作商雇佣）", "乐跑（高单量分组）", "众包（自由接单）"],
+      "earn_per_hour_cny": [25, 45],
+      "platform_take_pct": "0%（骑手端不抽成，运费由商家 / 用户出）",
+      "entry_barrier": "健康证 + 美团骑手 App 注册 + 实名 + 电动车 / 助力车",
+      "social_insurance": "专送通常由站点合作商缴纳；众包默认无五险，可自费配置意外险",
+      "vehicle_required": "电动车（部分城市要求带牌照）",
+      "best_for": ["想要稳定订单的（专送）", "想要时间自由的（众包）", "短期周转 1-3 个月"],
+      "warnings": [
+        "夏季高温 / 雨雪天气存在职业风险",
+        "众包无社保，建议自购意外险（200-500 元 / 年）",
+        "部分城市电动车需上牌（沪 / 京 / 杭等）"
+      ]
+    },
+    {
+      "name": "饿了么蜂鸟",
+      "category": "外卖",
+      "modes": ["专送", "众包"],
+      "earn_per_hour_cny": [22, 42],
+      "platform_take_pct": "0%（骑手端）",
+      "entry_barrier": "健康证 + 蜂鸟众包 App + 实名",
+      "social_insurance": "专送由代理商缴纳；众包无",
+      "vehicle_required": "电动车",
+      "best_for": ["阿里生态用户", "支付宝快速结算偏好"],
+      "warnings": [
+        "和美团竞争激烈，单量随城市波动",
+        "差评 / 超时直接扣款"
+      ]
+    },
+    {
+      "name": "达达快送",
+      "category": "外卖 + 同城",
+      "modes": ["京东到家众包", "本地商超配送"],
+      "earn_per_hour_cny": [20, 40],
+      "platform_take_pct": "0%",
+      "entry_barrier": "达达 App + 实名",
+      "social_insurance": "无",
+      "vehicle_required": "电动车 / 自行车",
+      "best_for": ["想做 KA 商超单（沃尔玛 / 永辉等）的", "副业身份"],
+      "warnings": ["单量不稳定，依赖 KA 商家活动"]
+    },
+    {
+      "name": "滴滴快车",
+      "category": "网约车",
+      "modes": ["快车", "优享", "专车（需平台审核）"],
+      "earn_per_hour_cny": [25, 60],
+      "platform_take_pct": "20%-27%（含信息服务费 + 抽成 + 平台奖励冲销）",
+      "entry_barrier": "C1 驾照 ≥ 3 年 + 网约车驾驶员证 + 网约车运输证（双证）+ 车辆符合当地标准",
+      "social_insurance": "无；平台仅提供事故商业险",
+      "vehicle_required": "私家车需办网约车运输证（车辆性质改营运 → 影响保险）",
+      "best_for": ["有车一族短期回血", "夜班 / 早高峰兼职"],
+      "warnings": [
+        "车辆性质改营运后报废年限缩短至 8 年",
+        "营运车辆保险费用大幅上升",
+        "双证不全运营属违规，处罚 1-3 万元"
+      ]
+    },
+    {
+      "name": "T3 出行",
+      "category": "网约车",
+      "modes": ["合规自营", "司机租车跑"],
+      "earn_per_hour_cny": [22, 50],
+      "platform_take_pct": "18%-22%",
+      "entry_barrier": "双证 + 平台培训",
+      "social_insurance": "部分城市有意外险 + 重疾险补贴",
+      "vehicle_required": "可租平台自有车（押金 + 日租）",
+      "best_for": ["无私家车的", "想要合规车辆的", "央国资背景偏好"],
+      "warnings": ["租车日租成本会吃掉 30-40% 流水"]
+    },
+    {
+      "name": "曹操出行",
+      "category": "网约车",
+      "modes": ["B2C 自营", "C2C 加盟"],
+      "earn_per_hour_cny": [22, 48],
+      "platform_take_pct": "18%-23%",
+      "entry_barrier": "双证 + 吉利系车型偏好",
+      "social_insurance": "B2C 司机有",
+      "vehicle_required": "B2C 模式平台提供电车",
+      "best_for": ["新能源车偏好", "杭州 / 宁波 / 苏州本地"],
+      "warnings": ["品牌车型限制"]
+    },
+    {
+      "name": "闪送",
+      "category": "跑腿",
+      "modes": ["单点直送（一对一）"],
+      "earn_per_hour_cny": [25, 55],
+      "platform_take_pct": "20%-25%",
+      "entry_barrier": "App 注册 + 押金 200-500 元 + 实名 + 培训",
+      "social_insurance": "无；可在 App 内购买意外险",
+      "vehicle_required": "电动车 / 摩托车",
+      "best_for": ["体力好 + 路熟的", "想接高客单价急件（200-500 元 / 单）的"],
+      "warnings": ["1 对 1 模式空驶率高，需会挑路线", "代收件涉及财物风险（贵重物品）"]
+    },
+    {
+      "name": "UU 跑腿",
+      "category": "跑腿",
+      "modes": ["代取 / 代买 / 帮排队"],
+      "earn_per_hour_cny": [18, 40],
+      "platform_take_pct": "15%-20%",
+      "entry_barrier": "App + 实名 + 押金 100-300 元",
+      "social_insurance": "无",
+      "vehicle_required": "电动车 / 自行车",
+      "best_for": ["低门槛入门", "二三线城市"],
+      "warnings": ["低线城市单价 5-15 元，需走量"]
+    },
+    {
+      "name": "众包数据标注",
+      "category": "线上众包",
+      "modes": ["龙猫数据 / 百度众测 / 京东众智"],
+      "earn_per_hour_cny": [10, 30],
+      "platform_take_pct": "0%（按任务计件）",
+      "entry_barrier": "电脑 + 网络 + 平台账号 + 标注培训",
+      "social_insurance": "无（按劳务报酬计税）",
+      "vehicle_required": "无（线上）",
+      "best_for": ["居家场景", "夜间 / 碎片时间", "AI 训练数据相关知识储备"],
+      "warnings": [
+        "单价低，需大量练习提速",
+        "结算周期长（30-60 天）",
+        "部分平台审核严格，错单率高时扣款"
+      ]
+    },
+    {
+      "name": "58 / 天鹅到家家政",
+      "category": "家政",
+      "modes": ["保洁 / 月嫂 / 育儿嫂 / 老人陪护"],
+      "earn_per_hour_cny": [40, 100],
+      "platform_take_pct": "10%-30%（中介费）",
+      "entry_barrier": "健康证 + 部分类目需技能证（月嫂 / 育婴师）",
+      "social_insurance": "无（多为 C2C）",
+      "vehicle_required": "无",
+      "best_for": ["女性 OPC 短期高时薪选择", "本地熟客复购"],
+      "warnings": ["首次接单需积累口碑", "雇主纠纷多发，建议平台担保结算"]
+    }
+  ],
+  "scoring_weights": {
+    "earn": 0.35,
+    "barrier": 0.20,
+    "insurance": 0.20,
+    "vehicle_fit": 0.15,
+    "stability": 0.10
+  },
+  "general_notes": [
+    "零工经济不构成劳动关系，五险一金需自行解决（参考 personal_finance.json 灵活就业方案）",
+    "当所有平台都需要健康证，本地疾控中心或社区医院 30-50 元 1-2 天可办",
+    "网约车双证不全运营是违规，本 skill 不推荐 / 不引导无证运营",
+    "部分平台押金需谨慎，遇到要求 1000+ 押金的非头部平台请警惕"
+  ]
+}
