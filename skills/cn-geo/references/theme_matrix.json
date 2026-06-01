@@ -1,0 +1,80 @@
+{
+  "version": "2026-06-01",
+  "theme_types": [
+    {
+      "id": "education",
+      "label": "品类教育型（What is / Why）",
+      "geo_benefit": 9,
+      "best_platforms": ["zhihu", "wechat_mp", "official_site", "baijiahao"],
+      "topic_seeds": [
+        "{category} 是什么",
+        "{category} 适合什么人",
+        "{category} 解决什么问题",
+        "{category} 行业概况 {year}"
+      ]
+    },
+    {
+      "id": "compare",
+      "label": "比较型（X vs Y）",
+      "geo_benefit": 10,
+      "best_platforms": ["zhihu", "wechat_mp", "official_site"],
+      "topic_seeds": [
+        "{brand} 和 {competitor} 哪个好",
+        "{category} Top 5 推荐 {year}",
+        "{category} 平替清单"
+      ]
+    },
+    {
+      "id": "review",
+      "label": "评测型（亲测 / 实测）",
+      "geo_benefit": 8,
+      "best_platforms": ["xiaohongshu", "bilibili", "zhihu", "douban"],
+      "topic_seeds": [
+        "用了 {brand} {duration} 后真实感受",
+        "{brand} 翻车了吗",
+        "{category} 避雷指南"
+      ]
+    },
+    {
+      "id": "tutorial",
+      "label": "教程型（怎么做 / 怎么用）",
+      "geo_benefit": 8,
+      "best_platforms": ["bilibili", "zhihu", "wechat_mp", "github"],
+      "topic_seeds": [
+        "{brand} 入门教程",
+        "如何用 {category} 解决 {scenario}",
+        "{brand} 进阶玩法"
+      ]
+    },
+    {
+      "id": "story",
+      "label": "故事型（创业 / 客户 / 个人）",
+      "geo_benefit": 6,
+      "best_platforms": ["wechat_mp", "36kr", "zhihu", "bilibili"],
+      "topic_seeds": [
+        "{brand} 是怎么做起来的",
+        "{brand} 一个客户的故事",
+        "我为什么离开 {competitor} 来做 {brand}"
+      ]
+    },
+    {
+      "id": "faq",
+      "label": "FAQ 型（常见问题）",
+      "geo_benefit": 9,
+      "best_platforms": ["official_site", "zhihu", "wechat_mp"],
+      "topic_seeds": [
+        "{brand} 多少钱",
+        "{brand} 安全吗",
+        "{brand} 退款政策",
+        "{brand} 怎么联系"
+      ]
+    }
+  ],
+  "persona_overrides": {
+    "solo_founder": {"prefer": ["education", "compare", "story", "faq"], "skip": []},
+    "indie_brand": {"prefer": ["review", "compare", "story"], "skip": []},
+    "studio": {"prefer": ["tutorial", "review", "compare"], "skip": []},
+    "creator": {"prefer": ["tutorial", "review", "story"], "skip": []},
+    "mcn": {"prefer": ["compare", "review", "tutorial"], "skip": []}
+  }
+}

@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.7] - 2026-06-01
+
+### Added
+
+- cn-geo v0.1.0：中文 AI 搜索（GEO）可见性优化——给定品牌 / 品类 / 阶段，输出在豆包 / Kimi / 文心 / 元宝 / 秘塔等中文 AI 搜索里被引用的行动清单、品牌问答素材、内容覆盖矩阵（本地规则推理，无外部 API）
+- cn-tax v0.1.0：中国小微纳税人税务助手——个体 / 个独 / 小规模 / 一般纳税人四种身份下的季度申报清单、税负近似测算、合规风险提醒（本地规则推理，不替代税务师，不自动提交申报）
+- icp-domain-cn v0.1.0：中国大陆上线前置流程清单——给定主体 / 域名 / 服务器位置，判断 ICP 备案 + 公安备案 + 域名实名 + 行业前置许可的需求，输出分步指引（本地规则推理，不替代律师 / 备案专员）
+
 ## [0.0.6] - 2026-06-01
 
 ### Added

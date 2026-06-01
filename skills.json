@@ -335,6 +335,81 @@
         "python3 scripts/redflush.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-einvoice"}
+    },
+    {
+      "name": "cn-geo",
+      "version": "0.1.0",
+      "description": "中文 AI 搜索（GEO）可见性优化：给定品牌 / 品类 / 阶段，输出在豆包 / Kimi / 文心 / 元宝 / 秘塔等中文 AI 搜索里被引用的行动清单、品牌问答素材、内容覆盖矩阵。",
+      "logo": "skill-logos/cn-geo.svg",
+      "icon": "search",
+      "color": "7C3AED",
+      "triggers": ["GEO", "生成式引擎优化", "AI 搜索优化", "AI SEO", "被 AI 引用", "被大模型引用", "豆包搜索", "Kimi 搜索", "文心一言", "通义千问", "秘塔", "纳米搜索", "品牌问答", "AEO", "答案优化", "AI 可见性"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-geo -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-geo"}
+      },
+      "commands": [
+        "python3 scripts/audit.py \"{input}\"",
+        "python3 scripts/qa.py \"{input}\"",
+        "python3 scripts/matrix.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-geo"}
+    },
+    {
+      "name": "cn-tax",
+      "version": "0.1.0",
+      "description": "中国小微纳税人税务助手：个体 / 个独 / 小规模 / 一般纳税人四种身份下的季度申报清单、税负近似测算、合规风险提醒。本地规则推理，不替代税务师，不自动提交申报。",
+      "logo": "skill-logos/cn-tax.svg",
+      "icon": "receipt",
+      "color": "0F766E",
+      "triggers": ["报税", "纳税申报", "季度申报", "年度汇算", "增值税", "企业所得税", "个人经营所得", "附加税", "税负测算", "小规模", "一般纳税人", "个体工商户", "个人独资", "税务合规", "零申报", "电子税务局", "虚开发票"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-tax -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-tax"}
+      },
+      "commands": [
+        "python3 scripts/estimate.py \"{input}\"",
+        "python3 scripts/checklist.py \"{input}\"",
+        "python3 scripts/risk.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-tax"}
+    },
+    {
+      "name": "icp-domain-cn",
+      "version": "0.1.0",
+      "description": "中国大陆上线前置流程清单：给定主体 / 域名 / 服务器位置，判断 ICP 备案 + 公安备案 + 域名实名 + 行业前置许可的需求，输出分步指引。本地规则推理，不替代律师 / 备案专员。",
+      "logo": "skill-logos/icp-domain-cn.svg",
+      "icon": "shield",
+      "color": "1D4ED8",
+      "triggers": ["ICP 备案", "公安备案", "网站备案", "域名备案", "上线流程", "域名注册", "服务器选型", "个人备案", "企业备案", "备案号", "beian", "视听许可证", "ICP 经营许可证", "网络文化经营许可证", "域名实名"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill icp-domain-cn -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill icp-domain-cn"}
+      },
+      "commands": [
+        "python3 scripts/check.py \"{input}\"",
+        "python3 scripts/steps.py \"{input}\"",
+        "python3 scripts/qualifications.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/icp-domain-cn"}
     }
   ]
 }

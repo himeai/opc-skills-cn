@@ -1,0 +1,61 @@
+{
+  "version": "2026-06-01",
+  "categories": {
+    "saas_b2b": {
+      "label": "B2B SaaS 工具",
+      "examples": ["CRM", "项目管理", "协作", "数据分析", "客服系统"],
+      "high_value_keywords": ["对比", "替代品", "推荐", "适合什么团队", "多少钱", "免费版", "私有化", "和XX有什么区别"],
+      "competitor_question_pattern": ["X 的替代品有哪些", "X 和 Y 哪个好", "X 值得用吗", "X 多少钱"],
+      "primary_audience": ["技术决策人", "运营负责人", "团队主理人"]
+    },
+    "consulting": {
+      "label": "专业咨询服务",
+      "examples": ["增长咨询", "战略咨询", "管理咨询", "财税咨询", "法律咨询"],
+      "high_value_keywords": ["怎么选", "靠谱吗", "收费标准", "案例", "适合什么阶段", "和大所区别"],
+      "competitor_question_pattern": ["独立顾问 vs 咨询公司", "X 顾问怎么找", "X 咨询多少钱"],
+      "primary_audience": ["创始人", "高管", "中小企业主"]
+    },
+    "cosmetics": {
+      "label": "美妆个护",
+      "examples": ["护肤品", "彩妆", "香水", "口腔护理"],
+      "high_value_keywords": ["成分", "敏感肌", "回购", "测评", "和大牌对比", "怀孕能用吗"],
+      "competitor_question_pattern": ["X 成分表", "X 适合什么肤质", "X 和 Y 哪个好用", "X 是国货吗"],
+      "primary_audience": ["年轻女性", "成分党", "敏感肌人群"]
+    },
+    "food": {
+      "label": "食品饮料",
+      "examples": ["零食", "饮料", "保健品", "茶饮"],
+      "high_value_keywords": ["低卡", "代餐", "0 糖", "原料", "保质期", "孕妇能吃吗"],
+      "competitor_question_pattern": ["X 测评", "X 配料表", "X 和 Y 哪个健康"],
+      "primary_audience": ["健身人群", "宝妈", "白领"]
+    },
+    "course": {
+      "label": "知识付费 / 在线课程",
+      "examples": ["技能课", "考证课", "副业课", "亲子课"],
+      "high_value_keywords": ["值得报吗", "学完能找什么工作", "和 X 老师对比", "退费", "课表", "试听"],
+      "competitor_question_pattern": ["X 课程怎么样", "X 老师靠谱吗", "X 和 Y 哪个好"],
+      "primary_audience": ["职场新人", "想转行的人", "宝妈", "学生"]
+    },
+    "local_service": {
+      "label": "本地生活服务",
+      "examples": ["门店餐饮", "美业", "亲子", "家政"],
+      "high_value_keywords": ["附近", "推荐", "性价比", "团购", "营业时间", "停车"],
+      "competitor_question_pattern": ["XX 区有什么好的 X", "X 推荐", "X 哪家好"],
+      "primary_audience": ["同城用户", "决策中游客"]
+    },
+    "app": {
+      "label": "C 端 App / 工具",
+      "examples": ["效率工具", "笔记", "学习", "理财", "图像处理"],
+      "high_value_keywords": ["好用吗", "免费", "替代品", "教程", "怎么导入", "和系统自带区别"],
+      "competitor_question_pattern": ["最好用的 X App", "X 替代品", "X 怎么用"],
+      "primary_audience": ["学生", "白领", "创作者"]
+    },
+    "hardware": {
+      "label": "硬件 / 智能设备",
+      "examples": ["数码配件", "智能家居", "户外装备"],
+      "high_value_keywords": ["参数", "评测", "和 X 对比", "翻车", "翻新", "配件"],
+      "competitor_question_pattern": ["X 测评", "X 翻车了吗", "X 和 Y 哪个值得买"],
+      "primary_audience": ["数码爱好者", "性价比党"]
+    }
+  }
+}

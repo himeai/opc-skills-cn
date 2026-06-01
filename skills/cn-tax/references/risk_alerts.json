@@ -1,0 +1,13 @@
+{
+  "version": "2026-06-01",
+  "items": [
+    {"id": "extreme_words", "level": "high", "rule": "申报数据出现 0 或异常波动（环比 / 同比 > 50%）会被风控关注；提前准备说明"},
+    {"id": "invoice_split", "level": "high", "rule": "禁止把同一笔业务拆分多张发票以规避免征额度（视为偷税）"},
+    {"id": "false_invoice", "level": "high", "rule": "禁止开具与实际经营业务不符的发票（虚开发票，刑事风险）"},
+    {"id": "personal_to_business", "level": "medium", "rule": "公司收入打到法人 / 股东个人账户：定性为分红或借款，分红需缴 20%，借款年底未还视同分红"},
+    {"id": "core_business_change", "level": "medium", "rule": "经营范围与开票项目长期不匹配会被风控比对"},
+    {"id": "long_zero_filing", "level": "medium", "rule": "连续 6 个月零申报且非新设企业，会被纳入异常监控"},
+    {"id": "social_insurance", "level": "medium", "rule": "用工但不缴社保：劳动监察 + 税务部门已联网比对"},
+    {"id": "cross_year_revenue", "level": "low", "rule": "跨年收入要按权责发生制确认，避免被认定调节利润"}
+  ]
+}

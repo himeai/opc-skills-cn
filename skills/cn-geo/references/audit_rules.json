@@ -1,0 +1,57 @@
+{
+  "version": "2026-06-01",
+  "dimensions": [
+    {
+      "name": "credible_source",
+      "label": "可信源建设",
+      "why": "AI 搜索倾向引用权威媒体 / 百科 / 知乎，没有外部来源 = 不存在",
+      "actions": [
+        {"id": "media_pr", "label": "向 36 氪 / 创业邦 / 钛媒体投稿一次产品 / 融资 PR", "stage": ["pre_launch", "early"], "priority": 1},
+        {"id": "wiki_entry", "label": "建立维基百科 / 百度百科词条（满足收录条件后）", "stage": ["growth", "mature"], "priority": 2},
+        {"id": "zhihu_org", "label": "开通知乎机构号，每月至少 4 条优质内容", "stage": ["early", "growth"], "priority": 1},
+        {"id": "industry_report", "label": "进入 1-2 个行业报告 / Top 榜单", "stage": ["growth", "mature"], "priority": 2}
+      ]
+    },
+    {
+      "name": "structured_content",
+      "label": "内容结构化",
+      "why": "AI 搜索更容易抓 标题+列表+表格+FAQ 结构的素材",
+      "actions": [
+        {"id": "site_faq", "label": "官网建立 FAQ 页（至少 15 条 Q&A，每条短于 200 字）", "stage": ["pre_launch", "early"], "priority": 1},
+        {"id": "compare_page", "label": "建立对比页（X vs Y）2-3 个", "stage": ["early", "growth"], "priority": 2},
+        {"id": "schema_org", "label": "为关键页面加 schema.org（FAQPage / Product / Organization）标注", "stage": ["early"], "priority": 2},
+        {"id": "outline_first", "label": "所有长文都用 H2/H3 + 列表 + 表格组织，不要纯散文", "stage": ["pre_launch", "early", "growth"], "priority": 1}
+      ]
+    },
+    {
+      "name": "brand_qa",
+      "label": "品牌问答覆盖",
+      "why": "GEO 的核心打法不是堆关键词，是覆盖问题",
+      "actions": [
+        {"id": "qa_skeleton", "label": "用 cn-geo qa.py 生成 20 条品牌问答素材", "stage": ["pre_launch", "early"], "priority": 1},
+        {"id": "zhihu_qa", "label": "把 10 条核心 QA 在知乎以问答形式发布或回答", "stage": ["early"], "priority": 1},
+        {"id": "wechat_qa", "label": "把同一批 QA 整合成 1 篇公众号深度文（标题包含核心问句）", "stage": ["early"], "priority": 2}
+      ]
+    },
+    {
+      "name": "multi_channel",
+      "label": "多平台分发一致性",
+      "why": "AI 搜索通过多平台引用做交叉验证；1 处声明 < 5 处声明",
+      "actions": [
+        {"id": "name_consistency", "label": "统一品牌名（中英文 + 大小写）在所有平台简介", "stage": ["pre_launch"], "priority": 1},
+        {"id": "channel_3", "label": "至少铺 3 个 PGC 平台（官网 + 知乎 + 公众号 / GitHub）", "stage": ["early"], "priority": 1},
+        {"id": "channel_5", "label": "扩展到 5+ 平台（加百家号 / 头条号 / 小红书 / B 站）", "stage": ["growth"], "priority": 2}
+      ]
+    },
+    {
+      "name": "monitor",
+      "label": "可监测性",
+      "why": "中文 AI 搜索没有 Search Console，但你必须知道 AI 现在怎么描述你",
+      "actions": [
+        {"id": "monthly_self_query", "label": "每月手动在豆包 / Kimi / 文心 / 元宝 / 秘塔搜一次品牌名 + 核心问句，记录回答质量", "stage": ["early", "growth", "mature"], "priority": 1},
+        {"id": "fix_misinfo", "label": "对错误描述：在权重最高的来源（官网 / 知乎机构号 / 百度百科）针对性纠正", "stage": ["growth", "mature"], "priority": 2},
+        {"id": "qa_log", "label": "维护一份 Q&A 真实回答库（你期望 AI 怎么回答），用作内容创作的源", "stage": ["early"], "priority": 1}
+      ]
+    }
+  ]
+}

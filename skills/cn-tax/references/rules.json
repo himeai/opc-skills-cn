@@ -1,0 +1,84 @@
+{
+  "version": "2026-06-01",
+  "_disclaimer": "本规则库仅作流程参考与近似计算，实际申报口径以电子税务局实时规则与主管税务机关意见为准。本 skill 不替代税务师/会计师。",
+  "entities": {
+    "individual_business": {
+      "label": "个体工商户",
+      "vat_default": "small_scale",
+      "income_tax_type": "individual_business_income",
+      "common_taxes": ["vat", "additional_tax", "individual_business_income", "stamp_duty"]
+    },
+    "small_scale_company": {
+      "label": "小规模纳税人（公司制）",
+      "vat_default": "small_scale",
+      "income_tax_type": "corporate",
+      "common_taxes": ["vat", "additional_tax", "corporate_income", "stamp_duty"]
+    },
+    "general_taxpayer_company": {
+      "label": "一般纳税人（公司制）",
+      "vat_default": "general",
+      "income_tax_type": "corporate",
+      "common_taxes": ["vat", "additional_tax", "corporate_income", "stamp_duty"]
+    },
+    "sole_proprietor": {
+      "label": "个人独资企业",
+      "vat_default": "small_scale",
+      "income_tax_type": "individual_business_income",
+      "common_taxes": ["vat", "additional_tax", "individual_business_income", "stamp_duty"]
+    }
+  },
+  "vat": {
+    "small_scale": {
+      "label": "小规模纳税人",
+      "current_rate": 0.01,
+      "_note": "2027 年底前增值税征收率 1%（政策延续，请以财政部/税务总局最新通知为准）",
+      "monthly_exempt_threshold": 100000,
+      "quarterly_exempt_threshold": 300000,
+      "exempt_note": "月销售额 ≤10 万 / 季度 ≤30 万：免征增值税（适用于开普票部分；专票部分仍需按 1% 缴纳）"
+    },
+    "general": {
+      "label": "一般纳税人",
+      "rates": {"sale_goods": 0.13, "modern_services": 0.06, "transportation": 0.09, "real_estate_rent": 0.09},
+      "_note": "一般纳税人增值税 = 销项 - 进项；本 skill 仅提供毛估，不建模进项票"
+    }
+  },
+  "additional_tax": {
+    "_note": "城建税 + 教育费附加 + 地方教育附加 = 增值税额 × (city + edu + local_edu)",
+    "rates": {
+      "urban_maintenance": {"city": 0.07, "county": 0.05, "other": 0.01},
+      "education_surcharge": 0.03,
+      "local_education_surcharge": 0.02
+    },
+    "small_scale_reduction": 0.5,
+    "small_scale_reduction_note": "小规模纳税人 / 小型微利企业增值税附加税费可享受减半（需关注地方文件）"
+  },
+  "corporate_income": {
+    "_note": "小型微利企业：年应纳税所得额 ≤300 万 / 从业人数 ≤300 人 / 资产总额 ≤5000 万",
+    "small_micro_threshold": {"income": 3000000, "headcount": 300, "assets": 50000000},
+    "small_micro_effective_rate": 0.05,
+    "small_micro_rate_note": "小型微利企业 2027 年底前减按 25% 计入应纳税所得额，按 20% 税率，综合实际税负 5%（政策延续，请以最新通知为准）",
+    "standard_rate": 0.25
+  },
+  "individual_business_income": {
+    "_note": "个体工商户 / 个独按经营所得 5 级超额累进征收个人所得税；2027 年底前 100 万以内部分减半征收",
+    "brackets": [
+      {"upper": 30000, "rate": 0.05, "deduct": 0},
+      {"upper": 90000, "rate": 0.10, "deduct": 1500},
+      {"upper": 300000, "rate": 0.20, "deduct": 10500},
+      {"upper": 500000, "rate": 0.30, "deduct": 40500},
+      {"upper": null, "rate": 0.35, "deduct": 65500}
+    ],
+    "halve_under_threshold": 1000000,
+    "halve_note": "应纳税所得额不超过 100 万的部分，减半征收（政策延续）"
+  },
+  "filing_calendar": {
+    "_note": "申报截止日为次月 / 次季度 15 日；遇法定节假日顺延。具体以电子税务局通知为准。",
+    "vat_small_scale": "quarterly",
+    "vat_general": "monthly",
+    "additional_tax": "follow_vat",
+    "corporate_income_prepay": "quarterly",
+    "corporate_income_settle": "annual_05_31",
+    "individual_business_income_prepay": "monthly_or_quarterly",
+    "individual_business_income_settle": "annual_03_31"
+  }
+}
