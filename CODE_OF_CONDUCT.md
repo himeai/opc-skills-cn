@@ -70,4 +70,4 @@
 
 ## 署名
 
-本行为准则改编自 Contributor Covenant 2.1，原文见 https://www.contributor-covenant.org/version/2/1/code_of_conduct.html。
+本行为准则改编自 Contributor Covenant 2.1，原文见： https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
