@@ -12,6 +12,21 @@
 - 凭证全部从环境变量读取
 - 不触碰仓库规定的合规红线
 
+## 1.1 先用流程型 skill
+
+在真正动手前，推荐先查看 [`.factory/skills/add-new-skill/SKILL.md`](../.factory/skills/add-new-skill/SKILL.md)。
+
+它适合两类人：
+
+- 人类 contributor：把新增 skill 的工作拆成 checklist
+- coding agent：先读取流程，再按仓库规范逐项落地
+
+若你是让 agent 执行，建议直接把这句话发给它：
+
+```text
+请先按 .factory/skills/add-new-skill/SKILL.md 的 checklist 完成新增 skill 流程。
+```
+
 ## 2. 命名规约
 
 命名只允许三档：
@@ -98,6 +113,8 @@ def get_credentials() -> dict[str, str | None]:
 - [`.claude-plugin/marketplace.json`](../.claude-plugin/marketplace.json)
 - [`README.md`](../README.md)
 - [`CHANGELOG.md`](../CHANGELOG.md)
+
+其中 `skills.json` 的字段说明与固定格式模板见 [skills-json-schema.md](./skills-json-schema.md)。
 
 ## 8. Logo 规范
 
