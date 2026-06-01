@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-7-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-8-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -43,6 +43,7 @@
 | ![kuaishou-ops](./skill-logos/kuaishou-ops.svg) | `kuaishou-ops` | 快手老铁口播脚本、3 段式分镜、30 分钟直播带货话术（本地模板 + 规则） | ✅ |
 | ![bilibili-ops](./skill-logos/bilibili-ops.svg) | `bilibili-ops` | B 站 12 分钟三段式长视频脚本、6 章节大纲与时间码、动态/专栏文案与 tag 推荐（本地模板 + 规则） | ✅ |
 | ![cn-content-compliance](./skill-logos/cn-content-compliance.svg) | `cn-content-compliance` | **中国内容合规自检**：广告法极限词 + 医疗/食品/化妆品/金融/教培行业红线 + 各平台禁用词，附改写建议（本地词库 + 规则） | ✅ |
+| ![cn-festival-calendar](./skill-logos/cn-festival-calendar.svg) | `cn-festival-calendar` | **节日内容决策引擎**：节日 / 节气 / 电商大促 / 监管敏感期 → 5 大平台错峰排期、内容角度、敏感期警告（本地数据） | ✅ |
 | | `cn-geo` | 中文 AI 搜索 GEO（豆包/Kimi/元宝/夸克/百度智能答案） | 📝 |
 | | `wepay-alipay` | 微信支付/支付宝下单、退款、对账、自动开票 | ⏳ |
 | | `cn-tax` | 个独/小规模季度税务申报、核定征收测算 | ⏳ |

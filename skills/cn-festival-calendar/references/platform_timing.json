@@ -1,0 +1,123 @@
+{
+  "version": "2026.06.01",
+  "_comment": "各平台基于公开运营白皮书与创作者中心指引整理的最佳发布时段；时段为 24h 制 HH:MM。tier=S 黄金 / A 优质 / B 可用。",
+  "platforms": {
+    "xiaohongshu": {
+      "display_name": "小红书",
+      "weekday_windows": [
+        {"start": "07:00", "end": "09:00", "tier": "S", "audience": "通勤上班族"},
+        {"start": "12:00", "end": "13:30", "tier": "A", "audience": "午休"},
+        {"start": "20:00", "end": "23:00", "tier": "S", "audience": "睡前刷"}
+      ],
+      "weekend_windows": [
+        {"start": "10:00", "end": "12:00", "tier": "S", "audience": "周末早起"},
+        {"start": "20:00", "end": "23:30", "tier": "S", "audience": "睡前刷"}
+      ],
+      "lead_time_days": 21,
+      "best_post_types": ["图文笔记", "生活方式", "种草"],
+      "notes": "种草内容需在购物节前 21 天开始铺，让算法有时间打标签。"
+    },
+    "douyin": {
+      "display_name": "抖音",
+      "weekday_windows": [
+        {"start": "07:00", "end": "08:30", "tier": "A", "audience": "上班路上"},
+        {"start": "12:00", "end": "13:00", "tier": "A", "audience": "午饭刷"},
+        {"start": "18:30", "end": "23:00", "tier": "S", "audience": "晚饭后到睡前的黄金长尾"}
+      ],
+      "weekend_windows": [
+        {"start": "10:00", "end": "12:00", "tier": "A"},
+        {"start": "19:00", "end": "23:30", "tier": "S"}
+      ],
+      "lead_time_days": 7,
+      "best_post_types": ["短视频", "口播", "剧情", "直播"],
+      "notes": "直播带货预告至少提前 3 天，开播预热视频需在 4-6 小时前发布。"
+    },
+    "kuaishou": {
+      "display_name": "快手",
+      "weekday_windows": [
+        {"start": "11:30", "end": "13:30", "tier": "A", "audience": "午休"},
+        {"start": "18:00", "end": "22:30", "tier": "S", "audience": "下沉市场晚饭后"}
+      ],
+      "weekend_windows": [
+        {"start": "10:00", "end": "13:00", "tier": "A"},
+        {"start": "18:00", "end": "23:00", "tier": "S"}
+      ],
+      "lead_time_days": 5,
+      "best_post_types": ["短视频", "老铁口播", "同城", "直播带货"],
+      "notes": "下沉市场作息相对早，晚 22 点后流量下降明显；同城内容工作日中午是高峰。"
+    },
+    "bilibili": {
+      "display_name": "B 站",
+      "weekday_windows": [
+        {"start": "12:00", "end": "13:00", "tier": "B"},
+        {"start": "19:00", "end": "23:00", "tier": "S", "audience": "学生党/上班族晚间"}
+      ],
+      "weekend_windows": [
+        {"start": "14:00", "end": "17:00", "tier": "A"},
+        {"start": "20:00", "end": "23:30", "tier": "S"}
+      ],
+      "lead_time_days": 10,
+      "best_post_types": ["中长视频", "知识区", "专栏", "动态"],
+      "notes": "中长视频需在节日话题热度爆发前 1-2 周发布，给算法和评论区发酵时间。"
+    },
+    "wechat_mp": {
+      "display_name": "微信公众号",
+      "weekday_windows": [
+        {"start": "07:30", "end": "09:00", "tier": "A", "audience": "通勤"},
+        {"start": "21:00", "end": "23:00", "tier": "S", "audience": "睡前长文"}
+      ],
+      "weekend_windows": [
+        {"start": "09:00", "end": "11:00", "tier": "A"},
+        {"start": "21:00", "end": "23:00", "tier": "S"}
+      ],
+      "lead_time_days": 3,
+      "best_post_types": ["长文", "干货", "节日复盘"],
+      "notes": "公众号读者偏长内容，节日当天发应景文章 + 当周复盘。"
+    }
+  },
+  "platform_angles": {
+    "_comment": "同一节日在不同平台应该用什么内容角度。key=festival_id_or_theme.",
+    "chunjie": {
+      "xiaohongshu": ["新年穿搭", "年货囤货", "年夜饭菜单", "新年仪式感"],
+      "douyin": ["返乡 vlog", "年俗挑战赛", "团圆瞬间"],
+      "kuaishou": ["回家路上", "老家年味", "家乡味道"],
+      "bilibili": ["年终复盘", "新春纪录片", "国风春节"],
+      "wechat_mp": ["新年祝福长文", "全年规划"]
+    },
+    "duanwu": {
+      "xiaohongshu": ["粽子做法", "礼盒推荐", "国风穿搭"],
+      "douyin": ["龙舟现场", "包粽子挑战", "南北甜咸之争"],
+      "kuaishou": ["家乡端午", "自家粽子"],
+      "bilibili": ["端午文化考据", "粽子米其林评测"],
+      "wechat_mp": ["端午文化长文", "送礼指南"]
+    },
+    "zhongqiu": {
+      "xiaohongshu": ["月饼礼盒", "中秋穿搭", "赏月攻略"],
+      "douyin": ["月饼测评", "团圆故事", "中秋夜直播"],
+      "kuaishou": ["回家过节", "家乡月饼"],
+      "bilibili": ["月饼评测", "中秋历史"],
+      "wechat_mp": ["中秋情感长文", "送礼指南"]
+    },
+    "618": {
+      "xiaohongshu": ["攻略", "比价清单", "已购实物分享"],
+      "douyin": ["开箱", "直播间引流", "限时秒杀"],
+      "kuaishou": ["源头工厂直播", "性价比好物"],
+      "bilibili": ["年中数码盘点", "深度评测"],
+      "wechat_mp": ["618 选购指南长文"]
+    },
+    "shuang_shi_yi": {
+      "xiaohongshu": ["全年最全攻略", "好物清单", "凑单笔记"],
+      "douyin": ["双 11 直播", "限时秒杀", "比价"],
+      "kuaishou": ["工厂直播", "老铁专属价"],
+      "bilibili": ["双 11 跨年盘点", "数码深评"],
+      "wechat_mp": ["双 11 长文指南", "理性消费"]
+    },
+    "_default": {
+      "xiaohongshu": ["攻略", "穿搭", "送礼"],
+      "douyin": ["短视频", "直播", "话题挑战"],
+      "kuaishou": ["家乡视角", "性价比"],
+      "bilibili": ["深度内容", "文化考据"],
+      "wechat_mp": ["长文复盘", "送礼指南"]
+    }
+  }
+}

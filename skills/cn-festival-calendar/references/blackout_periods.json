@@ -1,0 +1,129 @@
+{
+  "version": "2026.06.01",
+  "_comment": {
+    "annual": "每年固定/近似固定的敏感期；月日范围（M-D）。industries 字段表示对哪些行业造成限制，empty/missing 表示对所有行业。",
+    "fixed_dates": "单日重大事件，整个内容生态都需谨慎。",
+    "rolling": "随事件触发的临时窗口，本表只列代表性事件，运行时由代码判断。"
+  },
+  "annual": [
+    {
+      "id": "lianghui",
+      "name": "全国两会期间",
+      "start": "03-03",
+      "end": "03-15",
+      "level": "high",
+      "industries": ["finance", "medical", "education", "general"],
+      "blackout_topics": ["政策解读", "金融预测", "医疗效果对比", "教培营销", "境外政经议题"],
+      "safe_alternatives": ["产品使用教程", "用户故事", "幕后日常", "知识科普"],
+      "law_ref": "《互联网信息服务管理办法》+ 平台两会期间运营公告"
+    },
+    {
+      "id": "gaokao",
+      "name": "高考前后窗口",
+      "start": "06-05",
+      "end": "06-12",
+      "level": "medium",
+      "industries": ["education", "medical"],
+      "blackout_topics": ["教培推广", "提分培训广告", "状元营销", "压力贩卖", "焦虑感安利"],
+      "safe_alternatives": ["志愿填报科普（中性、非营销）", "高考往年回顾", "考后放松攻略"],
+      "law_ref": "教育部历年关于高考期间宣传管理的通知 + 双减政策"
+    },
+    {
+      "id": "qingming_blackout",
+      "name": "清明节祭扫期",
+      "start": "04-03",
+      "end": "04-07",
+      "level": "medium",
+      "industries": ["general"],
+      "blackout_topics": ["大型促销喊麦", "黑色幽默", "娱乐至死内容", "广告轰炸"],
+      "safe_alternatives": ["踏青出游", "春日时令", "追思类长文"],
+      "law_ref": "平台清明运营公约"
+    },
+    {
+      "id": "lieshi",
+      "name": "烈士纪念日",
+      "start": "09-30",
+      "end": "09-30",
+      "level": "high",
+      "industries": ["general"],
+      "blackout_topics": ["促销", "娱乐综艺", "戏谑历史", "插科打诨"],
+      "safe_alternatives": ["历史科普", "致敬类内容"],
+      "law_ref": "《英雄烈士保护法》+ 平台烈士纪念日运营公约"
+    },
+    {
+      "id": "national_mourning_buffer",
+      "name": "国家公祭日",
+      "start": "12-13",
+      "end": "12-13",
+      "level": "high",
+      "industries": ["general"],
+      "blackout_topics": ["促销", "娱乐", "段子"],
+      "safe_alternatives": ["历史科普", "致敬"],
+      "law_ref": "《南京大屠杀死难者国家公祭日法案》"
+    },
+    {
+      "id": "zhongkao",
+      "name": "中考期间",
+      "start": "06-15",
+      "end": "06-25",
+      "level": "low",
+      "industries": ["education"],
+      "blackout_topics": ["教培营销", "排名鸡汤"],
+      "safe_alternatives": ["志愿科普"],
+      "law_ref": "双减政策延伸"
+    },
+    {
+      "id": "jiaopei_zhuanxiang",
+      "name": "教培行业常态收紧",
+      "start": "01-01",
+      "end": "12-31",
+      "level": "medium",
+      "industries": ["education"],
+      "blackout_topics": ["学科类辅导广告", "提分承诺", "保过", "押题"],
+      "safe_alternatives": ["素质教育", "兴趣启蒙", "家庭教育（非学科）"],
+      "law_ref": "《关于进一步减轻义务教育阶段学生作业负担和校外培训负担的意见》"
+    },
+    {
+      "id": "yiliao_changtai",
+      "name": "医疗行业广告常态收紧",
+      "start": "01-01",
+      "end": "12-31",
+      "level": "medium",
+      "industries": ["medical", "cosmetics"],
+      "blackout_topics": ["疗效承诺", "治愈率", "前后对比图（部分平台）", "处方药营销"],
+      "safe_alternatives": ["科普", "就医指南", "医生人物纪实"],
+      "law_ref": "《广告法》+《互联网广告管理办法》"
+    },
+    {
+      "id": "jinrong_changtai",
+      "name": "金融行业宣传常态收紧",
+      "start": "01-01",
+      "end": "12-31",
+      "level": "medium",
+      "industries": ["finance"],
+      "blackout_topics": ["保本", "稳赚", "收益承诺", "无风险", "比较其他平台"],
+      "safe_alternatives": ["理财知识科普", "风险测评", "资产配置思路"],
+      "law_ref": "《金融产品网络营销管理办法（征求意见稿）》"
+    }
+  ],
+  "platform_specific": [
+    {
+      "id": "douyin_zhuanxiang",
+      "platform": "douyin",
+      "name": "抖音年度专项整治高发月（4月/10月）",
+      "windows": [{"start": "04-01", "end": "04-30"}, {"start": "10-01", "end": "10-31"}],
+      "level": "low",
+      "blackout_topics": ["低俗擦边", "摆拍剧情未标注", "误导性话术"],
+      "safe_alternatives": ["明确标注剧情/演绎", "原创真人出镜"]
+    },
+    {
+      "id": "xhs_qiyu",
+      "platform": "xiaohongshu",
+      "name": "小红书虚假种草专项",
+      "windows": [{"start": "01-01", "end": "12-31"}],
+      "level": "low",
+      "blackout_topics": ["未声明的商单", "虚构使用体验", "过度滤镜对比"],
+      "safe_alternatives": ["报备商单标注", "真实素人体验"]
+    }
+  ]
+}

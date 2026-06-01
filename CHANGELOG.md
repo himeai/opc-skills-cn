@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.6] - 2026-06-01
+
+### Added
+
+- cn-festival-calendar v0.1.0：中国节日 / 节气 / 电商大促 / 监管敏感期内容决策引擎——给定日期或节日，输出 5 大平台（小红书/抖音/快手/B站/公众号）的发布角度、错峰排期、敏感期警告（本地数据，覆盖 2024–2030 年农历对照）
+
 ## [0.0.5] - 2026-06-01
 
 ### Added

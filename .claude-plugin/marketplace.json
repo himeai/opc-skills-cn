@@ -117,6 +117,21 @@
         "python3 scripts/rules.py \"{input}\""
       ],
       "triggers": ["合规", "违禁词", "极限词", "广告法", "敏感词", "审核", "过审", "风险词", "改写"]
+    },
+    {
+      "name": "cn-festival-calendar",
+      "displayName": "中国节日内容决策引擎",
+      "description": "中国节日 / 节气 / 电商大促 / 监管敏感期内容决策引擎：给定日期或节日，输出 5 大平台的发布角度、错峰排期、敏感期警告，全部本地推理。",
+      "version": "0.1.0",
+      "path": "skills/cn-festival-calendar",
+      "logo": "skill-logos/cn-festival-calendar.svg",
+      "color": "#E63946",
+      "commands": [
+        "python3 scripts/today.py \"{input}\"",
+        "python3 scripts/plan.py \"{input}\"",
+        "python3 scripts/blackout.py \"{input}\""
+      ],
+      "triggers": ["节日营销", "节气", "电商大促", "618", "双11", "年货节", "春节", "中秋", "节日选题", "内容排期", "错峰发布", "两会", "清明", "敏感期", "节日日历"]
     }
   ]
 }

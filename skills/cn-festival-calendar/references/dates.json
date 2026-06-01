@@ -1,0 +1,98 @@
+{
+  "version": "2026.06.01",
+  "_comment": "Lunar festivals → Gregorian dates. Source: 中科院授时中心 / 香港天文台公开历表。Coverage 2024-2030; please refresh annually.",
+  "_source": "https://www.timeanddate.com/calendar/?year=YYYY&country=41 + 中科院紫金山天文台",
+  "lunar_to_solar": {
+    "2024": {
+      "chunjie": "2024-02-10",
+      "yuanxiao": "2024-02-24",
+      "longtaitou": "2024-03-11",
+      "duanwu": "2024-06-10",
+      "qixi": "2024-08-10",
+      "zhongyuan": "2024-08-18",
+      "zhongqiu": "2024-09-17",
+      "chongyang": "2024-10-11",
+      "laba": "2025-01-07",
+      "xiaonian": "2025-01-22",
+      "chuxi": "2025-01-28"
+    },
+    "2025": {
+      "chunjie": "2025-01-29",
+      "yuanxiao": "2025-02-12",
+      "longtaitou": "2025-03-01",
+      "duanwu": "2025-05-31",
+      "qixi": "2025-08-29",
+      "zhongyuan": "2025-09-06",
+      "zhongqiu": "2025-10-06",
+      "chongyang": "2025-10-29",
+      "laba": "2026-01-26",
+      "xiaonian": "2026-02-09",
+      "chuxi": "2026-02-16"
+    },
+    "2026": {
+      "chunjie": "2026-02-17",
+      "yuanxiao": "2026-03-03",
+      "longtaitou": "2026-03-20",
+      "duanwu": "2026-06-19",
+      "qixi": "2026-08-19",
+      "zhongyuan": "2026-08-27",
+      "zhongqiu": "2026-09-25",
+      "chongyang": "2026-10-19",
+      "laba": "2027-01-15",
+      "xiaonian": "2027-01-30",
+      "chuxi": "2027-02-05"
+    },
+    "2027": {
+      "chunjie": "2027-02-06",
+      "yuanxiao": "2027-02-20",
+      "longtaitou": "2027-03-09",
+      "duanwu": "2027-06-09",
+      "qixi": "2027-08-09",
+      "zhongyuan": "2027-08-17",
+      "zhongqiu": "2027-09-15",
+      "chongyang": "2027-10-08",
+      "laba": "2028-01-04",
+      "xiaonian": "2028-01-19",
+      "chuxi": "2028-01-25"
+    },
+    "2028": {
+      "chunjie": "2028-01-26",
+      "yuanxiao": "2028-02-09",
+      "longtaitou": "2028-02-26",
+      "duanwu": "2028-05-28",
+      "qixi": "2028-08-26",
+      "zhongyuan": "2028-09-03",
+      "zhongqiu": "2028-10-03",
+      "chongyang": "2028-10-26",
+      "laba": "2029-01-22",
+      "xiaonian": "2029-02-06",
+      "chuxi": "2029-02-12"
+    },
+    "2029": {
+      "chunjie": "2029-02-13",
+      "yuanxiao": "2029-02-27",
+      "longtaitou": "2029-03-16",
+      "duanwu": "2029-06-16",
+      "qixi": "2029-08-16",
+      "zhongyuan": "2029-08-24",
+      "zhongqiu": "2029-09-22",
+      "chongyang": "2029-10-16",
+      "laba": "2030-01-12",
+      "xiaonian": "2030-01-26",
+      "chuxi": "2030-02-02"
+    },
+    "2030": {
+      "chunjie": "2030-02-03",
+      "yuanxiao": "2030-02-17",
+      "longtaitou": "2030-03-05",
+      "duanwu": "2030-06-05",
+      "qixi": "2030-08-05",
+      "zhongyuan": "2030-08-13",
+      "zhongqiu": "2030-09-12",
+      "chongyang": "2030-10-05",
+      "laba": "2031-01-01",
+      "xiaonian": "2031-01-15",
+      "chuxi": "2031-01-22"
+    }
+  }
+}

@@ -201,6 +201,31 @@
         "python3 scripts/rules.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-content-compliance"}
+    },
+    {
+      "name": "cn-festival-calendar",
+      "version": "0.1.0",
+      "description": "中国节日/节气/电商大促/监管敏感期内容决策引擎：给定日期或节日，输出 5 大平台的发布角度、错峰排期、敏感期警告，全部本地推理。",
+      "logo": "skill-logos/cn-festival-calendar.svg",
+      "icon": "calendar",
+      "color": "E63946",
+      "triggers": ["节日营销", "节气", "电商大促", "618", "双11", "年货节", "春节", "中秋", "节日选题", "内容排期", "错峰发布", "两会", "清明", "烈士纪念日", "敏感期", "过节发什么", "节日日历"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-festival-calendar -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-festival-calendar"}
+      },
+      "commands": [
+        "python3 scripts/today.py \"{input}\"",
+        "python3 scripts/plan.py \"{input}\"",
+        "python3 scripts/blackout.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-festival-calendar"}
     }
   ]
 }
