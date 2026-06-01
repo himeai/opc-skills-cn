@@ -1,0 +1,82 @@
+{
+  "_comment": "Style metadata: BGM/subtitle/visual hints to drive storyboard and CapCut JSON skeleton.",
+  "default_duration_sec": 60,
+  "default_shot_count": 6,
+  "styles": {
+    "knowhow": {
+      "label": "干货口播",
+      "subtitle_color": "#FFFFFF",
+      "subtitle_bg": "#000000",
+      "subtitle_font_size": 72,
+      "bgm_keyword": "lofi-knowledge",
+      "shot_visuals": [
+        "正脸口播 / 中景",
+        "屏幕录制 / 数据图",
+        "对比镜头 / 左右分屏",
+        "白板手写 / 重点圈出",
+        "正脸口播 / 收尾点睛",
+        "字卡 + 二维码 / CTA"
+      ]
+    },
+    "效率": {
+      "label": "效率工具",
+      "subtitle_color": "#FFE600",
+      "subtitle_bg": "#1A1A1A",
+      "subtitle_font_size": 68,
+      "bgm_keyword": "uplifting-electronic",
+      "shot_visuals": [
+        "正脸口播 / 桌面后景",
+        "屏幕录制 / 操作 demo",
+        "时间对比图 / before-after",
+        "工具截图 / 高亮按钮",
+        "总结字卡 / 三步骤",
+        "字卡 + CTA / 评论区扣 1"
+      ]
+    },
+    "故事": {
+      "label": "故事讲述",
+      "subtitle_color": "#FFFFFF",
+      "subtitle_bg": "#000000",
+      "subtitle_font_size": 60,
+      "bgm_keyword": "emotional-piano",
+      "shot_visuals": [
+        "环境空镜 / 引入",
+        "人物中景 / 正脸口播",
+        "回忆画面 / 模糊滤镜",
+        "转折点 / 特写 + 字幕",
+        "现场反应 / 对话切片",
+        "落幕字卡 / 留白"
+      ]
+    },
+    "测评": {
+      "label": "横向测评",
+      "subtitle_color": "#FFFFFF",
+      "subtitle_bg": "#0066CC",
+      "subtitle_font_size": 64,
+      "bgm_keyword": "minimal-percussion",
+      "shot_visuals": [
+        "产品平铺 / 俯拍",
+        "逐件展示 / 微距",
+        "对比表格 / 屏幕填充",
+        "实测使用 / 手部特写",
+        "结论字卡 / 推荐榜",
+        "购买信息字卡 / CTA"
+      ]
+    },
+    "避雷": {
+      "label": "避雷提醒",
+      "subtitle_color": "#FFFF00",
+      "subtitle_bg": "#CC0000",
+      "subtitle_font_size": 72,
+      "bgm_keyword": "deep-strings",
+      "shot_visuals": [
+        "警告字卡 / 大字号",
+        "案例画面 / 模糊处理",
+        "错误做法 / 红叉标注",
+        "正确做法 / 绿勾标注",
+        "三点总结 / 字卡轮播",
+        "转发引导字卡 / CTA"
+      ]
+    }
+  }
+}

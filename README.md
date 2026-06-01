@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-2-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-4-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -38,8 +38,8 @@
 |---|---|---|---|
 | ![cn-city-picker](./skill-logos/cn-city-picker.svg) | `cn-city-picker` | **创业城市选择决策**：八维评分（税收/生活成本/气候/政策/产业/人才/基建/行政）从重点城市筛 Top 3-5，并给出落地 checklist | ✅ |
 | ![wechat-ops](./skill-logos/wechat-ops.svg) | `wechat-ops` | 微信公众号 access_token 缓存、图文草稿、自定义菜单、客服文本回复（仅官方开放 API） | ✅ |
-| | `xiaohongshu-ops` | 小红书选题、笔记生成、关键词排名、热点追踪 | 📝 |
-| | `douyin-ops` | 抖音/视频号脚本→分镜→剪映工程→热点话题 | 📝 |
+| ![xiaohongshu-ops](./skill-logos/xiaohongshu-ops.svg) | `xiaohongshu-ops` | 小红书选题工厂、笔记结构化生成、关键词与 tag 推荐（本地种子库 + 规则模板） | ✅ |
+| ![douyin-ops](./skill-logos/douyin-ops.svg) | `douyin-ops` | 抖音/视频号 60 秒口播脚本、6 镜分镜表、剪映工程 JSON 骨架（本地模板 + 规则） | ✅ |
 | | `cn-geo` | 中文 AI 搜索 GEO（豆包/Kimi/元宝/夸克/百度智能答案） | 📝 |
 | | `wepay-alipay` | 微信支付/支付宝下单、退款、对账、自动开票 | ⏳ |
 | | `cn-tax` | 个独/小规模季度税务申报、核定征收测算 | ⏳ |
@@ -220,8 +220,8 @@ def get_wechat_mp_credentials() -> dict:
 
 ## 路线图快照
 
-- 当前已实现：[`cn-city-picker`](./skills/cn-city-picker/SKILL.md)、[`wechat-ops`](./skills/wechat-ops/SKILL.md)
-- 下一批优先：`xiaohongshu-ops`、`douyin-ops`、`cn-geo`
+- 当前已实现：[`cn-city-picker`](./skills/cn-city-picker/SKILL.md)、[`wechat-ops`](./skills/wechat-ops/SKILL.md)、[`xiaohongshu-ops`](./skills/xiaohongshu-ops/SKILL.md)、[`douyin-ops`](./skills/douyin-ops/SKILL.md)
+- 下一批优先：`cn-geo`、`wepay-alipay`、`cn-tax`
 - 详细分期与风险评估：见 [ROADMAP.md](./ROADMAP.md)
 
 | 阶段 | 时间 | 目标 |

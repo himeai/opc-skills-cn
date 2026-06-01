@@ -1,0 +1,51 @@
+{
+  "_comment": "Note structure templates by tone. Each defines body sections and tag-style guidance.",
+  "tones": {
+    "经验分享": {
+      "title_patterns": [
+        "{emoji} {audience}必看！{topic}的真实经验",
+        "用了半年才敢说：{topic}",
+        "{topic}｜踩过的坑都写在这了"
+      ],
+      "cover_copy": "亲测有效",
+      "body_outline": ["开篇钩子", "我的背景", "踩过的坑", "现在的做法", "结果与反馈", "总结提醒"]
+    },
+    "测评口吻": {
+      "title_patterns": [
+        "横评 {n} 款 {category}，最值的是它",
+        "{topic}｜参数 + 实测一篇看完",
+        "贵的真的更好？{topic} 实测对比"
+      ],
+      "cover_copy": "实测对比",
+      "body_outline": ["测评背景", "对比维度", "逐项实测", "数据汇总", "结论与推荐"]
+    },
+    "教程口吻": {
+      "title_patterns": [
+        "{audience} 也能 {action}：保姆级教程",
+        "{topic}｜{n} 步上手",
+        "0 基础学会 {topic}，跟着做就行"
+      ],
+      "cover_copy": "保姆教程",
+      "body_outline": ["适合谁看", "需要准备", "分步操作", "常见问题", "进阶建议"]
+    },
+    "种草口吻": {
+      "title_patterns": [
+        "宝藏！{topic} 我吹爆",
+        "{topic} 凭什么让我回购 {n} 次",
+        "新发现｜{topic}"
+      ],
+      "cover_copy": "回购种草",
+      "body_outline": ["第一印象", "使用感", "和同类对比", "适合谁", "购买建议"]
+    },
+    "避雷口吻": {
+      "title_patterns": [
+        "⚠️ {topic} 千万别踩这 {n} 个雷",
+        "{topic}｜避雷指南",
+        "买之前一定要看：{topic} 的雷"
+      ],
+      "cover_copy": "避雷预警",
+      "body_outline": ["背景说明", "踩雷清单", "原因分析", "替代方案", "总结提醒"]
+    }
+  },
+  "default_emojis": ["🔥", "✨", "⚠️", "💡", "📌", "🌿"]
+}

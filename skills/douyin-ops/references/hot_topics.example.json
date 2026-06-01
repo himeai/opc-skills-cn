@@ -1,0 +1,11 @@
+{
+  "_comment": "User-maintained example of hot topics. The skill never crawls Douyin; users update this file from their own observations.",
+  "updated_at": "2026-06-01",
+  "topics": [
+    {"topic": "AI 副业入门", "category": "副业", "audience": "职场新人"},
+    {"topic": "ChatGPT 提效工作流", "category": "效率", "audience": "白领"},
+    {"topic": "敏感肌平价精华", "category": "护肤", "audience": "25-30 岁女性"},
+    {"topic": "一人公司起步指南", "category": "创业", "audience": "想创业打工人"},
+    {"topic": "60 元婴儿辅食工具", "category": "母婴", "audience": "新手妈妈"}
+  ]
+}

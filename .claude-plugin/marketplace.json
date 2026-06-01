@@ -42,6 +42,36 @@
         "python3 scripts/reply.py \"{input}\""
       ],
       "triggers": ["公众号", "推文", "图文消息", "菜单", "客服回复", "草稿", "订阅号", "服务号"]
+    },
+    {
+      "name": "xiaohongshu-ops",
+      "displayName": "小红书内容运营",
+      "description": "小红书选题工厂、笔记结构化生成、关键词与 tag 推荐，全部基于本地种子库与规则模型，不爬抓不刷量。",
+      "version": "0.1.0",
+      "path": "skills/xiaohongshu-ops",
+      "logo": "skill-logos/xiaohongshu-ops.svg",
+      "color": "#FF2442",
+      "commands": [
+        "python3 scripts/topic.py \"{input}\"",
+        "python3 scripts/note.py \"{input}\"",
+        "python3 scripts/keywords.py \"{input}\""
+      ],
+      "triggers": ["小红书", "笔记", "xhs", "爆款标题", "选题", "关键词", "tag", "种草文案", "封面文案"]
+    },
+    {
+      "name": "douyin-ops",
+      "displayName": "抖音/视频号脚本工厂",
+      "description": "60 秒口播脚本、6 镜分镜表、剪映工程 JSON 骨架，全部基于本地模板与规则模型，不爬抓不刷量。",
+      "version": "0.1.0",
+      "path": "skills/douyin-ops",
+      "logo": "skill-logos/douyin-ops.svg",
+      "color": "#FE2C55",
+      "commands": [
+        "python3 scripts/script.py \"{input}\"",
+        "python3 scripts/storyboard.py \"{input}\"",
+        "python3 scripts/capcut.py \"{input}\""
+      ],
+      "triggers": ["抖音", "视频号", "短视频", "口播", "脚本", "分镜", "剪映", "capcut", "爆款视频"]
     }
   ]
 }

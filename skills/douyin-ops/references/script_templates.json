@@ -1,0 +1,82 @@
+{
+  "_comment": "Douyin/Shipinhao 60s vertical short-video script templates. Each style maps to a 5-section formula.",
+  "sections": ["opening", "hook", "twist", "conclusion", "cta"],
+  "styles": {
+    "knowhow": {
+      "label": "干货口播",
+      "tone": "冷静、信息密度高",
+      "subtitle_style": "黑底白字大字号",
+      "bgm_hint": "lo-fi 节奏感",
+      "templates": {
+        "opening": "{audience} 注意，今天讲清楚 {topic}。",
+        "hook": "90% 的人在第一步就错了，错在以为 {topic} 是 {misconception}。",
+        "twist": "真正的做法是 {method}，我用 {duration} 实测过。",
+        "conclusion": "记住三件事：第一 {point1}，第二 {point2}，第三 {point3}。",
+        "cta": "觉得有用点个赞，下条聊 {next_topic}。"
+      }
+    },
+    "效率": {
+      "label": "效率工具",
+      "tone": "兴奋、节奏快",
+      "subtitle_style": "彩色字号渐变",
+      "bgm_hint": "电子节拍",
+      "templates": {
+        "opening": "{audience}，我是怎么用一个工具把 {topic} 时间砍一半的。",
+        "hook": "之前一周做完的 {topic}，现在 1 小时搞定。",
+        "twist": "关键就是 {method}，多数人没用对。",
+        "conclusion": "三步：{point1}、{point2}、{point3}。",
+        "cta": "需要工具清单的扣 1，下条出对比。"
+      }
+    },
+    "故事": {
+      "label": "故事讲述",
+      "tone": "口语、有起伏",
+      "subtitle_style": "电影黑边字幕",
+      "bgm_hint": "情绪钢琴",
+      "templates": {
+        "opening": "我跟你讲一件关于 {topic} 的事。",
+        "hook": "当时我以为 {misconception}，结果差点踩大坑。",
+        "twist": "后来我才明白，{method} 才是答案。",
+        "conclusion": "回头看，无非就 {point1}、{point2}、{point3}。",
+        "cta": "你也踩过这个坑吗？评论区聊聊。"
+      }
+    },
+    "测评": {
+      "label": "横向测评",
+      "tone": "客观、对比",
+      "subtitle_style": "表格字幕",
+      "bgm_hint": "极简鼓点",
+      "templates": {
+        "opening": "{topic} 我测了 {n} 款，今天告诉你哪个最值。",
+        "hook": "别看广告，{misconception} 是最大的误区。",
+        "twist": "实测后，{method} 这一项差距最大。",
+        "conclusion": "选购看三点：{point1}、{point2}、{point3}。",
+        "cta": "需要完整对比表的评论区扣『要』。"
+      }
+    },
+    "避雷": {
+      "label": "避雷提醒",
+      "tone": "严肃、警告感",
+      "subtitle_style": "红黄警告色",
+      "bgm_hint": "低音弦乐",
+      "templates": {
+        "opening": "{audience} 在 {topic} 上千万别犯这个错。",
+        "hook": "我身边 3 个人都掉过这个坑，损失最少的也 {loss}。",
+        "twist": "真正应该做的是 {method}，不是 {misconception}。",
+        "conclusion": "记住三点：{point1}、{point2}、{point3}。",
+        "cta": "转给那个还在犹豫的朋友。"
+      }
+    }
+  },
+  "default_filler": {
+    "misconception": "随便选就行",
+    "method": "先列清单再决策",
+    "duration": "一个月",
+    "point1": "看清需求",
+    "point2": "对比 3 款",
+    "point3": "小成本试错",
+    "loss": "几千块",
+    "next_topic": "进阶玩法",
+    "n": "5"
+  }
+}

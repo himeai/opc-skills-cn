@@ -68,6 +68,60 @@
         "python3 scripts/reply.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/wechat-ops"}
+    },
+    {
+      "name": "xiaohongshu-ops",
+      "version": "0.1.0",
+      "description": "小红书内容生产副驾驶：选题工厂、笔记结构化生成、关键词与 tag 推荐，全部基于本地种子库与规则模型，不爬抓不刷量。",
+      "logo": "skill-logos/xiaohongshu-ops.svg",
+      "icon": "book-open",
+      "color": "FF2442",
+      "triggers": ["小红书", "笔记", "xhs", "爆款标题", "选题", "话题", "关键词", "tag", "种草文案", "封面文案", "薯队长"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "api_key",
+        "keys": [
+          {"env": "XIAOHONGSHU_OPS_DANDELION_TOKEN", "url": "https://pgy.xiaohongshu.com", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill xiaohongshu-ops -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill xiaohongshu-ops"}
+      },
+      "commands": [
+        "python3 scripts/topic.py \"{input}\"",
+        "python3 scripts/note.py \"{input}\"",
+        "python3 scripts/keywords.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/xiaohongshu-ops"}
+    },
+    {
+      "name": "douyin-ops",
+      "version": "0.1.0",
+      "description": "抖音/视频号短视频副驾驶：60 秒口播脚本、6 镜分镜表、剪映工程 JSON 骨架，全部基于本地模板与规则模型，不爬抓不刷量。",
+      "logo": "skill-logos/douyin-ops.svg",
+      "icon": "video",
+      "color": "FE2C55",
+      "triggers": ["抖音", "视频号", "短视频", "口播", "脚本", "分镜", "剪映", "capcut", "热点话题", "tag", "爆款视频"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "api_key",
+        "keys": [
+          {"env": "DOUYIN_OPS_OPEN_TOKEN", "url": "https://developer.open-douyin.com", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill douyin-ops -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill douyin-ops"}
+      },
+      "commands": [
+        "python3 scripts/script.py \"{input}\"",
+        "python3 scripts/storyboard.py \"{input}\"",
+        "python3 scripts/capcut.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/douyin-ops"}
     }
   ]
 }

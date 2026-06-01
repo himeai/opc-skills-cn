@@ -1,0 +1,66 @@
+{
+  "_comment": "Topic seed library: angles + hook patterns shared across industries. Industry-specific niches override generic ones.",
+  "angles": [
+    {"id": "pain_point", "name": "痛点直击", "hook": "{audience}总在 {pain} 上踩坑？"},
+    {"id": "compare", "name": "横向对比", "hook": "{n} 款 {category}，我用半年挑出这 3 支"},
+    {"id": "experience", "name": "亲身经历", "hook": "{audience} 的我，靠 {action} {result}"},
+    {"id": "avoid_pit", "name": "避雷指南", "hook": "{category} 这 5 个雷千万别踩"},
+    {"id": "cheap_solve", "name": "平价解决", "hook": "{budget} 元搞定 {pain}，比 {benchmark} 还省"},
+    {"id": "before_after", "name": "前后对比", "hook": "用 {duration} 后，我的 {metric} 变化"},
+    {"id": "checklist", "name": "清单合集", "hook": "{audience} 必备的 {n} 个 {category}"},
+    {"id": "myth_break", "name": "认知颠覆", "hook": "{popular} 是谎言？真相是 …"},
+    {"id": "tutorial", "name": "保姆教程", "hook": "{action} 0 基础也能学会的 {n} 步"},
+    {"id": "lifestyle", "name": "生活方式", "hook": "做 {role} 的我，这样安排一天"}
+  ],
+  "industries": {
+    "护肤": {
+      "default_pain": "敏感泛红",
+      "category": "精华",
+      "benchmark": "大牌正装",
+      "metric": "肤质",
+      "duration": "30 天"
+    },
+    "母婴": {
+      "default_pain": "辅食工具难选",
+      "category": "辅食工具",
+      "benchmark": "进口品牌",
+      "metric": "宝宝接受度",
+      "duration": "1 个月"
+    },
+    "数码": {
+      "default_pain": "选错踩坑",
+      "category": "外设",
+      "benchmark": "万元配置",
+      "metric": "效率",
+      "duration": "两周"
+    },
+    "穿搭": {
+      "default_pain": "怎么穿都显胖",
+      "category": "夏装",
+      "benchmark": "网红同款",
+      "metric": "身材显瘦度",
+      "duration": "一周"
+    },
+    "美食": {
+      "default_pain": "做饭不好吃",
+      "category": "家常菜",
+      "benchmark": "外卖",
+      "metric": "口味",
+      "duration": "10 天"
+    },
+    "健身": {
+      "default_pain": "练完没效果",
+      "category": "居家训练",
+      "benchmark": "健身房私教",
+      "metric": "围度",
+      "duration": "21 天"
+    },
+    "副业": {
+      "default_pain": "赚不到钱",
+      "category": "副业方向",
+      "benchmark": "传统兼职",
+      "metric": "月收入",
+      "duration": "3 个月"
+    }
+  }
+}
