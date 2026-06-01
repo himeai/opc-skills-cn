@@ -64,6 +64,8 @@ npx skills add file:///ABSOLUTE/PATH/TO/opc-skills-cn --skill cn-city-picker -y 
 
 ## 7. 下一步
 
+- 如果你准备新增一个 skill，推荐先打开 [`.factory/skills/add-new-skill/SKILL.md`](../.factory/skills/add-new-skill/SKILL.md)，按里面的 checklist 执行。
+- 如果你需要核对注册表格式，先看 [skills.json 字段说明](./skills-json-schema.md)。
 - 想开发新 skill：看 [skill-authoring.md](./skill-authoring.md)
 - 想理解合规边界：看 [compliance.md](./compliance.md)
 - 想查看路线图：看 [../ROADMAP.md](../ROADMAP.md)
