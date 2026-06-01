@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.8] - 2026-06-01
+
+### Added
+
+- wecom-crm v0.1.0：企业微信客户运营——客户联系、客户标签、客户群、欢迎语、合规群发、企业朋友圈，仅包装企业微信官方 OpenAPI；按模块隔离的 access_token 文件缓存；禁止批量加好友 / 群发骚扰 / 协议逆向
+- cn-recruit v0.1.0：中国小公司招聘助手（本地规则版）——JD 生成（6 大 role_family × 3 tone × 5 seniority）、候选人 5 维加权评分（技能 35/经验 20/行业 15/稳定性 15/亮点 15）、结构化面试题库、招聘看板与 SLA 告警，全部本地推理
+- zhihu-ops v0.1.0：知乎内容生产副驾驶（本地规则版）——5 种长回答体裁骨架（科普/干货/经验/对比/反驳）、4 种专栏长文骨架、6 大领域选题工厂、领域 tag 推荐与 canonical 化，不爬抓不刷量
+
 ## [0.0.7] - 2026-06-01
 
 ### Added

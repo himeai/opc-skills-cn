@@ -1,0 +1,24 @@
+{
+  "_comment": "招聘看板默认列与 SLA 规则。",
+  "stages": [
+    {"key": "sourcing", "label": "渠道触达", "sla_days": 3, "owner": "HR"},
+    {"key": "screening", "label": "简历筛选", "sla_days": 2, "owner": "HRBP"},
+    {"key": "phone", "label": "电话沟通", "sla_days": 3, "owner": "HRBP"},
+    {"key": "tech1", "label": "一面（专业）", "sla_days": 5, "owner": "用人经理"},
+    {"key": "tech2", "label": "二面（交叉）", "sla_days": 5, "owner": "对口业务"},
+    {"key": "leader", "label": "终面（负责人）", "sla_days": 5, "owner": "团队负责人"},
+    {"key": "offer", "label": "Offer 沟通", "sla_days": 3, "owner": "HR"},
+    {"key": "onboard", "label": "入职跟进", "sla_days": 30, "owner": "HRBP"}
+  ],
+  "warning_rules": [
+    {"key": "stage_overdue", "rule": "days_in_stage > sla_days", "level": "warn", "advice": "停留时间超过 SLA，建议立即推进或调整候选人状态"},
+    {"key": "pipeline_too_thin", "rule": "active_candidates < 3 && open_days > 14", "level": "warn", "advice": "候选人池过薄且开放超过 2 周，建议扩展渠道 / 提高悬赏"},
+    {"key": "offer_long_silence", "rule": "stage=='offer' && days_in_stage > 7", "level": "block", "advice": "Offer 阶段超过 7 天无回复，需要主动跟进或假设流失"}
+  ],
+  "default_kpis": [
+    {"key": "fill_rate", "label": "岗位关闭率", "target": "≥ 60% / 季度"},
+    {"key": "time_to_hire", "label": "平均填补天数", "target": "≤ 35 天"},
+    {"key": "channel_efficiency", "label": "渠道转化率", "target": "热门渠道电话→面试 ≥ 30%"},
+    {"key": "offer_accept_rate", "label": "Offer 接受率", "target": "≥ 70%"}
+  ]
+}

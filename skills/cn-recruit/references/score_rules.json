@@ -1,0 +1,65 @@
+{
+  "_comment": "候选人筛选评分规则，用于把简历结构化字段映射成 0-100 分。",
+  "axes": {
+    "match_skill": {
+      "label": "技能匹配",
+      "weight": 35,
+      "rules": [
+        {"if": "must_have_hit_ratio>=1.0", "score": 100},
+        {"if": "must_have_hit_ratio>=0.75", "score": 80},
+        {"if": "must_have_hit_ratio>=0.5", "score": 55},
+        {"if": "must_have_hit_ratio>=0.25", "score": 30},
+        {"else": true, "score": 10}
+      ]
+    },
+    "match_seniority": {
+      "label": "经验年限匹配",
+      "weight": 20,
+      "rules": [
+        {"if": "years_in_band==true", "score": 100},
+        {"if": "years_one_band_off==true", "score": 65},
+        {"else": true, "score": 25}
+      ]
+    },
+    "industry_fit": {
+      "label": "行业相关度",
+      "weight": 15,
+      "rules": [
+        {"if": "industry_match==true", "score": 100},
+        {"if": "industry_adjacent==true", "score": 60},
+        {"else": true, "score": 30}
+      ]
+    },
+    "stability": {
+      "label": "履历稳定性",
+      "weight": 15,
+      "rules": [
+        {"if": "avg_tenure_years>=2.5", "score": 100},
+        {"if": "avg_tenure_years>=1.5", "score": 75},
+        {"if": "avg_tenure_years>=1.0", "score": 50},
+        {"else": true, "score": 25}
+      ]
+    },
+    "highlights": {
+      "label": "亮点 / 作品集",
+      "weight": 15,
+      "rules": [
+        {"if": "highlights_count>=3", "score": 100},
+        {"if": "highlights_count>=2", "score": 75},
+        {"if": "highlights_count>=1", "score": 50},
+        {"else": true, "score": 20}
+      ]
+    }
+  },
+  "verdicts": [
+    {"min_score": 85, "verdict": "强推", "advice": "尽快约第一轮，避免竞品挖走"},
+    {"min_score": 70, "verdict": "可面", "advice": "正常排期，建议结构化面试 + 作品集深聊"},
+    {"min_score": 50, "verdict": "电话沟通", "advice": "先电话 30 分钟看动机与软实力，再决定是否进流程"},
+    {"min_score": 0,  "verdict": "暂不合适", "advice": "礼貌拒绝，加入人才池，3-6 个月后再看"}
+  ],
+  "red_flags": [
+    {"key": "frequent_jobhop", "rule": "avg_tenure_years<1.0 && job_count>=4", "note": "近 5 段经历平均不到 1 年，需在面试里追问原因"},
+    {"key": "title_inflation", "rule": "title_seniority>actual_seniority", "note": "title 与实际年限不符，警惕 inflated CV"},
+    {"key": "gap_unexplained", "rule": "max_gap_months>=6 && gap_explained==false", "note": "存在未说明的 6 个月以上空窗"}
+  ]
+}

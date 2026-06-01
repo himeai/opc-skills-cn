@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="wecom-crm logo">
+  <rect width="24" height="24" fill="#2D7DF6"/>
+  <path d="M4 7h11v8H8l-3 2v-2H4z" fill="#FFFFFF"/>
+  <rect x="7" y="10" width="2" height="2" fill="#2D7DF6"/>
+  <rect x="11" y="10" width="2" height="2" fill="#2D7DF6"/>
+  <circle cx="18" cy="9" r="2.5" fill="#FFFFFF"/>
+  <path d="M14 18c0-2.2 1.8-4 4-4s4 1.8 4 4" fill="#FFFFFF"/>
+</svg>

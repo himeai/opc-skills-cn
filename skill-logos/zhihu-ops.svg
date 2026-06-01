@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="zhihu-ops logo">
+  <rect width="24" height="24" fill="#0066FF"/>
+  <path d="M5 7h6v2H7v8.5L9.5 15H11V7" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M14 7h5v8h-2.5l-1.5 2v-2H14z" fill="#FFFFFF"/>
+  <rect x="15" y="9" width="3" height="0.9" fill="#0066FF"/>
+  <rect x="15" y="11" width="3" height="0.9" fill="#0066FF"/>
+  <rect x="15" y="13" width="2" height="0.9" fill="#0066FF"/>
+</svg>

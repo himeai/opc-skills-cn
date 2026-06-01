@@ -1,0 +1,65 @@
+{
+  "_comment": "知乎选题种子库 + 领域 tag 推荐。topic_seeds 按行业域（domain）+ 选题角度（angle）组织。",
+  "domains": {
+    "互联网产品": {
+      "tags": ["互联网", "产品经理", "用户体验", "增长", "SaaS"],
+      "audiences": ["产品经理", "互联网从业者", "创业者", "学生"],
+      "angles": [
+        {"angle": "趋势解读", "templates": ["如何看待 {target} 在 {year} 的新动作？", "{target} 还能继续高增长吗？", "{target} 接下来的护城河在哪里？"]},
+        {"angle": "踩坑复盘", "templates": ["做 {target} 类产品最容易踩的 {n} 个坑", "我做 {target} 半年的 {n} 条经验"]},
+        {"angle": "方法论", "templates": ["如何系统地学习 {target}？", "如何为 {target} 写一个像样的 PRD？"]},
+        {"angle": "对比选型", "templates": ["{target} A 还是 B？", "{target} 和 {benchmark} 比，哪个更值得做？"]}
+      ]
+    },
+    "AI / 大模型": {
+      "tags": ["人工智能", "大语言模型", "AGI", "AI Agent", "Prompt Engineering"],
+      "audiences": ["AI 工程师", "产品经理", "创业者", "学生"],
+      "angles": [
+        {"angle": "技术解读", "templates": ["{target} 的技术原理是什么？", "为什么 {target} 在 {year} 突然火了？"]},
+        {"angle": "落地经验", "templates": ["把 {target} 落地到 {scene} 的 {n} 个真实坑", "{target} 在 {scene} 真的能取代人吗？"]},
+        {"angle": "趋势预测", "templates": ["{year} 之后的 {target} 会走向哪？", "{target} 会不会冲击 {industry}？"]}
+      ]
+    },
+    "创业 / 副业": {
+      "tags": ["创业", "副业", "小生意", "个体户", "OPC", "一人公司"],
+      "audiences": ["创业者", "副业从业者", "想离职的人"],
+      "angles": [
+        {"angle": "亲历分享", "templates": ["做 {target} 副业半年我赚到了多少", "辞职做 {target} 一年后的 {n} 个真实数字"]},
+        {"angle": "选型决策", "templates": ["{target} 副业值不值得做？", "{target} 适合什么样的人？"]},
+        {"angle": "方法论", "templates": ["从 0 到 1 启动 {target} 的 {n} 步", "{target} 起步阶段最该做的 {n} 件事"]}
+      ]
+    },
+    "职场 / 求职": {
+      "tags": ["职场", "求职", "跳槽", "面试", "简历"],
+      "audiences": ["应届生", "职场新人", "想跳槽的人"],
+      "angles": [
+        {"angle": "面经", "templates": ["{target} 一面到终面我被问到了什么", "{target} 校招 vs 社招怎么准备"]},
+        {"angle": "选择题", "templates": ["大厂 {target} vs 创业公司 {target}，怎么选？", "去 {city} 做 {target} 是个好主意吗？"]},
+        {"angle": "方法论", "templates": ["{target} 简历怎么改才有面试机会？", "{target} 面试前一周怎么冲刺？"]}
+      ]
+    },
+    "理财 / 个人金融": {
+      "tags": ["理财", "基金", "保险", "存款", "个人金融"],
+      "audiences": ["上班族", "刚毕业", "中产"],
+      "angles": [
+        {"angle": "经验分享", "templates": ["{target} 我的 {n} 年实操记录", "{target} 怎么避开常见的坑"]},
+        {"angle": "概念科普", "templates": ["{target} 到底是什么？", "{target} 适合什么阶段的人买"]},
+        {"angle": "对比选型", "templates": ["A 类 {target} vs B 类 {target} 哪个更适合我？"]}
+      ]
+    },
+    "健康 / 心理": {
+      "tags": ["心理", "健身", "营养", "睡眠", "情绪管理"],
+      "audiences": ["上班族", "学生"],
+      "angles": [
+        {"angle": "亲历分享", "templates": ["坚持 {target} 一年后我身上发生了什么", "我在 {target} 这件事上踩过的 {n} 个坑"]},
+        {"angle": "科普", "templates": ["{target} 真的有效吗？", "{target} 的科学原理是什么？"]}
+      ]
+    }
+  },
+  "default_quality_filters": [
+    "避免标题党，给出明确可验证的承诺",
+    "如果不能给出至少 3 条独立信息点，不写",
+    "如果不能附上 1 个真实案例 / 数据 / 截图，不写",
+    "对结论要主动给出适用边界（什么人不适用）"
+  ]
+}

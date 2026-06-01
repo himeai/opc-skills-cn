@@ -225,6 +225,56 @@
         "python3 scripts/qualifications.py \"{input}\""
       ],
       "triggers": ["ICP 备案", "公安备案", "网站备案", "域名备案", "上线流程", "域名注册", "服务器选型", "个人备案", "企业备案", "备案号", "beian", "视听许可证", "ICP 经营许可证", "网络文化经营许可证", "域名实名"]
+    },
+    {
+      "name": "wecom-crm",
+      "displayName": "企业微信客户运营",
+      "description": "企业微信客户运营：客户联系、客户标签、客户群、欢迎语、合规群发、企业朋友圈，仅包装企业微信官方 OpenAPI，禁止批量加好友 / 群发骚扰。",
+      "version": "0.1.0",
+      "path": "skills/wecom-crm",
+      "logo": "skill-logos/wecom-crm.svg",
+      "color": "#2D7DF6",
+      "commands": [
+        "python3 scripts/contact.py \"{input}\"",
+        "python3 scripts/tag.py \"{input}\"",
+        "python3 scripts/group.py \"{input}\"",
+        "python3 scripts/welcome.py \"{input}\"",
+        "python3 scripts/mass.py \"{input}\"",
+        "python3 scripts/moments.py \"{input}\""
+      ],
+      "triggers": ["企业微信", "wecom", "企微", "客户联系", "外部联系人", "external_contact", "客户标签", "客户群", "群发", "企业朋友圈", "moments", "欢迎语", "CRM", "私域"]
+    },
+    {
+      "name": "cn-recruit",
+      "displayName": "中国小公司招聘助手",
+      "description": "中国小公司招聘助手（本地规则版）：JD 生成、候选人筛选评分、结构化面试题库、招聘看板与 SLA 告警。完全本地推理，不爬抓简历库。",
+      "version": "0.1.0",
+      "path": "skills/cn-recruit",
+      "logo": "skill-logos/cn-recruit.svg",
+      "color": "#0EA572",
+      "commands": [
+        "python3 scripts/jd.py \"{input}\"",
+        "python3 scripts/score.py \"{input}\"",
+        "python3 scripts/interview.py \"{input}\"",
+        "python3 scripts/board.py \"{input}\""
+      ],
+      "triggers": ["招聘", "JD", "岗位描述", "候选人筛选", "简历评分", "面试题", "面试评估", "招聘看板", "pipeline", "HR", "用人需求", "社招", "校招", "内推"]
+    },
+    {
+      "name": "zhihu-ops",
+      "displayName": "知乎内容副驾驶",
+      "description": "知乎内容生产副驾驶（本地规则版）：长回答结构化生成、专栏长文骨架、问题选题工厂、领域 tag 推荐。完全本地推理，不爬抓不刷量。",
+      "version": "0.1.0",
+      "path": "skills/zhihu-ops",
+      "logo": "skill-logos/zhihu-ops.svg",
+      "color": "#0066FF",
+      "commands": [
+        "python3 scripts/answer.py \"{input}\"",
+        "python3 scripts/column.py \"{input}\"",
+        "python3 scripts/topic.py \"{input}\"",
+        "python3 scripts/tag.py \"{input}\""
+      ],
+      "triggers": ["知乎", "zhihu", "回答", "长答", "专栏", "知乎选题", "知乎话题", "领域 tag", "盐选", "好评率", "高赞回答", "知乎 SEO"]
     }
   ]
 }

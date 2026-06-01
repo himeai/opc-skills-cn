@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-14-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-17-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -54,10 +54,12 @@
 | ![cn-einvoice](./skill-logos/cn-einvoice.svg) | `cn-einvoice` | **中国电子发票开具**：诺诺 / 百望双供应商，覆盖普票 / 专票开具、查询、红冲，可被 wechatpay / alipay 复用 | ✅ |
 | **📊 税务合规** ||||
 | ![cn-tax](./skill-logos/cn-tax.svg) | `cn-tax` | **中国小微纳税人税务助手**：个体 / 个独 / 小规模 / 一般纳税人四种身份下的季度申报清单、税负近似测算、合规风险提醒（本地规则，不替代税务师） | ✅ |
+| **🤝 私域协作** ||||
+| ![wecom-crm](./skill-logos/wecom-crm.svg) | `wecom-crm` | **企业微信客户运营**：客户联系、客户标签、客户群、欢迎语、合规群发、企业朋友圈，仅包装企业微信官方 OpenAPI（禁止批量加好友/群发骚扰） | ✅ |
+| **🧑‍💼 招聘内容** ||||
+| ![cn-recruit](./skill-logos/cn-recruit.svg) | `cn-recruit` | **中国小公司招聘助手**：JD 生成、候选人筛选评分、结构化面试题库、招聘看板与 SLA 告警（本地规则推理，无外部 API） | ✅ |
+| ![zhihu-ops](./skill-logos/zhihu-ops.svg) | `zhihu-ops` | **知乎内容生产副驾驶**：长回答结构化生成（科普/干货/经验/对比/反驳）、专栏长文骨架、问题选题工厂、领域 tag 推荐（本地规则，不爬抓不刷量） | ✅ |
 | **⏳ 规划中** ||||
-| | `wecom-crm` | 企业微信 SCRM：加客户、群发、SOP、标签 | ⏳ |
-| | `cn-recruit` | Boss 直聘 / 拉勾 / 脉脉 / 猎聘职位与候选人 | ⏳ |
-| | `zhihu-ops` | 知乎长回答与专栏分发 | ⏳ |
 | | `cn-legal` | 个独章程、SaaS 服务协议、PIPL 隐私政策（法大大 / e 签宝） | ⏳ |
 | | `cn-cloud` | 阿里云 / 腾讯云 / 火山引擎：OSS、CDN、函数计算、解析 | ⏳ |
 | | `cn-requesthunt` | 跨小红书 / 知乎 / 即刻 / V2EX / 脉脉的需求挖掘 | ⏳ |
@@ -236,7 +238,9 @@ def get_wechat_mp_credentials() -> dict:
   - **内容支撑**：[`cn-content-compliance`](./skills/cn-content-compliance/SKILL.md)、[`cn-festival-calendar`](./skills/cn-festival-calendar/SKILL.md)、[`cn-geo`](./skills/cn-geo/SKILL.md)
   - **收款开票**：[`wechatpay`](./skills/wechatpay/SKILL.md)、[`alipay`](./skills/alipay/SKILL.md)、[`cn-einvoice`](./skills/cn-einvoice/SKILL.md)
   - **税务合规**：[`cn-tax`](./skills/cn-tax/SKILL.md)
-- 下一批优先：`wecom-crm`、`cn-recruit`、`zhihu-ops`
+  - **私域协作**：[`wecom-crm`](./skills/wecom-crm/SKILL.md)
+  - **招聘内容**：[`cn-recruit`](./skills/cn-recruit/SKILL.md)、[`zhihu-ops`](./skills/zhihu-ops/SKILL.md)
+- 下一批优先：`cn-legal`、`cn-cloud`、`cn-requesthunt`
 - 详细分期与风险评估：见 [ROADMAP.md](./ROADMAP.md)
 
 | 阶段 | 时间 | 目标 |

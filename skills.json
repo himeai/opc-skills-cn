@@ -410,6 +410,94 @@
         "python3 scripts/qualifications.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/icp-domain-cn"}
+    },
+    {
+      "name": "wecom-crm",
+      "version": "0.1.0",
+      "description": "企业微信客户运营：客户联系、客户标签、客户群、欢迎语、合规群发、企业朋友圈，仅包装企业微信官方 OpenAPI，禁止批量加好友 / 群发骚扰。",
+      "logo": "skill-logos/wecom-crm.svg",
+      "icon": "users",
+      "color": "2D7DF6",
+      "triggers": ["企业微信", "wecom", "企微", "客户联系", "外部联系人", "external_contact", "客户标签", "客户群", "群发", "企业朋友圈", "moments", "欢迎语", "CRM", "私域"],
+      "dependencies": {},
+      "auth": {
+        "required": true,
+        "type": "api_key",
+        "keys": [
+          {"env": "WECOM_CORP_ID", "url": "https://work.weixin.qq.com", "optional": false},
+          {"env": "WECOM_SECRET_EXTERNAL_CONTACT", "url": "https://work.weixin.qq.com", "optional": true},
+          {"env": "WECOM_SECRET_CUSTOMER_GROUP", "url": "https://work.weixin.qq.com", "optional": true},
+          {"env": "WECOM_SECRET_MOMENTS", "url": "https://work.weixin.qq.com", "optional": true},
+          {"env": "WECOM_SECRET_APP", "url": "https://work.weixin.qq.com", "optional": true},
+          {"env": "WECOM_AGENT_ID", "url": "https://work.weixin.qq.com", "optional": true},
+          {"env": "WECOM_TOKEN_CACHE_DIR", "url": "", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill wecom-crm -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill wecom-crm"}
+      },
+      "commands": [
+        "python3 scripts/contact.py \"{input}\"",
+        "python3 scripts/tag.py \"{input}\"",
+        "python3 scripts/group.py \"{input}\"",
+        "python3 scripts/welcome.py \"{input}\"",
+        "python3 scripts/mass.py \"{input}\"",
+        "python3 scripts/moments.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/wecom-crm"}
+    },
+    {
+      "name": "cn-recruit",
+      "version": "0.1.0",
+      "description": "中国小公司招聘助手（本地规则版）：JD 生成、候选人筛选评分、结构化面试题库、招聘看板与 SLA 告警。完全本地推理，不爬抓简历库。",
+      "logo": "skill-logos/cn-recruit.svg",
+      "icon": "user-check",
+      "color": "0EA572",
+      "triggers": ["招聘", "JD", "岗位描述", "候选人筛选", "简历评分", "面试题", "面试评估", "招聘看板", "pipeline", "HR", "用人需求", "社招", "校招", "内推"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-recruit -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-recruit"}
+      },
+      "commands": [
+        "python3 scripts/jd.py \"{input}\"",
+        "python3 scripts/score.py \"{input}\"",
+        "python3 scripts/interview.py \"{input}\"",
+        "python3 scripts/board.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-recruit"}
+    },
+    {
+      "name": "zhihu-ops",
+      "version": "0.1.0",
+      "description": "知乎内容生产副驾驶（本地规则版）：长回答结构化生成、专栏长文骨架、问题选题工厂、领域 tag 推荐。完全本地推理，不爬抓不刷量。",
+      "logo": "skill-logos/zhihu-ops.svg",
+      "icon": "message-circle",
+      "color": "0066FF",
+      "triggers": ["知乎", "zhihu", "回答", "长答", "专栏", "知乎选题", "知乎话题", "领域 tag", "盐选", "好评率", "高赞回答", "知乎 SEO"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill zhihu-ops -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill zhihu-ops"}
+      },
+      "commands": [
+        "python3 scripts/answer.py \"{input}\"",
+        "python3 scripts/column.py \"{input}\"",
+        "python3 scripts/topic.py \"{input}\"",
+        "python3 scripts/tag.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/zhihu-ops"}
     }
   ]
 }
