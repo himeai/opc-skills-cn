@@ -1,0 +1,84 @@
+{
+  "_comment": "高净值体验所需的训练 / 准备体系。triple-pillar: 体能 / 资格证 / 装备清单。",
+  "_disclaimer": "训练时长与考核标准随机构变动，仅作参考。实际请以教练 / 协会 / 民航局 / 体育总局为准。",
+  "training_paths": {
+    "everest": {
+      "name": "登顶珠峰（南坡）",
+      "years": 3,
+      "stages": [
+        {"stage": "1 年", "milestones": ["跑全马 sub 4:00", "玉珠峰 6178m / 哈巴雪山 5396m"]},
+        {"stage": "2 年", "milestones": ["阿玛达布拉姆 6812m", "卓奥友 8201m 或 马纳斯鲁 8163m（任一）"]},
+        {"stage": "3 年", "milestones": ["珠峰春季登山", "建议 50 万 CNY 预算 + 300 小时高山训练"]}
+      ],
+      "danger_rate_pct": 1.0,
+      "must_have": ["7+1+1 高海拔履历", "国际登山协会 UIAA 认证教练 / 团队"]
+    },
+    "ppl_us_faa": {
+      "name": "美国 FAA 私人飞行执照（PPL）",
+      "weeks": 8,
+      "stages": [
+        {"stage": "1-3 周", "milestones": ["地面理论 60 小时", "笔试 70/100 分"]},
+        {"stage": "4-6 周", "milestones": ["双人飞 30 小时 + 起落 / 仪表 / 导航 / 紧急程序"]},
+        {"stage": "7-8 周", "milestones": ["solo 10 小时 + 越野", "考飞 1.5 小时", "FAA 现场口试 + 飞行检测"]}
+      ],
+      "fee_usd": [12000, 18000],
+      "must_have": ["FAA 1 类 / 3 类体检证", "M1 / B1 学生身份签证 / TSA 培训许可"]
+    },
+    "marathon_bmw6": {
+      "name": "六大满贯",
+      "years": 5,
+      "stages": [
+        {"stage": "Y1", "milestones": ["完赛任意一场马拉松 sub 5:00"]},
+        {"stage": "Y2-3", "milestones": ["柏林 / 芝加哥 / 东京 / 伦敦 / 纽约（5 大慈善 / 抽签）"]},
+        {"stage": "Y4-5", "milestones": ["波士顿 BQ", "男子 ≤ 3:00 / 女子 ≤ 3:30（35-39 岁）"]}
+      ],
+      "fee_cny_total": [100000, 300000],
+      "must_have": ["abbottwmm.com 注册 + 6 场完赛上传"]
+    },
+    "freediving_pro": {
+      "name": "自由潜专业级",
+      "years": 3,
+      "stages": [
+        {"stage": "Y1", "milestones": ["AIDA 2/3 → 平潜 30m"]},
+        {"stage": "Y2", "milestones": ["AIDA 4 → 50m + Frenzel-Fattah 通气"]},
+        {"stage": "Y3", "milestones": ["国际比赛 / 教练 → 80-100m"]}
+      ],
+      "must_have": ["DAN 潜水保险", "心血管 + 肺活量年检"]
+    },
+    "ironman": {
+      "name": "Ironman 226 km",
+      "years": 2,
+      "stages": [
+        {"stage": "Y1", "milestones": ["完赛半铁 113 km", "VO2max ≥ 50"]},
+        {"stage": "Y2", "milestones": ["全程铁 sub 12h", "分组 KQ 积分"]}
+      ]
+    },
+    "f1_grid": {
+      "name": "F1 单座 / 副驾",
+      "weeks": 2,
+      "stages": [
+        {"stage": "1 周", "milestones": ["GP 学校理论 + 模拟器"]},
+        {"stage": "2 周", "milestones": ["F2/F3 单座赛车出弯", "蒙扎 / 银石 / 上海赛道"]}
+      ],
+      "must_have": ["FIA 国际 D 级赛照", "防火服 + HANS 设施"]
+    }
+  },
+  "license_table": [
+    {"name": "FAA PPL", "country": "美国", "weeks": 8, "fee_usd": [12000, 18000], "scope": "私人飞行（不可商用）"},
+    {"name": "中国 CCAR-61 PPL", "country": "中国", "weeks": 16, "fee_cny": [180000, 300000], "scope": "私人飞行（中国境内）"},
+    {"name": "EASA PPL", "country": "欧盟", "weeks": 12, "fee_eur": [12000, 18000], "scope": "欧盟全境"},
+    {"name": "PADI Open Water", "country": "全球", "weeks": 1, "fee_cny": [3000, 8000], "scope": "18m 内"},
+    {"name": "PADI Divemaster", "country": "全球", "weeks": 8, "fee_cny": [25000, 60000], "scope": "潜水教练助理"},
+    {"name": "AIDA 4", "country": "全球", "weeks": 2, "fee_cny": [15000, 30000], "scope": "自由潜 30m+"},
+    {"name": "FIA 国际 D 级", "country": "国际", "weeks": 1, "fee_cny": [50000, 200000], "scope": "F4 / F2/F3 / GT3 单座赛照"},
+    {"name": "ASA 帆船 101-104", "country": "全球", "weeks": 4, "fee_cny": [40000, 80000], "scope": "私人帆船"},
+    {"name": "UIAA 高山协会", "country": "国际", "weeks": 12, "fee_cny": [200000, 500000], "scope": "高山向导认证"}
+  ],
+  "fitness_baseline_by_tier": {
+    "1": {"5km_run_minutes": 35, "core_seconds": 30, "any_chronic": "无"},
+    "2": {"5km_run_minutes": 30, "core_seconds": 60, "any_chronic": "无重大慢性病"},
+    "3": {"5km_run_minutes": 25, "half_marathon": "完赛", "core_seconds": 90},
+    "4": {"5km_run_minutes": 22, "marathon": "sub 4:00", "vo2max": 45},
+    "5": {"5km_run_minutes": 18, "marathon": "sub 3:30", "vo2max": 55, "altitude": "5000m+ 经验"}
+  }
+}

@@ -343,6 +343,22 @@
         "python3 scripts/pack.py \"{input}\""
       ],
       "triggers": ["环球旅行", "Round the World", "RTW", "长途旅行", "gap year", "间隔年", "签证规划", "出行预算", "欧洲游", "亚洲游", "北美游", "南美游", "非洲游", "大洋洲", "极地", "南极", "北极", "米其林之旅", "海岛", "潜水", "极光", "行李清单", "最佳季节", "申根签", "蜜月"]
+    },
+    {
+      "name": "opc-experience",
+      "displayName": "一人公司高净值体验解锁副驾驶",
+      "description": "一人公司「成功篇·体验解锁」副驾驶（本地规则版）：8 大类 60+ 高净值体验（南极 / KTM 环球 / 米其林三星 / 六大满贯 / PPL / 去太空 / 顶豪拍场 / 七顶峰）按预算 + 体能 + 年龄筛选；太空旅行 3 档 6 家提供商；6 类训练路径；支付 / 保险 / 医疗 / 法律红线。本地推理，不推荐具体俱乐部 / 教练 / 中介。",
+      "version": "0.1.0",
+      "path": "skills/opc-experience",
+      "logo": "skill-logos/opc-experience.svg",
+      "color": "#A855F7",
+      "commands": [
+        "python3 scripts/unlock.py \"{input}\"",
+        "python3 scripts/space.py \"{input}\"",
+        "python3 scripts/train.py \"{input}\"",
+        "python3 scripts/compliance.py \"{input}\""
+      ],
+      "triggers": ["高净值体验", "人生清单", "bucket list", "解锁体验", "南极", "北极", "私人飞机", "私人飞行执照", "PPL", "去太空", "亚轨道", "轨道飞行", "Virgin Galactic", "Blue Origin", "SpaceX", "Axiom", "米其林三星", "World 50 Best", "马拉松六大满贯", "BMW6", "Ironman", "珠峰", "七大洲最高峰", "F1", "自由潜", "斯卡拉", "佳士得", "苏富比", "拍卖"]
     }
   ]
 }

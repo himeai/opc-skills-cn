@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.13] - 2026-06-01
+
+### Added
+
+- opc-experience v0.1.0：一人公司「成功篇·体验解锁」副驾驶（本地规则版）——8 大类 60+ 高净值体验主清单（极地探险 / 极速极限 / 顶级美食 / 体育成就 / 飞行航天 / 登山远征 / 私享包场 / 文化收藏）按预算 + 5 档体能 + 年龄 + 最大 lead 月数过滤；太空旅行（去太空）专项 3 档（亚轨道 / 轨道 / 月球深空）+ 6 家提供商（Virgin Galactic / Blue Origin / SpaceX × Axiom / Polaris / Roscosmos / Boeing Starliner）含价格 / 训练 / 排队周期；6 类训练路径（珠峰 / PPL / 六大满贯 / 自由潜专业 / Ironman / F1 单座）+ 资格证矩阵 + 体能 gap 分析；支付 / 保险 / 医疗（含 8000m 高山 / 高 G / 失重 / 深潜基线）/ 法律红线（5 类违法外汇方法 + 信托 + CRS）。完全本地推理；不推荐具体俱乐部 / 教练 / 中介 / 拍卖行；不爬抓任何预订平台；不替代体育 / 航空 / 医疗 / 法律 / 保险专业人士
+
 ## [0.0.12] - 2026-06-01
 
 ### Added

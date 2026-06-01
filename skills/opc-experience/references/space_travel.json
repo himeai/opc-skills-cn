@@ -1,0 +1,153 @@
+{
+  "_comment": "太空旅行专项数据（去太空）。三层级：亚轨道（90-100 km，失重几分钟）/ 轨道级（绕地球，多日）/ 月球级（深空，未首飞）。所有价格、排队、训练时长以官方公告为准。",
+  "_disclaimer": "本工具仅作信息整理，不替代供应商官方报名渠道；不承担合同 / 保险 / 训练资格；具体票价 / 排队由 Virgin Galactic / Blue Origin / SpaceX / Axiom 等官方公告。",
+  "tiers": [
+    {
+      "tier": "亚轨道",
+      "tier_en": "suborbital",
+      "altitude_km_range": [80, 110],
+      "duration_total_minutes": 90,
+      "weightless_minutes": 4,
+      "g_force_peak": 4,
+      "training_days": 3,
+      "physical_screening": "中等体检 + 心血管 + 离心机训练",
+      "fee_cny_range": [3000000, 5500000],
+      "current_status": "在售 / 排队中"
+    },
+    {
+      "tier": "轨道级",
+      "tier_en": "orbital",
+      "altitude_km_range": [400, 600],
+      "duration_total_days_range": [3, 14],
+      "weightless_minutes": 14400,
+      "g_force_peak": 4,
+      "training_days": 180,
+      "physical_screening": "严苛 NASA 级体检 + 6 个月封闭训练",
+      "fee_cny_range": [350000000, 800000000],
+      "current_status": "Axiom 在售 / SpaceX 私人飞行"
+    },
+    {
+      "tier": "月球级 / 深空",
+      "tier_en": "lunar_deepspace",
+      "altitude_km_range": [384400, 384400],
+      "duration_total_days_range": [6, 12],
+      "weightless_minutes": 17280,
+      "g_force_peak": 4,
+      "training_days": 365,
+      "physical_screening": "顶级宇航员级 + 1 年训练",
+      "fee_cny_range": [1000000000, 5000000000],
+      "current_status": "项目重组 / 未首飞"
+    }
+  ],
+  "providers": [
+    {
+      "name": "Virgin Galactic",
+      "tier": "亚轨道",
+      "vehicle": "VSS Unity / VSS Imagine（SpaceShipTwo）",
+      "altitude_km": 90,
+      "weightless_minutes": 4,
+      "fee_usd": 600000,
+      "fee_cny_est": 4350000,
+      "deposit_usd": 150000,
+      "queue_years": "1-3",
+      "training_days": 3,
+      "launch_site": "美国新墨西哥 Spaceport America",
+      "wings_awarded_by_faa": true,
+      "notes": "FAA 商业宇航员之翼颁发依据：飞行高度 ≥ 80 km",
+      "official_url_path": "virgingalactic.com / reserve"
+    },
+    {
+      "name": "Blue Origin",
+      "tier": "亚轨道",
+      "vehicle": "New Shepard NS-XX",
+      "altitude_km": 107,
+      "weightless_minutes": 4,
+      "fee_usd": "拍卖出价 / 邀约制",
+      "fee_cny_est": 3500000,
+      "deposit_usd": 150000,
+      "queue_years": "1-2",
+      "training_days": 2,
+      "launch_site": "美国西德州 Launch Site One",
+      "wings_awarded_by_faa": true,
+      "notes": "穿越卡门线（100 km）的国际通用宇航员定义",
+      "official_url_path": "blueorigin.com / new-shepard"
+    },
+    {
+      "name": "SpaceX × Axiom Space",
+      "tier": "轨道级",
+      "vehicle": "Crew Dragon",
+      "altitude_km": 408,
+      "duration_days": 10,
+      "fee_usd_per_seat": 55000000,
+      "fee_cny_est": 400000000,
+      "deposit_usd": "首付 25%",
+      "queue_years": "1-2",
+      "training_days": 240,
+      "launch_site": "肯尼迪航天中心 39A",
+      "destination": "国际空间站 ISS",
+      "notes": "Axiom Mission 1-4 已陆续执飞（2022 起），需通过 Axiom 申请",
+      "official_url_path": "axiomspace.com"
+    },
+    {
+      "name": "SpaceX 私人飞行（Polaris Dawn 等）",
+      "tier": "轨道级",
+      "vehicle": "Crew Dragon（任务定制）",
+      "altitude_km": 1400,
+      "duration_days": 5,
+      "fee_usd_per_seat": "私募 / 机密",
+      "fee_cny_est": 700000000,
+      "queue_years": "邀约",
+      "training_days": 730,
+      "launch_site": "肯尼迪航天中心 39A",
+      "notes": "Polaris Dawn 已完成首次商业舱外活动 EVA（2024）",
+      "official_url_path": "polarisprogram.com"
+    },
+    {
+      "name": "Roscosmos / Space Adventures",
+      "tier": "轨道级",
+      "vehicle": "Soyuz",
+      "altitude_km": 408,
+      "duration_days": 10,
+      "fee_usd_per_seat": 55000000,
+      "fee_cny_est": 400000000,
+      "queue_years": "目前停摆",
+      "training_days": 180,
+      "launch_site": "拜科努尔",
+      "notes": "因俄乌冲突现状，西方游客通道实际暂不可用",
+      "official_url_path": "spaceadventures.com"
+    },
+    {
+      "name": "Boeing Starliner",
+      "tier": "轨道级",
+      "vehicle": "CST-100 Starliner",
+      "altitude_km": 408,
+      "duration_days": 10,
+      "fee_usd_per_seat": "未公开",
+      "queue_years": "尚未开放商业旅游",
+      "training_days": 180,
+      "launch_site": "卡纳维拉尔角",
+      "notes": "目前仅 NASA 任务，私人旅游通道未开放"
+    }
+  ],
+  "checklist_decision": [
+    "1. 确定层级：亚轨道（300-550 万）/ 轨道级（3.5-8 亿）/ 月球级（10 亿+）",
+    "2. 体检：心血管 + ECG + 离心机适应（亚轨道 4G）",
+    "3. 资金安排：首付 15-25 万美元定金，余款约发射前 12 个月清账；境外支付走合规购汇 + 大额跨境通道",
+    "4. 训练：亚轨道 2-3 天即可；轨道 6-12 个月封闭",
+    "5. 保险：太空意外险全球仅 < 5 家承保（Allianz / Lloyd's of London 等），保费 5-15% of fee",
+    "6. 法律：签订美国 FAA 知情同意书；中国境内目前无相关监管对接，请咨询海事 / 航空法律师",
+    "7. 备份：发射常因天气推迟，行程预留 ±2 周；建议结合美国旅游办其他事"
+  ],
+  "regulatory_notes": [
+    "中国公民赴美参加太空旅行：B1/B2 签证 + ESTA 不适用 12 个月以上 / 需正常 B1/B2",
+    "FAA 颁发『商业宇航员之翼』标准：飞行高度 ≥ 80 km（亚轨道两家均符合）",
+    "卡门线 100 km 是国际航空联合会 FAI 定义",
+    "中国神舟 / 长征系列目前仅航天员任务，无商业旅游通道"
+  ],
+  "warnings": [
+    "Virgin Galactic 2023-2024 多次推迟，订金不可全额退；以官方最新公告为准",
+    "Blue Origin 2022 NS-23 任务出现非载人逃逸，体现整体安全度但仍属高风险",
+    "深海下潜 Titan 事故（2023）后行业反思加强；太空旅游同样属于实验性消费",
+    "境外支付亿级费用必须走合规外汇通道：每年 5 万美元购汇 + 境外信用卡 + 借记卡受限；亿级跨境通道请通过境内持牌私行 ODI / 个人 5w 美金合规拼接 + 境外资产多年积累，不要走任何地下钱庄"
+  ]
+}

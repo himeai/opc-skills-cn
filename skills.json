@@ -606,6 +606,32 @@
         "python3 scripts/pack.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-travel"}
+    },
+    {
+      "name": "opc-experience",
+      "version": "0.1.0",
+      "description": "一人公司「成功篇·体验解锁」副驾驶（本地规则版）：高净值体验全清单——南极游艇 / KTM 摩托环球 / 米其林三星巡礼 / 马拉松六大满贯 / 私人飞行执照 / 去太空（Virgin Galactic / Blue Origin / SpaceX × Axiom）/ 顶豪拍场 / 七大洲最高峰；按预算 + 体能 + 类别 + 年龄筛选；6 类训练路径规划；支付 / 保险 / 医疗 / 法律红线。本地推理，不推荐具体俱乐部 / 教练 / 中介。",
+      "logo": "skill-logos/opc-experience.svg",
+      "icon": "sparkles",
+      "color": "A855F7",
+      "triggers": ["高净值体验", "人生清单", "bucket list", "解锁体验", "南极", "北极", "私人飞机", "私人飞行执照", "PPL", "去太空", "亚轨道", "轨道飞行", "Virgin Galactic", "Blue Origin", "SpaceX", "Axiom", "米其林三星", "World 50 Best", "马拉松六大满贯", "BMW6", "Ironman", "珠峰", "七大洲最高峰", "F1", "自由潜", "斯卡拉", "佳士得", "苏富比", "拍卖"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-experience -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-experience"}
+      },
+      "commands": [
+        "python3 scripts/unlock.py \"{input}\"",
+        "python3 scripts/space.py \"{input}\"",
+        "python3 scripts/train.py \"{input}\"",
+        "python3 scripts/compliance.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-experience"}
     }
   ]
 }

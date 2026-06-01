@@ -1,0 +1,58 @@
+{
+  "_comment": "高净值体验解锁主清单。8 大类、60+ 体验。fields: tier(S/A/B), price_cny_min/max, lead_months(从决定到完成的最短前置时间), fitness(体能要求 1-5), age_window(建议年龄区间), bookable_now(当前是否开放预订)。",
+  "_disclaimer": "本工具不推荐具体俱乐部 / 教练 / 中介 / 拍卖行；价格为公开口径区间，以实际报价为准；高风险体验请独立完成法律 / 保险 / 体检评估。",
+  "categories": ["极地探险", "极速极限", "顶级美食", "体育成就", "飞行航天", "登山远征", "私享包场", "文化收藏"],
+  "fitness_legend": {
+    "1": "无门槛（坐着 / 走路即可）",
+    "2": "需基础健康（无重大慢性病）",
+    "3": "需中等运动能力（半马水准）",
+    "4": "需较强体能（全马 / 高反耐受）",
+    "5": "需专业训练（登山 / 飞行 / 潜水）"
+  },
+  "tier_legend": {
+    "S": "100w+ 单次 或 5 年+ 长期投入",
+    "A": "10-100w 单次 或 1-3 年投入",
+    "B": "1-10w 单次 或 数月内可做"
+  },
+  "experiences": [
+    {"id": "antarctic_yacht", "name": "南极包船游艇巡航", "category": "极地探险", "tier": "S", "price_cny_min": 800000, "price_cny_max": 3000000, "lead_months": 18, "fitness": 3, "age_window": [18, 75], "season": "11-3 月（南半球夏）", "highlights": ["乌斯怀亚出发", "登陆 + 皮划艇 + 露营企鹅群", "私人邮轮可定制 14-30 天"], "bookable_now": true, "notes": "顶级班轮 Silversea / Scenic 6w-15w/人；包船则上百万"},
+    {"id": "antarctic_emperor", "name": "南极帝企鹅探险", "category": "极地探险", "tier": "S", "price_cny_min": 700000, "price_cny_max": 1200000, "lead_months": 18, "fitness": 4, "age_window": [25, 65], "season": "10-11 月", "highlights": ["内陆冰盖营地", "私人飞机降落", "见到帝企鹅幼崽"], "bookable_now": true, "notes": "全球少数运营商承运（如 White Desert）"},
+    {"id": "north_pole_cruise", "name": "北极点 / 斯瓦尔巴破冰船", "category": "极地探险", "tier": "S", "price_cny_min": 200000, "price_cny_max": 700000, "lead_months": 12, "fitness": 3, "age_window": [18, 75], "season": "6-8 月", "highlights": ["核动力破冰船", "北纬 90°", "热气球俯瞰极点"], "bookable_now": true},
+    {"id": "deep_sea_titanic", "name": "深海下潜（如马里亚纳 / 历史沉船）", "category": "极地探险", "tier": "S", "price_cny_min": 1000000, "price_cny_max": 4000000, "lead_months": 12, "fitness": 4, "age_window": [25, 60], "season": "全年", "highlights": ["专业 DSV", "5000m+ 深度"], "bookable_now": false, "notes": "2023 Titan 事故后多家停摆；当前仅个别运营商，请以专业商业潜水公司为准，风险极高"},
+
+    {"id": "ktm_world_tour", "name": "KTM / 哈雷摩托环球", "category": "极速极限", "tier": "A", "price_cny_min": 200000, "price_cny_max": 800000, "lead_months": 18, "fitness": 4, "age_window": [25, 60], "season": "12-18 个月不等", "highlights": ["跨 5 大洲", "GS 探险 / KTM Adventure / 哈雷 PanAm", "全程支持车 + 翻译"], "bookable_now": true, "notes": "GlobeRiders / Edelweiss 等团队运营；自驾需国际驾照 + 各国签证"},
+    {"id": "f1_pro_drive", "name": "F1 单座赛车体验 / 副驾驶", "category": "极速极限", "tier": "A", "price_cny_min": 80000, "price_cny_max": 500000, "lead_months": 6, "fitness": 4, "age_window": [21, 55], "season": "全年", "highlights": ["蒙扎 / 银石 / 上海赛道", "F2/F3 单座或 GP2", "F1 双座副驾仅极少国家提供"], "bookable_now": true},
+    {"id": "skydive_world_5", "name": "全球五大跳伞圣地", "category": "极速极限", "tier": "B", "price_cny_min": 30000, "price_cny_max": 150000, "lead_months": 6, "fitness": 3, "age_window": [18, 65], "season": "夏秋", "highlights": ["瑞士因特拉肯 / 新西兰皇后镇 / 美国莫阿布 / 迪拜棕榈岛 / 澳洲拜伦湾"], "bookable_now": true},
+    {"id": "freediving_100m", "name": "自由潜深潜 100m", "category": "极速极限", "tier": "A", "price_cny_min": 100000, "price_cny_max": 300000, "lead_months": 36, "fitness": 5, "age_window": [25, 55], "season": "全年训练", "highlights": ["AIDA / SSI 等级证 → 教练→ 国际比赛", "需 3 年系统训练"], "bookable_now": true, "notes": "百米属于专业级，业余通常 30-50m 即可玩到极致"},
+
+    {"id": "michelin_3star_grand_tour", "name": "米其林三星巡礼 21 餐", "category": "顶级美食", "tier": "A", "price_cny_min": 150000, "price_cny_max": 400000, "lead_months": 9, "fitness": 1, "age_window": [25, 80], "season": "全年", "highlights": ["巴黎 + 罗马 + 东京 + 京都 + 香港 + 纽约", "21 家三星 / 顶级 1-2 星", "需提前 3-6 个月预订热门餐厅"], "bookable_now": true},
+    {"id": "world_50best_sweep", "name": "World's 50 Best 全打卡", "category": "顶级美食", "tier": "S", "price_cny_min": 300000, "price_cny_max": 600000, "lead_months": 24, "fitness": 1, "age_window": [25, 80], "season": "需 2 年", "highlights": ["跨 4-5 大洲 50 家", "热门店预订排队 6 个月+"], "bookable_now": true},
+    {"id": "noma_omakase", "name": "Noma / Sukiyabashi 二郎 / Eleven Madison 闭店私厨", "category": "顶级美食", "tier": "S", "price_cny_min": 500000, "price_cny_max": 2000000, "lead_months": 12, "fitness": 1, "age_window": [25, 80], "season": "全年", "highlights": ["主厨私厨 / 包场闭店", "全程定制菜单"], "bookable_now": true},
+
+    {"id": "marathon_bmw6", "name": "马拉松世界六大满贯（BMW6）", "category": "体育成就", "tier": "A", "price_cny_min": 100000, "price_cny_max": 300000, "lead_months": 60, "fitness": 5, "age_window": [25, 60], "season": "需 4-7 年", "highlights": ["波士顿 + 伦敦 + 柏林 + 芝加哥 + 纽约 + 东京", "波士顿要 BQ 成绩 / 其他可慈善名额", "BQ 男子 ≤3:00 / 女子 ≤3:30（35-39 岁）"], "bookable_now": true, "notes": "中国跑者首选先跑柏林（最快 PB）"},
+    {"id": "ironman_kona", "name": "Ironman 科纳总决赛", "category": "体育成就", "tier": "A", "price_cny_min": 150000, "price_cny_max": 400000, "lead_months": 48, "fitness": 5, "age_window": [25, 60], "season": "需 3-5 年", "highlights": ["分组完赛积分", "夏威夷大岛"], "bookable_now": true},
+    {"id": "everest_summit", "name": "登顶珠穆朗玛峰（南坡 / 北坡）", "category": "登山远征", "tier": "S", "price_cny_min": 450000, "price_cny_max": 1200000, "lead_months": 36, "fitness": 5, "age_window": [25, 60], "season": "5 月（春季登山窗口）", "highlights": ["7+1+1 系统训练 → 阿玛达布拉姆 → 卓奥友 → 珠峰", "需 3 年高海拔履历"], "bookable_now": true, "notes": "极高风险，死亡率约 1%"},
+    {"id": "seven_summits", "name": "登顶七大洲最高峰", "category": "登山远征", "tier": "S", "price_cny_min": 800000, "price_cny_max": 2500000, "lead_months": 60, "fitness": 5, "age_window": [25, 65], "season": "需 3-7 年", "highlights": ["珠峰 + 阿空 + 麦金利 + 文森 + 厄尔布鲁士 + 乞力马扎罗 + 查亚峰"], "bookable_now": true},
+    {"id": "explorers_grand_slam", "name": "探险家大满贯（七顶峰 + 南北极点）", "category": "登山远征", "tier": "S", "price_cny_min": 1500000, "price_cny_max": 4000000, "lead_months": 84, "fitness": 5, "age_window": [25, 60], "season": "需 5-10 年", "highlights": ["全球完成者 < 100 人"], "bookable_now": true},
+
+    {"id": "ppl_license", "name": "私人飞行执照（PPL）", "category": "飞行航天", "tier": "B", "price_cny_min": 120000, "price_cny_max": 300000, "lead_months": 12, "fitness": 3, "age_window": [17, 65], "season": "全年", "highlights": ["最少 40-60 小时飞行 + 笔试", "可在国内 / 美国 / 加拿大 / 澳洲完成", "中国 CCAR-61 / 美国 FAA / 欧洲 EASA"], "bookable_now": true, "notes": "美国 FAA 性价比最高（~6w 美元 + 食宿）"},
+    {"id": "ir_rating", "name": "PPL → 仪表等级（IR）→ 多发", "category": "飞行航天", "tier": "A", "price_cny_min": 300000, "price_cny_max": 800000, "lead_months": 36, "fitness": 3, "age_window": [25, 60], "season": "需 2-3 年", "highlights": ["PPL → IR → ME → 商照 / 涡桨型号", "可独立飞 Cirrus / King Air"], "bookable_now": true},
+    {"id": "private_jet_card", "name": "私人飞机会籍 / 卡（NetJets / Wheels Up / 君联航空）", "category": "飞行航天", "tier": "S", "price_cny_min": 1500000, "price_cny_max": 50000000, "lead_months": 3, "fitness": 1, "age_window": [25, 80], "season": "全年", "highlights": ["分时所有权 / 小时卡", "Phenom / Citation / Global"], "bookable_now": true, "notes": "中国境内私人飞机政策不同，多数会籍卡为境外（NA / EU）使用"},
+    {"id": "space_suborbital", "name": "亚轨道太空旅行（去太空）", "category": "飞行航天", "tier": "S", "price_cny_min": 3000000, "price_cny_max": 5500000, "lead_months": 24, "fitness": 3, "age_window": [18, 80], "season": "排队 1-3 年", "highlights": ["Virgin Galactic（VSS Unity 90 km）", "Blue Origin（New Shepard 100 km 卡门线）", "失重 3-5 分钟 + 可见地球曲率"], "bookable_now": true, "notes": "Virgin Galactic 票价 60w USD；Blue Origin 拍卖出价；详见 space_travel.json"},
+    {"id": "space_orbital", "name": "轨道级太空旅行（绕地球飞行）", "category": "飞行航天", "tier": "S", "price_cny_min": 350000000, "price_cny_max": 800000000, "lead_months": 24, "fitness": 4, "age_window": [25, 65], "season": "排队 2-5 年", "highlights": ["SpaceX Crew Dragon Inspiration4 / Polaris", "Axiom 国际空间站 8-10 天", "需要 6 个月封闭训练"], "bookable_now": true, "notes": "Axiom Mission 单舱 5500w 美元 / 人，详见 space_travel.json"},
+    {"id": "space_lunar", "name": "环月之旅（深空旅行）", "category": "飞行航天", "tier": "S", "price_cny_min": 1000000000, "price_cny_max": 5000000000, "lead_months": 60, "fitness": 5, "age_window": [25, 60], "season": "尚未首飞（计划 2027+）", "highlights": ["SpaceX Starship dearMoon", "DSE-Alpha"], "bookable_now": false, "notes": "dearMoon 项目已搁置，关注 SpaceX 后续公告"},
+
+    {"id": "louvre_after_hours", "name": "卢浮宫闭馆夜场参观", "category": "私享包场", "tier": "A", "price_cny_min": 300000, "price_cny_max": 1500000, "lead_months": 9, "fitness": 1, "age_window": [10, 90], "season": "全年", "highlights": ["闭馆后私人导览", "蒙娜丽莎单独面对面", "需通过法国博物馆基金会渠道"], "bookable_now": true},
+    {"id": "vatican_private", "name": "梵蒂冈博物馆 + 西斯廷礼拜堂私享", "category": "私享包场", "tier": "A", "price_cny_min": 200000, "price_cny_max": 800000, "lead_months": 6, "fitness": 1, "age_window": [10, 90], "season": "全年", "highlights": ["开门前 1 小时", "Castel Gandolfo 教皇花园"], "bookable_now": true},
+    {"id": "la_scala_box", "name": "米兰斯卡拉 / 维也纳金色大厅 / 纽约大都会歌剧 包厢", "category": "私享包场", "tier": "B", "price_cny_min": 30000, "price_cny_max": 200000, "lead_months": 6, "fitness": 1, "age_window": [10, 90], "season": "10-5 月", "highlights": ["主厅 4 人包厢", "首演夜礼服 dress code"], "bookable_now": true},
+    {"id": "wimbledon_centre", "name": "温网中央球场会员席 + 皇家包厢", "category": "私享包场", "tier": "A", "price_cny_min": 100000, "price_cny_max": 1200000, "lead_months": 12, "fitness": 1, "age_window": [12, 80], "season": "6-7 月", "highlights": ["决赛日 + 草莓奶油"], "bookable_now": true},
+    {"id": "f1_paddock_club", "name": "F1 各站 Paddock Club", "category": "私享包场", "tier": "A", "price_cny_min": 80000, "price_cny_max": 600000, "lead_months": 6, "fitness": 1, "age_window": [12, 80], "season": "3-12 月", "highlights": ["维修区参观", "车手见面"], "bookable_now": true},
+    {"id": "monaco_gp_yacht", "name": "摩纳哥 GP 游艇看台", "category": "私享包场", "tier": "A", "price_cny_min": 200000, "price_cny_max": 2000000, "lead_months": 12, "fitness": 1, "age_window": [21, 80], "season": "5 月", "highlights": ["港口包船 3 天", "每艘可容 8-30 人"], "bookable_now": true},
+
+    {"id": "auction_blue_chip", "name": "顶级拍场举牌（佳士得 / 苏富比 / 富艺斯）", "category": "文化收藏", "tier": "S", "price_cny_min": 5000000, "price_cny_max": 500000000, "lead_months": 12, "fitness": 1, "age_window": [25, 90], "season": "全年", "highlights": ["伦敦 / 纽约 / 香港夜场", "蓝筹艺术家 + 当代艺术 + 钟表"], "bookable_now": true, "notes": "需先建立买家档案 / KYC"},
+    {"id": "patek_grand_complication", "name": "百达翡丽超复杂功能预订", "category": "文化收藏", "tier": "S", "price_cny_min": 5000000, "price_cny_max": 50000000, "lead_months": 60, "fitness": 1, "age_window": [25, 90], "season": "需 5-10 年关系", "highlights": ["6300 / 5208 / 5175", "VIP 客户名单"], "bookable_now": false, "notes": "需要长期与品牌经销商建立购买记录，无法直接出价"},
+    {"id": "burgundy_pilgrimage", "name": "勃艮第特级园朝圣 + 酒庄私访", "category": "文化收藏", "tier": "A", "price_cny_min": 80000, "price_cny_max": 600000, "lead_months": 6, "fitness": 1, "age_window": [21, 80], "season": "5-10 月", "highlights": ["DRC / Leroy / Coche-Dury 私访", "Hospices de Beaune 拍卖会 11 月"], "bookable_now": true},
+    {"id": "michelangelo_master_class", "name": "佛罗伦萨美第奇博物馆研究生大师课", "category": "文化收藏", "tier": "A", "price_cny_min": 100000, "price_cny_max": 400000, "lead_months": 12, "fitness": 1, "age_window": [25, 80], "season": "9-6 月", "highlights": ["1 周深度研习 + 私人导师"], "bookable_now": true}
+  ],
+  "fitness_age_warning": "极地 / 高原 / 跳伞 / 自由潜在出发前必须做完整体检 + 心血管 + 高反测试；65 岁以上需医师签字。"
+}

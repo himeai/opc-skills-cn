@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-21-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-22-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -172,6 +172,12 @@
       <td><img src="./skill-logos/opc-travel.svg" alt="opc-travel" width="24"></td>
       <td><code>opc-travel</code></td>
       <td><b>一人公司环球旅行副驾驶</b>：80+ 国 200+ 城市路线生成（按主题 / 时长 / 预算 / 出发月份）、4 档预算（穷游 / 舒适 / 商务 / 奢华）、中国普通护照签证矩阵 + 办理时间轴、月份反查目的地（含半球切换 + 节庆日历）、跨气候打包清单（本地规则，不推荐具体航司 / 酒店 / 旅行社，不爬抓任何机票数据）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/opc-experience.svg" alt="opc-experience" width="24"></td>
+      <td><code>opc-experience</code></td>
+      <td><b>一人公司高净值体验解锁副驾驶</b>：8 大类 60+ 高净值体验（南极游艇 / KTM 摩托环球 / 米其林三星巡礼 / 马拉松六大满贯 / 私人飞行执照 / 去太空 / 顶豪拍场 / 七大洲最高峰）按预算 + 体能 + 年龄筛选；太空旅行专项（Virgin Galactic / Blue Origin / SpaceX × Axiom 等 3 档 6 家提供商）；6 类训练路径规划；支付 / 保险 / 医疗 / 法律红线（本地规则，不推荐具体俱乐部 / 教练 / 中介，不替代体育 / 航空 / 法律 / 保险专业人士）</td>
       <td>✅</td>
     </tr>
     <tr><td colspan="4"><b>⏳ 规划中</b></td></tr>
