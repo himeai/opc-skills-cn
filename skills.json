@@ -176,6 +176,31 @@
         "python3 scripts/post.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/bilibili-ops"}
+    },
+    {
+      "name": "cn-content-compliance",
+      "version": "0.1.0",
+      "description": "中国内容合规自检：广告法极限词、医疗/食品/化妆品/金融/教培行业红线、小红书/抖音/B站/公众号/快手平台禁用词，全部本地规则匹配，附改写建议。",
+      "logo": "skill-logos/cn-content-compliance.svg",
+      "icon": "shield-check",
+      "color": "0EA572",
+      "triggers": ["合规", "违禁词", "极限词", "广告法", "敏感词", "审核", "过审", "风险词", "内容自检", "发布前检查", "改写", "降级", "平替词"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-content-compliance -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill cn-content-compliance"}
+      },
+      "commands": [
+        "python3 scripts/check.py \"{input}\"",
+        "python3 scripts/rewrite.py \"{input}\"",
+        "python3 scripts/rules.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-content-compliance"}
     }
   ]
 }

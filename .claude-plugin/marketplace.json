@@ -102,6 +102,21 @@
         "python3 scripts/post.py \"{input}\""
       ],
       "triggers": ["B站", "bilibili", "UP主", "长视频", "专栏", "动态", "稿件", "章节", "必剪", "三连"]
+    },
+    {
+      "name": "cn-content-compliance",
+      "displayName": "中国内容合规自检",
+      "description": "广告法极限词、医疗/食品/化妆品/金融/教培行业红线、各主流平台禁用词的本地自检与改写建议。",
+      "version": "0.1.0",
+      "path": "skills/cn-content-compliance",
+      "logo": "skill-logos/cn-content-compliance.svg",
+      "color": "#0EA572",
+      "commands": [
+        "python3 scripts/check.py \"{input}\"",
+        "python3 scripts/rewrite.py \"{input}\"",
+        "python3 scripts/rules.py \"{input}\""
+      ],
+      "triggers": ["合规", "违禁词", "极限词", "广告法", "敏感词", "审核", "过审", "风险词", "改写"]
     }
   ]
 }

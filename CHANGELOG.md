@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.5] - 2026-06-01
+
+### Added
+
+- cn-content-compliance v0.1.0：中国内容合规自检——广告法极限词 + 医疗/食品/化妆品/金融/教培行业红线 + 各主流平台禁用词的本地匹配与改写建议（不构成法律意见）
+
 ## [0.0.4] - 2026-06-01
 
 ### Added
