@@ -1,0 +1,7 @@
+{
+  "_comment": "Chapter metadata: chapter count includes intro + body chapters + outro. Default 6 = 1 intro + 4 body + 1 outro.",
+  "default_duration_min": 12,
+  "default_chapter_count": 6,
+  "intro_label": "开场",
+  "outro_label": "总结与三连"
+}

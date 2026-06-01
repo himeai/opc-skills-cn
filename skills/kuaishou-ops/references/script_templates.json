@@ -1,0 +1,80 @@
+{
+  "_comment": "Kuaishou 60s vertical short-video script templates. Each style maps to a 5-section formula tailored to 老铁 culture.",
+  "sections": ["opening", "empathy", "fact", "twist", "cta"],
+  "styles": {
+    "老铁": {
+      "label": "老铁喊话",
+      "tone": "亲切、口语、敞亮",
+      "subtitle_style": "黄底黑字大字号",
+      "bgm_hint": "二人转 / 喊麦节奏",
+      "templates": {
+        "opening": "老铁们，今天讲讲 {topic}，{audience} 都得听。",
+        "empathy": "我知道很多老铁在 {topic} 上吃过亏，咱不藏着掖着，今天敞亮聊。",
+        "fact": "事实就是 {fact}，不信你看身边人。",
+        "twist": "真正能解决的办法是 {method}，我自己干过 {duration}。",
+        "cta": "觉得有用的双击屏幕，关注我，下条聊 {next_topic}。"
+      }
+    },
+    "同城": {
+      "label": "同城生活",
+      "tone": "接地气、本地感",
+      "subtitle_style": "红黑字幕",
+      "bgm_hint": "热闹背景人声",
+      "templates": {
+        "opening": "{audience} 注意了，本地 {topic} 我跑了 {n} 家给你测出来。",
+        "empathy": "本地老铁选 {topic} 最容易踩坑的点就是 {misconception}。",
+        "fact": "实际情况是 {fact}，便宜的真不一定差。",
+        "twist": "真正值的是 {method}，价格也就 {price}。",
+        "cta": "本地的扣 1，外地的扣 2，下条做对比。"
+      }
+    },
+    "干货": {
+      "label": "干货老铁",
+      "tone": "信息密度高、节奏紧",
+      "subtitle_style": "白底黑字大字号",
+      "bgm_hint": "稳定鼓点",
+      "templates": {
+        "opening": "{audience}，{topic} 我把答案直接给你。",
+        "empathy": "走过的弯路我知道：{misconception}。",
+        "fact": "硬事实是 {fact}，没有水分。",
+        "twist": "真正的做法只有 {method}，{duration} 就能见效。",
+        "cta": "需要清单的评论区扣『要』，我整理一份给老铁们。"
+      }
+    },
+    "故事": {
+      "label": "故事老铁",
+      "tone": "口语、情绪起伏",
+      "subtitle_style": "电影黑边字幕",
+      "bgm_hint": "情绪鼓点",
+      "templates": {
+        "opening": "今天给老铁们讲个事，关于 {topic}。",
+        "empathy": "{audience} 是不是经常因为 {topic} 失眠？我以前也是。",
+        "fact": "真相是 {fact}，听我讲完你就懂。",
+        "twist": "后来我才发现 {method}，整个人豁然开朗。",
+        "cta": "你们有没有类似经历？评论区告诉我。"
+      }
+    },
+    "测评": {
+      "label": "老铁测评",
+      "tone": "客观、对比",
+      "subtitle_style": "蓝底白字",
+      "bgm_hint": "极简鼓点",
+      "templates": {
+        "opening": "老铁们，{topic} 我测了 {n} 款，今天告诉你哪个真值。",
+        "empathy": "买之前我也踩过坑，{misconception} 是最大误区。",
+        "fact": "硬测下来 {fact} 这一项差距最大。",
+        "twist": "选购看三点：{method}，记住这个就不亏。",
+        "cta": "需要完整对比的评论区扣『要』，我发表给你。"
+      }
+    }
+  },
+  "default_filler": {
+    "fact": "便宜不一定差，贵的不一定好",
+    "misconception": "看广告就下单",
+    "method": "先列三个硬指标再决策",
+    "duration": "三个月",
+    "n": "5",
+    "price": "百元以内",
+    "next_topic": "进阶玩法"
+  }
+}

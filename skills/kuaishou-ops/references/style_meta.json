@@ -1,0 +1,82 @@
+{
+  "_comment": "Style metadata for kuaishou-ops storyboard generation.",
+  "default_duration_sec": 60,
+  "default_shot_count": 6,
+  "styles": {
+    "老铁": {
+      "label": "老铁喊话",
+      "subtitle_color": "#000000",
+      "subtitle_bg": "#FFEC3D",
+      "subtitle_font_size": 76,
+      "bgm_keyword": "northeast-folk",
+      "shot_visuals": [
+        "正脸口播 / 街头 / 中景",
+        "镜头怼脸 / 共情眼神",
+        "实物展示 / 手部特写",
+        "对比镜头 / 现场环境",
+        "手写字卡 / 圈重点",
+        "字卡 + 关注引导 / CTA"
+      ]
+    },
+    "同城": {
+      "label": "同城生活",
+      "subtitle_color": "#FFFFFF",
+      "subtitle_bg": "#CC0000",
+      "subtitle_font_size": 68,
+      "bgm_keyword": "city-walk",
+      "shot_visuals": [
+        "门店外景 / 招牌特写",
+        "店内走动 / 第一视角",
+        "试吃试用 / 反应镜头",
+        "价格标签 / 特写",
+        "总结字卡 / 推荐榜",
+        "门店地址字卡 / CTA"
+      ]
+    },
+    "干货": {
+      "label": "干货老铁",
+      "subtitle_color": "#000000",
+      "subtitle_bg": "#FFFFFF",
+      "subtitle_font_size": 72,
+      "bgm_keyword": "lofi-ks",
+      "shot_visuals": [
+        "正脸口播 / 中景",
+        "屏幕/数据图录制",
+        "对比图 / 左右分屏",
+        "白板手写 / 重点圈出",
+        "正脸口播 / 收尾点睛",
+        "字卡 + CTA / 评论区扣"
+      ]
+    },
+    "故事": {
+      "label": "故事老铁",
+      "subtitle_color": "#FFFFFF",
+      "subtitle_bg": "#000000",
+      "subtitle_font_size": 60,
+      "bgm_keyword": "emotional-piano-ks",
+      "shot_visuals": [
+        "环境空镜 / 引入",
+        "人物中景 / 正脸口播",
+        "回忆画面 / 滤镜处理",
+        "转折点 / 特写 + 字幕",
+        "现场反应 / 切片",
+        "落幕字卡 / 关注 CTA"
+      ]
+    },
+    "测评": {
+      "label": "老铁测评",
+      "subtitle_color": "#FFFFFF",
+      "subtitle_bg": "#0066CC",
+      "subtitle_font_size": 64,
+      "bgm_keyword": "minimal-ks",
+      "shot_visuals": [
+        "产品平铺 / 俯拍",
+        "逐件展示 / 微距",
+        "对比表格 / 屏幕填充",
+        "实测使用 / 手部特写",
+        "结论字卡 / 推荐榜",
+        "购买引导字卡 / CTA"
+      ]
+    }
+  }
+}

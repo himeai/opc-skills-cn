@@ -1,0 +1,75 @@
+{
+  "_comment": "Bilibili 12-min long-form three-section script templates. body_chapters provides 4 default chapter hooks per style.",
+  "default_duration_min": 12,
+  "styles": {
+    "knowhow": {
+      "label": "干货长视频",
+      "tone": "信息密度高、结构感强",
+      "intro_pattern": "{audience} 你好，今天我们用 {duration} 分钟把 {topic} 这件事讲透。开始前先看三个事实：{fact1}、{fact2}、{fact3}。",
+      "outro_pattern": "总结今天三个要点：{point1}、{point2}、{point3}。觉得有用三连支持，下期继续。",
+      "body_chapters": [
+        {"title": "{topic} 的本质问题是什么", "hook": "先把概念定义清楚，避免后面误解。"},
+        {"title": "常见做法的 3 个坑", "hook": "{audience} 最容易犯的错误盘点。"},
+        {"title": "我推荐的方法论", "hook": "拆成 3 步：{point1}、{point2}、{point3}。"},
+        {"title": "实操演示", "hook": "结合真实案例 {duration} 分钟内走一遍。"}
+      ]
+    },
+    "测评": {
+      "label": "横向测评",
+      "tone": "客观对比",
+      "intro_pattern": "{topic} 我测了 {n} 款，{duration} 分钟告诉你哪个真值得买。先抛结论：第一名 {point1}。",
+      "outro_pattern": "结论复述：第一名 {point1}，第二名 {point2}，第三名 {point3}。需要数据表的评论区留言，下期挖更细。",
+      "body_chapters": [
+        {"title": "测评维度与评分规则", "hook": "{n} 个硬指标，主观感受单独打分。"},
+        {"title": "外观与基础参数", "hook": "拆箱、上手、参数横评。"},
+        {"title": "性能/体验实测", "hook": "把 {n} 款逐项对比。"},
+        {"title": "总分与购买建议", "hook": "按预算 / 场景给出 3 套方案。"}
+      ]
+    },
+    "复盘": {
+      "label": "经验复盘",
+      "tone": "口语、个人化",
+      "intro_pattern": "{audience} 大家好，今天复盘我做 {topic} 的 {duration} 分钟，从结果到过程，全部讲清楚。",
+      "outro_pattern": "三个主要收获：{point1}、{point2}、{point3}。如果你也在做类似的事，留言聊聊，下期继续。",
+      "body_chapters": [
+        {"title": "起点：我为什么开始做 {topic}", "hook": "动机比方法重要。"},
+        {"title": "过程：30 天关键动作", "hook": "时间线 + 关键节点。"},
+        {"title": "踩过的 3 个坑", "hook": "包括认知、执行、心态。"},
+        {"title": "下一阶段计划", "hook": "短期 / 中期 / 长期目标。"}
+      ]
+    },
+    "教程": {
+      "label": "保姆教程",
+      "tone": "步骤清晰",
+      "intro_pattern": "今天教 {audience} 0 基础完成 {topic}，全程 {duration} 分钟。看完直接能动手。",
+      "outro_pattern": "完成步骤：{point1} → {point2} → {point3}。卡住的地方评论区贴截图，我看到都会回。",
+      "body_chapters": [
+        {"title": "前置准备", "hook": "工具/账号/资源全部列清。"},
+        {"title": "主流程 step-by-step", "hook": "按编号一步一步走。"},
+        {"title": "常见问题 FAQ", "hook": "踩坑点提前预警。"},
+        {"title": "进阶玩法预告", "hook": "本期能做到 60 分，下期讲怎么做到 80 分。"}
+      ]
+    },
+    "故事": {
+      "label": "故事向",
+      "tone": "口语、起伏",
+      "intro_pattern": "今天讲一段我自己的事，关于 {topic}。{duration} 分钟，慢慢说。",
+      "outro_pattern": "我从这段经历里学到的是 {point1}、{point2}、{point3}。你的故事呢？评论区聊聊。",
+      "body_chapters": [
+        {"title": "事情的起因", "hook": "环境、动机、关键人物。"},
+        {"title": "高潮与转折", "hook": "矛盾爆发点。"},
+        {"title": "结果与代价", "hook": "我得到了什么，又失去了什么。"},
+        {"title": "回头看的反思", "hook": "如果重来一次会怎么做。"}
+      ]
+    }
+  },
+  "default_filler": {
+    "fact1": "存在认知盲区",
+    "fact2": "信息差很大",
+    "fact3": "执行成本被低估",
+    "point1": "明确目标",
+    "point2": "拆解步骤",
+    "point3": "小步迭代",
+    "n": "5"
+  }
+}

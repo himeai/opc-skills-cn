@@ -122,6 +122,60 @@
         "python3 scripts/capcut.py \"{input}\""
       ],
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/douyin-ops"}
+    },
+    {
+      "name": "kuaishou-ops",
+      "version": "0.1.0",
+      "description": "快手短视频内容生产副驾驶：老铁口播脚本、3 段式分镜、30 分钟直播带货话术，全部基于本地模板与规则模型，不爬抓不刷量。",
+      "logo": "skill-logos/kuaishou-ops.svg",
+      "icon": "video",
+      "color": "FF6600",
+      "triggers": ["快手", "ks", "老铁", "同城", "口播", "分镜", "磁力金牛", "电商直播", "带货话术", "直播脚本"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "api_key",
+        "keys": [
+          {"env": "KUAISHOU_OPS_OPEN_TOKEN", "url": "https://open.kuaishou.com", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill kuaishou-ops -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill kuaishou-ops"}
+      },
+      "commands": [
+        "python3 scripts/script.py \"{input}\"",
+        "python3 scripts/storyboard.py \"{input}\"",
+        "python3 scripts/live.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/kuaishou-ops"}
+    },
+    {
+      "name": "bilibili-ops",
+      "version": "0.1.0",
+      "description": "B 站长视频与图文内容生产副驾驶：12 分钟三段式脚本、6 章节大纲与时间码、动态/专栏文案与 tag 推荐，全部基于本地模板与规则模型，不爬抓不刷量。",
+      "logo": "skill-logos/bilibili-ops.svg",
+      "icon": "video",
+      "color": "FB7299",
+      "triggers": ["B站", "bilibili", "UP主", "长视频", "专栏", "动态", "稿件", "章节", "必剪", "三连", "bv", "av"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "api_key",
+        "keys": [
+          {"env": "BILIBILI_OPS_OPEN_TOKEN", "url": "https://open.bilibili.com", "optional": true}
+        ]
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill bilibili-ops -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill bilibili-ops"}
+      },
+      "commands": [
+        "python3 scripts/script.py \"{input}\"",
+        "python3 scripts/chapters.py \"{input}\"",
+        "python3 scripts/post.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/bilibili-ops"}
     }
   ]
 }

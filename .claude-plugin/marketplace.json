@@ -72,6 +72,36 @@
         "python3 scripts/capcut.py \"{input}\""
       ],
       "triggers": ["抖音", "视频号", "短视频", "口播", "脚本", "分镜", "剪映", "capcut", "爆款视频"]
+    },
+    {
+      "name": "kuaishou-ops",
+      "displayName": "快手脚本工厂",
+      "description": "快手老铁口播脚本、3 段式分镜、30 分钟直播带货话术，全部基于本地模板与规则模型，不爬抓不刷量。",
+      "version": "0.1.0",
+      "path": "skills/kuaishou-ops",
+      "logo": "skill-logos/kuaishou-ops.svg",
+      "color": "#FF6600",
+      "commands": [
+        "python3 scripts/script.py \"{input}\"",
+        "python3 scripts/storyboard.py \"{input}\"",
+        "python3 scripts/live.py \"{input}\""
+      ],
+      "triggers": ["快手", "ks", "老铁", "同城", "口播", "分镜", "磁力金牛", "电商直播", "带货话术"]
+    },
+    {
+      "name": "bilibili-ops",
+      "displayName": "B 站长视频脚本工厂",
+      "description": "B 站 12 分钟三段式长视频脚本、6 章节大纲与时间码、动态/专栏文案与 tag 推荐，全部基于本地模板与规则模型，不爬抓不刷量。",
+      "version": "0.1.0",
+      "path": "skills/bilibili-ops",
+      "logo": "skill-logos/bilibili-ops.svg",
+      "color": "#FB7299",
+      "commands": [
+        "python3 scripts/script.py \"{input}\"",
+        "python3 scripts/chapters.py \"{input}\"",
+        "python3 scripts/post.py \"{input}\""
+      ],
+      "triggers": ["B站", "bilibili", "UP主", "长视频", "专栏", "动态", "稿件", "章节", "必剪", "三连"]
     }
   ]
 }

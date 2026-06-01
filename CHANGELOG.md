@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.4] - 2026-06-01
+
+### Added
+
+- kuaishou-ops v0.1.0：快手老铁口播脚本、3 段式分镜、30 分钟直播带货话术（本地模板 + 规则模型，不爬抓不刷量）
+- bilibili-ops v0.1.0：B 站 12 分钟三段式长视频脚本、6 章节大纲与时间码、动态/专栏文案与 tag 推荐（本地模板 + 规则模型，不爬抓不刷量）
+
 ## [0.0.3] - 2026-06-01
 
 ### Added

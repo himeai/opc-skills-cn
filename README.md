@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-4-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-6-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -40,6 +40,8 @@
 | ![wechat-ops](./skill-logos/wechat-ops.svg) | `wechat-ops` | 微信公众号 access_token 缓存、图文草稿、自定义菜单、客服文本回复（仅官方开放 API） | ✅ |
 | ![xiaohongshu-ops](./skill-logos/xiaohongshu-ops.svg) | `xiaohongshu-ops` | 小红书选题工厂、笔记结构化生成、关键词与 tag 推荐（本地种子库 + 规则模板） | ✅ |
 | ![douyin-ops](./skill-logos/douyin-ops.svg) | `douyin-ops` | 抖音/视频号 60 秒口播脚本、6 镜分镜表、剪映工程 JSON 骨架（本地模板 + 规则） | ✅ |
+| ![kuaishou-ops](./skill-logos/kuaishou-ops.svg) | `kuaishou-ops` | 快手老铁口播脚本、3 段式分镜、30 分钟直播带货话术（本地模板 + 规则） | ✅ |
+| ![bilibili-ops](./skill-logos/bilibili-ops.svg) | `bilibili-ops` | B 站 12 分钟三段式长视频脚本、6 章节大纲与时间码、动态/专栏文案与 tag 推荐（本地模板 + 规则） | ✅ |
 | | `cn-geo` | 中文 AI 搜索 GEO（豆包/Kimi/元宝/夸克/百度智能答案） | 📝 |
 | | `wepay-alipay` | 微信支付/支付宝下单、退款、对账、自动开票 | ⏳ |
 | | `cn-tax` | 个独/小规模季度税务申报、核定征收测算 | ⏳ |
@@ -47,7 +49,7 @@
 | | `feishu-ops` | 飞书多维表格 / IM 机器人 / 审批自动化 | ⏳ |
 | | `wecom-crm` | 企业微信 SCRM：加客户、群发、SOP、标签 | ⏳ |
 | | `cn-recruit` | Boss 直聘 / 拉勾 / 脉脉 / 猎聘职位与候选人 | ⏳ |
-| | `bilibili-zhihu` | B 站 / 知乎长内容分发与回答营销 | ⏳ |
+| | `zhihu-ops` | 知乎长回答与专栏分发 | ⏳ |
 | | `cn-legal` | 个独章程、SaaS 服务协议、PIPL 隐私政策（法大大 / e 签宝） | ⏳ |
 | | `cn-cloud` | 阿里云 / 腾讯云 / 火山引擎：OSS、CDN、函数计算、解析 | ⏳ |
 | | `cn-requesthunt` | 跨小红书 / 知乎 / 即刻 / V2EX / 脉脉的需求挖掘 | ⏳ |
@@ -220,15 +222,15 @@ def get_wechat_mp_credentials() -> dict:
 
 ## 路线图快照
 
-- 当前已实现：[`cn-city-picker`](./skills/cn-city-picker/SKILL.md)、[`wechat-ops`](./skills/wechat-ops/SKILL.md)、[`xiaohongshu-ops`](./skills/xiaohongshu-ops/SKILL.md)、[`douyin-ops`](./skills/douyin-ops/SKILL.md)
+- 当前已实现：[`cn-city-picker`](./skills/cn-city-picker/SKILL.md)、[`wechat-ops`](./skills/wechat-ops/SKILL.md)、[`xiaohongshu-ops`](./skills/xiaohongshu-ops/SKILL.md)、[`douyin-ops`](./skills/douyin-ops/SKILL.md)、[`kuaishou-ops`](./skills/kuaishou-ops/SKILL.md)、[`bilibili-ops`](./skills/bilibili-ops/SKILL.md)
 - 下一批优先：`cn-geo`、`wepay-alipay`、`cn-tax`
 - 详细分期与风险评估：见 [ROADMAP.md](./ROADMAP.md)
 
 | 阶段 | 时间 | 目标 |
 |---|---|---|
-| **P0** | M1–M2 | `cn-city-picker`（前置决策） · `wechat-mp` · `xiaohongshu-ops` · `douyin-ops` · `cn-geo` |
+| **P0** | M1–M2 | `cn-city-picker`（前置决策） · `wechat-mp` · `xiaohongshu-ops` · `douyin-ops` · `kuaishou-ops` · `bilibili-ops` · `cn-geo` |
 | **P1** | M3–M4 | `wepay-alipay` · `cn-tax` · `icp-domain-cn` · `feishu-ops` |
-| **P2** | M5–M6 | `wecom-crm` · `cn-recruit` · `bilibili-zhihu` · `cn-legal` |
+| **P2** | M5–M6 | `wecom-crm` · `cn-recruit` · `zhihu-ops` · `cn-legal` |
 | **P3** | M7+   | `cn-cloud` · `cn-requesthunt` · 出海回流 skill |
 
 ## 许可

@@ -1,0 +1,80 @@
+{
+  "_comment": "30-min live commerce script skeleton. 6 phases × 5 minutes each. NO exaggerated/absolute claims; subject to local advertising law.",
+  "duration_min": 30,
+  "phases": [
+    {
+      "id": "warmup",
+      "label": "暖场",
+      "minutes": 3,
+      "goals": ["留住进直播间老铁", "介绍主播身份与今天主题"],
+      "lines": [
+        "刚进来的老铁打个『来了』",
+        "今天上的是 {category} 类目，主推 {product}",
+        "新老铁先点个关注，待会发福利只通知关注的"
+      ]
+    },
+    {
+      "id": "intro",
+      "label": "讲解",
+      "minutes": 6,
+      "goals": ["把产品讲清楚", "建立专业感与信任"],
+      "lines": [
+        "{product} 的核心点就三个：{point1}、{point2}、{point3}",
+        "适合人群：{audience}",
+        "我自己用过 {duration}，使用感受是 {feeling}",
+        "成分/参数我念给老铁听，咱不藏着"
+      ]
+    },
+    {
+      "id": "pain",
+      "label": "痛点",
+      "minutes": 5,
+      "goals": ["唤起需求"],
+      "lines": [
+        "{audience} 平时是不是经常 {pain}",
+        "传统办法是 {old_way}，但是 {old_way_problem}",
+        "我们这款主要解决的就是 {pain}"
+      ]
+    },
+    {
+      "id": "benefit",
+      "label": "福利",
+      "minutes": 5,
+      "goals": ["突出今天直播间专属价"],
+      "lines": [
+        "市面价是 {market_price}，今天直播间专属价 {live_price}",
+        "前 {limit} 单赠送 {gift}",
+        "运费由我们承担/包邮，售后承诺 {after_sale}"
+      ]
+    },
+    {
+      "id": "urgency",
+      "label": "逼单",
+      "minutes": 6,
+      "goals": ["让犹豫的老铁下单"],
+      "lines": [
+        "库存只剩 {stock} 件了，下播之后就恢复原价",
+        "已下单的老铁扣个 1，让我看看有多少老铁手快",
+        "确实拿不准的扣『纠结』，我帮你判断适不适合你",
+        "下单口令：3、2、1 上链接！"
+      ]
+    },
+    {
+      "id": "closing",
+      "label": "收尾",
+      "minutes": 5,
+      "goals": ["留客 / 复购引导"],
+      "lines": [
+        "今天没抢到的老铁，明天 {time} 我还在直播间",
+        "关注我每天 {time} 直播，发货问题评论区随时找我",
+        "感谢老铁支持，咱不卖虚的，质量我兜底"
+      ]
+    }
+  ],
+  "compliance_reminders": [
+    "禁用『最』『第一』『国家级』『绝对』等绝对化用语",
+    "化妆品/保健品/医疗器械严禁宣称疗效",
+    "价格/赠品承诺必须真实可兑现",
+    "未成年人专属类目需完成未成年人保护合规审核"
+  ]
+}
