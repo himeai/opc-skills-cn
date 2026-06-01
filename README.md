@@ -170,6 +170,8 @@ def get_wechat_mp_credentials() -> dict:
 }
 ```
 
+字段解释、固定格式模板与提交前检查见 [`docs/skills-json-schema.md`](./docs/skills-json-schema.md)。
+
 ## 贡献新 Skill
 
 > 完整 checklist 见 `.factory/skills/add-new-skill/SKILL.md`（这本身也是一个 skill）。
@@ -179,6 +181,14 @@ def get_wechat_mp_credentials() -> dict:
 - 第一次参与：先看 [5 分钟快速开始](./docs/quickstart.md)
 - 需要长版开发说明：看 [Skill 开发手册](./docs/skill-authoring.md)
 - 需要确认中国合规边界：看 [合规说明](./docs/compliance.md)
+- 想直接拿到新增 skill 的执行清单：优先查看 [`.factory/skills/add-new-skill/SKILL.md`](./.factory/skills/add-new-skill/SKILL.md)
+- 想核对注册表字段：看 [`skills.json` 字段说明](./docs/skills-json-schema.md)
+
+如果你是在和 agent 协作，推荐先把下面这句话直接发给它：
+
+```text
+请先使用 .factory/skills/add-new-skill/SKILL.md 中的 checklist，再开始新增 <skill-name>
+```
 
 1. 从 `develop` 分支切出 `feature/skill/<skill-name>`（kebab-case）
 2. 复制 `template/SKILL.md` 到 `skills/<skill-name>/SKILL.md`，按规范填写 frontmatter
