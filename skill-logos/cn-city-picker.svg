@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="cn-city-picker logo">
-  <rect width="24" height="24" fill="#FFFFFF"/>
-  <path d="M7 5h3v2h2v2h3v2h2v3h-2v2h-3v2H9v-2H6v-3H4v-3h2V7h1z" fill="#2E7CF6"/>
-  <path d="M8 7h2v2H8zM6 11h2v2H6zM10 10h2v2h-2zM13 12h2v2h-2zM9 15h3v1H9z" fill="#FFFFFF"/>
-  <path d="M17 4c-2 0-4 2-4 4 0 3 4 7 4 7s4-4 4-7c0-2-2-4-4-4z" fill="#F64B3C"/>
-  <rect x="16" y="7" width="2" height="2" fill="#FFFFFF"/>
+  <rect width="24" height="24" rx="4" fill="#2E7CF6" fill-opacity="0.1"/>
+  <path d="M10 12h4M10 8h4M14 21v-3a2 2 0 0 0-4 0v3M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" stroke="#2E7CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" fill="#F64B3C" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="12" cy="10" r="2.5" fill="#FFFFFF"/>
 </svg>
