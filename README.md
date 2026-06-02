@@ -38,7 +38,7 @@
     <tr><th>Logo</th><th>Skill</th><th>描述</th><th>状态</th></tr>
   </thead>
   <tbody>
-    <tr><td colspan="4"><b>🏛️ 创业前置</b></td></tr>
+    <tr><td colspan="4" align="center"><b>🏛️ 创业前置</b></td></tr>
     <tr>
       <td><img src="./skill-logos/cn-city-picker.svg" alt="cn-city-picker" width="24"></td>
       <td><code>cn-city-picker</code></td>
@@ -51,7 +51,7 @@
       <td><b>中国大陆上线前置流程</b>：给定主体 / 域名 / 服务器位置，判断 ICP 备案 + 公安备案 + 域名实名 + 行业前置许可需求，输出分步指引（本地规则）</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>📣 流量内容</b></td></tr>
+    <tr><td colspan="4" align="center"><b>📣 流量内容</b></td></tr>
     <tr>
       <td><img src="./skill-logos/wechat-ops.svg" alt="wechat-ops" width="24"></td>
       <td><code>wechat-ops</code></td>
@@ -82,7 +82,7 @@
       <td>B 站 12 分钟三段式长视频脚本、6 章节大纲与时间码、动态/专栏文案与 tag 推荐（本地模板 + 规则）</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>🧭 内容支撑</b></td></tr>
+    <tr><td colspan="4" align="center"><b>🧭 内容支撑</b></td></tr>
     <tr>
       <td><img src="./skill-logos/cn-content-compliance.svg" alt="cn-content-compliance" width="24"></td>
       <td><code>cn-content-compliance</code></td>
@@ -101,7 +101,7 @@
       <td><b>中文 AI 搜索 GEO 优化</b>：给定品牌 / 品类 / 阶段，输出在豆包 / Kimi / 文心 / 元宝 / 秘塔等中文 AI 搜索里被引用的行动清单、品牌问答素材、内容覆盖矩阵（本地规则）</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>💰 收款开票</b></td></tr>
+    <tr><td colspan="4" align="center"><b>💰 收款开票</b></td></tr>
     <tr>
       <td><img src="./skill-logos/wechatpay.svg" alt="wechatpay" width="24"></td>
       <td><code>wechatpay</code></td>
@@ -120,21 +120,21 @@
       <td><b>中国电子发票开具</b>：诺诺 / 百望双供应商，覆盖普票 / 专票开具、查询、红冲，可被 wechatpay / alipay 复用</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>📊 税务合规</b></td></tr>
+    <tr><td colspan="4" align="center"><b>📊 税务合规</b></td></tr>
     <tr>
       <td><img src="./skill-logos/cn-tax.svg" alt="cn-tax" width="24"></td>
       <td><code>cn-tax</code></td>
       <td><b>中国小微纳税人税务助手</b>：个体 / 个独 / 小规模 / 一般纳税人四种身份下的季度申报清单、税负近似测算、合规风险提醒（本地规则，不替代税务师）</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>🤝 私域协作</b></td></tr>
+    <tr><td colspan="4" align="center"><b>🤝 私域协作</b></td></tr>
     <tr>
       <td><img src="./skill-logos/wecom-crm.svg" alt="wecom-crm" width="24"></td>
       <td><code>wecom-crm</code></td>
       <td><b>企业微信客户运营</b>：客户联系、客户标签、客户群、欢迎语、合规群发、企业朋友圈，仅包装企业微信官方 OpenAPI（禁止批量加好友/群发骚扰）</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>🧑‍💼 招聘内容</b></td></tr>
+    <tr><td colspan="4" align="center"><b>🧑‍💼 招聘内容</b></td></tr>
     <tr>
       <td><img src="./skill-logos/cn-recruit.svg" alt="cn-recruit" width="24"></td>
       <td><code>cn-recruit</code></td>
@@ -144,61 +144,61 @@
     <tr>
       <td><img src="./skill-logos/zhihu-ops.svg" alt="zhihu-ops" width="24"></td>
       <td><code>zhihu-ops</code></td>
-      <td><b>知乎内容生产副驾驶</b>：长回答结构化生成（科普/干货/经验/对比/反驳）、专栏长文骨架、问题选题工厂、领域 tag 推荐（本地规则，不爬抓不刷量）</td>
+      <td><b>知乎内容生产助手</b>：长回答结构化生成（科普/干货/经验/对比/反驳）、专栏长文骨架、问题选题工厂、领域 tag 推荐（本地规则，不爬抓不刷量）</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>💸 融资资金</b></td></tr>
+    <tr><td colspan="4" align="center"><b>💸 融资资金</b></td></tr>
     <tr>
       <td><img src="./skill-logos/cn-angel.svg" alt="cn-angel" width="24"></td>
       <td><code>cn-angel</code></td>
-      <td><b>中国天使轮融资副驾驶</b>：BP 10 页骨架、4 法估值平均（Berkus / Scorecard / VC / 行业倍数）与稀释表、Term Sheet 12 条关键条款解读、投资人画像匹配、12 周融资时间表与 SLA 告警（本地规则，不替代律师 / FA / 投资顾问，不提供具体投资人联系方式）</td>
+      <td><b>中国天使轮融资助手</b>：BP 10 页骨架、4 法估值平均（Berkus / Scorecard / VC / 行业倍数）与稀释表、Term Sheet 12 条关键条款解读、投资人画像匹配、12 周融资时间表与 SLA 告警（本地规则，不替代律师 / FA / 投资顾问，不提供具体投资人联系方式）</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>💔 失败篇</b></td></tr>
-    <tr>
-      <td><img src="./skill-logos/opc-shutdown.svg" alt="opc-shutdown" width="24"></td>
-      <td><code>opc-shutdown</code></td>
-      <td><b>一人公司体面注销副驾驶</b>：4 类主体（个体 / 个独 / 一人有限 / 有限公司）注销路径，简易 vs 普通 vs 破产清算判定，详细步骤 + 典型周数 + 常见卡点 + 异常状态处理（本地规则，不替代律师 / 税务师）</td>
-      <td>✅</td>
-    </tr>
-    <tr>
-      <td><img src="./skill-logos/opc-dagong.svg" alt="opc-dagong" width="24"></td>
-      <td><code>opc-dagong</code></td>
-      <td><b>一人公司打工回血副驾驶</b>：跑滴滴 / 送外卖 / 送快递 / 跑腿 / 众包；10 家主流零工平台按 5 维加权打分排序（earn 35% · barrier 20% · insurance 20% · vehicle_fit 15% · stability 10%），按城市 / 交通工具 / 五险需求筛选（本地规则，不爬抓任何招聘 / 平台数据，不教刷单 / 套保险）</td>
-      <td>✅</td>
-    </tr>
-    <tr>
-      <td><img src="./skill-logos/opc-baitan.svg" alt="opc-baitan" width="24"></td>
-      <td><code>opc-baitan</code></td>
-      <td><b>一人公司摆摊回血副驾驶</b>：摆地摊 / 卖烤肠 / 夜市；10 城（上海 / 北京 / 广州 / 深圳 / 成都 / 杭州 / 重庆 / 武汉 / 西安 / 长沙）夜市政策 + 5 大品类（小吃热食 / 饮品冷食 / 文创手作 / 二手好物 / 轻服务）选品 + ROI 估算 + 设备清单 + 备案要求（本地规则，不教逃避城管 / 占用消防通道）</td>
-      <td>✅</td>
-    </tr>
-    <tr>
-      <td><img src="./skill-logos/opc-tangping.svg" alt="opc-tangping" width="24"></td>
-      <td><code>opc-tangping</code></td>
-      <td><b>一人公司彻底躺平副驾驶</b>：领低保 / 领失业金 / 灵活就业社保；个人现金流跑道 4 档红绿灯 + 失业金估算（10 城）+ 灵活就业养老 / 医疗社保金额 + 征信保护清单 + 必保 / 可砍支出（不推荐 P2P / 网贷 / 高利贷；不做「逃废债」/「征信修复」攻略）</td>
-      <td>✅</td>
-    </tr>
-    <tr><td colspan="4"><b>🎉 成功篇</b></td></tr>
+    <tr><td colspan="4" align="center"><b>🎉 成功篇</b></td></tr>
     <tr>
       <td><img src="./skill-logos/opc-property.svg" alt="opc-property" width="24"></td>
       <td><code>opc-property</code></td>
-      <td><b>一人公司置业副驾驶</b>：1000 万起步的高净值置业决策——国内顶豪盘（汤臣一品 / 深圳湾一号 / 钓鱼台七号院 / 翠湖天地等 S/A/B 三级清单）、海外 10 大豪宅市场（纽约 / 伦敦 / 巴黎 / 悉尼 / 新加坡 / 迪拜 / 东京 / 洛杉矶 / 温哥华 / 葡萄牙）、5 年持有成本测算、跨境资金合规清单（本地规则，不构成投资 / 移民 / 税务建议）</td>
+      <td><b>一人公司置业助手</b>：1000 万起步的高净值置业决策——国内顶豪盘（汤臣一品 / 深圳湾一号 / 钓鱼台七号院 / 翠湖天地等 S/A/B 三级清单）、海外 10 大豪宅市场（纽约 / 伦敦 / 巴黎 / 悉尼 / 新加坡 / 迪拜 / 东京 / 洛杉矶 / 温哥华 / 葡萄牙）、5 年持有成本测算、跨境资金合规清单（本地规则，不构成投资 / 移民 / 税务建议）</td>
       <td>✅</td>
     </tr>
     <tr>
       <td><img src="./skill-logos/opc-travel.svg" alt="opc-travel" width="24"></td>
       <td><code>opc-travel</code></td>
-      <td><b>一人公司环球旅行副驾驶</b>：80+ 国 200+ 城市路线生成（按主题 / 时长 / 预算 / 出发月份）、4 档预算（穷游 / 舒适 / 商务 / 奢华）、中国普通护照签证矩阵 + 办理时间轴、月份反查目的地（含半球切换 + 节庆日历）、跨气候打包清单（本地规则，不推荐具体航司 / 酒店 / 旅行社，不爬抓任何机票数据）</td>
+      <td><b>一人公司环球旅行助手</b>：80+ 国 200+ 城市路线生成（按主题 / 时长 / 预算 / 出发月份）、4 档预算（穷游 / 舒适 / 商务 / 奢华）、中国普通护照签证矩阵 + 办理时间轴、月份反查目的地（含半球切换 + 节庆日历）、跨气候打包清单（本地规则，不推荐具体航司 / 酒店 / 旅行社，不爬抓任何机票数据）</td>
       <td>✅</td>
     </tr>
     <tr>
       <td><img src="./skill-logos/opc-experience.svg" alt="opc-experience" width="24"></td>
       <td><code>opc-experience</code></td>
-      <td><b>一人公司高净值体验解锁副驾驶</b>：8 大类 60+ 高净值体验（南极游艇 / KTM 摩托环球 / 米其林三星巡礼 / 马拉松六大满贯 / 私人飞行执照 / 去太空 / 顶豪拍场 / 七大洲最高峰）按预算 + 体能 + 年龄筛选；太空旅行专项（Virgin Galactic / Blue Origin / SpaceX × Axiom 等 3 档 6 家提供商）；6 类训练路径规划；支付 / 保险 / 医疗 / 法律红线（本地规则，不推荐具体俱乐部 / 教练 / 中介，不替代体育 / 航空 / 法律 / 保险专业人士）</td>
+      <td><b>一人公司高净值体验解锁助手</b>：8 大类 60+ 高净值体验（南极游艇 / KTM 摩托环球 / 米其林三星巡礼 / 马拉松六大满贯 / 私人飞行执照 / 去太空 / 顶豪拍场 / 七大洲最高峰）按预算 + 体能 + 年龄筛选；太空旅行专项（Virgin Galactic / Blue Origin / SpaceX × Axiom 等 3 档 6 家提供商）；6 类训练路径规划；支付 / 保险 / 医疗 / 法律红线（本地规则，不推荐具体俱乐部 / 教练 / 中介，不替代体育 / 航空 / 法律 / 保险专业人士）</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>⏳ 规划中</b></td></tr>
+    <tr><td colspan="4" align="center"><b>💔 失败篇</b></td></tr>
+    <tr>
+      <td><img src="./skill-logos/opc-shutdown.svg" alt="opc-shutdown" width="24"></td>
+      <td><code>opc-shutdown</code></td>
+      <td><b>一人公司体面注销助手</b>：4 类主体（个体 / 个独 / 一人有限 / 有限公司）注销路径，简易 vs 普通 vs 破产清算判定，详细步骤 + 典型周数 + 常见卡点 + 异常状态处理（本地规则，不替代律师 / 税务师）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/opc-dagong.svg" alt="opc-dagong" width="24"></td>
+      <td><code>opc-dagong</code></td>
+      <td><b>一人公司打工回血助手</b>：跑滴滴 / 送外卖 / 送快递 / 跑腿 / 众包；10 家主流零工平台按 5 维加权打分排序（earn 35% · barrier 20% · insurance 20% · vehicle_fit 15% · stability 10%），按城市 / 交通工具 / 五险需求筛选（本地规则，不爬抓任何招聘 / 平台数据，不教刷单 / 套保险）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/opc-baitan.svg" alt="opc-baitan" width="24"></td>
+      <td><code>opc-baitan</code></td>
+      <td><b>一人公司摆摊回血助手</b>：摆地摊 / 卖烤肠 / 夜市；10 城（上海 / 北京 / 广州 / 深圳 / 成都 / 杭州 / 重庆 / 武汉 / 西安 / 长沙）夜市政策 + 5 大品类（小吃热食 / 饮品冷食 / 文创手作 / 二手好物 / 轻服务）选品 + ROI 估算 + 设备清单 + 备案要求（本地规则，不教逃避城管 / 占用消防通道）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/opc-tangping.svg" alt="opc-tangping" width="24"></td>
+      <td><code>opc-tangping</code></td>
+      <td><b>一人公司彻底躺平助手</b>：领低保 / 领失业金 / 灵活就业社保；个人现金流跑道 4 档红绿灯 + 失业金估算（10 城）+ 灵活就业养老 / 医疗社保金额 + 征信保护清单 + 必保 / 可砍支出（不推荐 P2P / 网贷 / 高利贷；不做「逃废债」/「征信修复」攻略）</td>
+      <td>✅</td>
+    </tr>
+    <tr><td colspan="4" align="center"><b>⏳ 规划中</b></td></tr>
     <tr><td></td><td><code>cn-legal</code></td><td>个独章程、SaaS 服务协议、PIPL 隐私政策（法大大 / e 签宝）</td><td>⏳</td></tr>
     <tr><td></td><td><code>cn-cloud</code></td><td>阿里云 / 腾讯云 / 火山引擎：OSS、CDN、函数计算、解析</td><td>⏳</td></tr>
     <tr><td></td><td><code>cn-requesthunt</code></td><td>跨小红书 / 知乎 / 即刻 / V2EX / 脉脉的需求挖掘</td><td>⏳</td></tr>
