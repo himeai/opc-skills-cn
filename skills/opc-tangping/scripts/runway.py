@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""opc-plan-b: 个人现金流体检 + 失业金 + 灵活就业社保参考.
+"""opc-tangping: 个人现金流体检 + 失业金 + 灵活就业社保 + 征信保护.
 
 Input (`|` 分隔，`=` 键值):
   city=杭州|monthly_cost=8000|cash=30000|debt=0|has_house_loan=yes|prev_contribution_years=3
@@ -135,7 +135,7 @@ def build_runway(fields: dict[str, str]) -> dict:
 
     action_list = []
     if threshold["level"] in {"orange", "red"}:
-        action_list.append("立即开始零工 / 摆摊（参考 gig.py / stall.py）")
+        action_list.append("立即开始零工 / 摆摊（参考 opc-dagong / opc-baitan）")
         action_list.append("把外食 / 订阅 / 健身等可砍支出全部砍掉")
     if threshold["level"] == "red":
         action_list.append("考虑短租 / 退房合住 / 回老家过渡")

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""opc-plan-b: 零工经济岗位匹配（外卖 / 网约车 / 跑腿 / 众包 / 家政）.
+"""opc-dagong: 零工平台匹配（外卖 / 网约车 / 跑腿 / 众包 / 家政）.
 
 Input (`|` 分隔，`=` 键值):
   city=杭州|wheels=电动车|hours_per_day=8|need_insurance=yes|prefer=外卖
 
-Output: JSON {ranked_platforms:[{name, score, fit_reason, ...}], notes}
+Output: JSON {ranked: [{name, score, fit_reasons, ...}], notes}
 """
 
 from __future__ import annotations

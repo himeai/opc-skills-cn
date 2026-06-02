@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.0] - 2026-06-02
+
+### Added
+
+- opc-shutdown v0.1.0：「失败篇·注销」副驾驶——4 类主体（个体 / 个独 / 一人有限 / 有限公司）注销路径，简易 vs 普通 vs 破产清算判定 + 详细步骤 + 典型周数 + 常见卡点 + 异常状态处理
+- opc-dagong v0.1.0：「失败篇·打工」副驾驶——10 家主流零工平台（外卖 / 网约车 / 跑腿 / 众包 / 家政）按 5 维加权打分排序（earn 35% · barrier 20% · insurance 20% · vehicle_fit 15% · stability 10%），按城市 / 交通工具 / 五险需求 / 偏好类目筛选
+- opc-baitan v0.1.0：「失败篇·摆摊」副驾驶——10 城夜市政策 + 5 大品类（小吃热食 / 饮品冷食 / 文创手作 / 二手好物 / 轻服务）选品 + ROI 估算 + 设备清单 + 备案要求
+- opc-tangping v0.1.0：「失败篇·彻底躺平」副驾驶——个人现金流跑道 4 档红绿灯 + 失业金估算（10 城）+ 灵活就业养老 / 医疗社保金额 + 征信保护清单 + 必保 / 可砍支出
+
+### Removed
+
+- **BREAKING** opc-plan-b 已拆分并删除：原 5 个脚本（shutdown / runway / gig / stall / restart）按职责拆分进 opc-shutdown / opc-tangping / opc-dagong / opc-baitan 4 个独立 skill；restart.py + comeback_paths.json（复业决策树 / 6 类轻资产复业方向）整体下线，不再纳入失败篇
+
+### Changed
+
+- README 类目「🛟 下车回血」更名为「💔 失败篇」（与 opc-property/SKILL.md 现有「失败篇 / 成功篇」对仗叙事一致）
+- AGENTS.md §2 命名示例从 opc-plan-b 更新为 opc-shutdown / opc-dagong / opc-baitan / opc-tangping 四例
+
 ## [0.0.13] - 2026-06-01
 
 ### Added

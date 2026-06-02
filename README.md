@@ -4,7 +4,7 @@
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](./.github/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-22-2E7CF6)](./skills.json)
+[![Skills](https://img.shields.io/badge/Skills-25-2E7CF6)](./skills.json)
 [![Star](https://img.shields.io/badge/Star-welcome-lightgrey)](https://github.com)
 
 **面向中国市场的一人公司（OPC）AI Agent Skills 集合**
@@ -154,11 +154,29 @@
       <td><b>中国天使轮融资副驾驶</b>：BP 10 页骨架、4 法估值平均（Berkus / Scorecard / VC / 行业倍数）与稀释表、Term Sheet 12 条关键条款解读、投资人画像匹配、12 周融资时间表与 SLA 告警（本地规则，不替代律师 / FA / 投资顾问，不提供具体投资人联系方式）</td>
       <td>✅</td>
     </tr>
-    <tr><td colspan="4"><b>🛟 下车回血</b></td></tr>
+    <tr><td colspan="4"><b>💔 失败篇</b></td></tr>
     <tr>
-      <td><img src="./skill-logos/opc-plan-b.svg" alt="opc-plan-b" width="24"></td>
-      <td><code>opc-plan-b</code></td>
-      <td><b>一人公司 Plan B 副驾驶</b>：注销公司（4 类主体）、跑外卖 / 网约车 / 跑腿 / 众包（10 平台打分排序）、摆摊（10 城政策 + 5 大品类 ROI）、续社保 + 领失业金 + 跑道体检、半年后复业决策树（本地规则，不替代律师 / 税务师 / 心理咨询师）。让你亲眼看见——人生的容错率大得可怕</td>
+      <td><img src="./skill-logos/opc-shutdown.svg" alt="opc-shutdown" width="24"></td>
+      <td><code>opc-shutdown</code></td>
+      <td><b>一人公司体面注销副驾驶</b>：4 类主体（个体 / 个独 / 一人有限 / 有限公司）注销路径，简易 vs 普通 vs 破产清算判定，详细步骤 + 典型周数 + 常见卡点 + 异常状态处理（本地规则，不替代律师 / 税务师）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/opc-dagong.svg" alt="opc-dagong" width="24"></td>
+      <td><code>opc-dagong</code></td>
+      <td><b>一人公司打工回血副驾驶</b>：跑滴滴 / 送外卖 / 送快递 / 跑腿 / 众包；10 家主流零工平台按 5 维加权打分排序（earn 35% · barrier 20% · insurance 20% · vehicle_fit 15% · stability 10%），按城市 / 交通工具 / 五险需求筛选（本地规则，不爬抓任何招聘 / 平台数据，不教刷单 / 套保险）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/opc-baitan.svg" alt="opc-baitan" width="24"></td>
+      <td><code>opc-baitan</code></td>
+      <td><b>一人公司摆摊回血副驾驶</b>：摆地摊 / 卖烤肠 / 夜市；10 城（上海 / 北京 / 广州 / 深圳 / 成都 / 杭州 / 重庆 / 武汉 / 西安 / 长沙）夜市政策 + 5 大品类（小吃热食 / 饮品冷食 / 文创手作 / 二手好物 / 轻服务）选品 + ROI 估算 + 设备清单 + 备案要求（本地规则，不教逃避城管 / 占用消防通道）</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><img src="./skill-logos/opc-tangping.svg" alt="opc-tangping" width="24"></td>
+      <td><code>opc-tangping</code></td>
+      <td><b>一人公司彻底躺平副驾驶</b>：领低保 / 领失业金 / 灵活就业社保；个人现金流跑道 4 档红绿灯 + 失业金估算（10 城）+ 灵活就业养老 / 医疗社保金额 + 征信保护清单 + 必保 / 可砍支出（不推荐 P2P / 网贷 / 高利贷；不做「逃废债」/「征信修复」攻略）</td>
       <td>✅</td>
     </tr>
     <tr><td colspan="4"><b>🎉 成功篇</b></td></tr>
@@ -364,7 +382,7 @@ def get_wechat_mp_credentials() -> dict:
   - **私域协作**：[`wecom-crm`](./skills/wecom-crm/SKILL.md)
   - **招聘内容**：[`cn-recruit`](./skills/cn-recruit/SKILL.md)、[`zhihu-ops`](./skills/zhihu-ops/SKILL.md)
   - **融资资金**：[`cn-angel`](./skills/cn-angel/SKILL.md)
-  - **下车回血**：[`opc-plan-b`](./skills/opc-plan-b/SKILL.md)
+  - **失败篇**：[`opc-shutdown`](./skills/opc-shutdown/SKILL.md)、[`opc-dagong`](./skills/opc-dagong/SKILL.md)、[`opc-baitan`](./skills/opc-baitan/SKILL.md)、[`opc-tangping`](./skills/opc-tangping/SKILL.md)
 - 下一批优先：`cn-legal`、`cn-cloud`、`cn-requesthunt`
 - 详细分期与风险评估：见 [ROADMAP.md](./ROADMAP.md)
 

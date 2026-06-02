@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""opc-plan-b: 摆摊选品 ROI + 城市政策 + 备案路径.
+"""opc-baitan: 摆摊选品 ROI + 城市政策 + 备案路径.
 
 Input (`|` 分隔，`=` 键值):
   city=成都|budget_cny=3000|category=小吃热食|night_or_day=night

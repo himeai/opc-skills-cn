@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="opc-baitan logo">
+  <rect width="24" height="24" fill="#F59E0B"/>
+  <path d="M5 13 L19 13 L17 17 L7 17 Z" fill="#FFFFFF"/>
+  <rect x="5" y="13" width="14" height="1.5" fill="#FFFFFF"/>
+  <circle cx="9" cy="18.5" r="1.2" fill="#FFFFFF"/>
+  <circle cx="15" cy="18.5" r="1.2" fill="#FFFFFF"/>
+  <path d="M8 13 L8 8 Q8 6 10 6 Q12 6 12 8 L12 13" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="14" cy="7" r="1" fill="#FFFFFF"/>
+  <circle cx="16.5" cy="9" r="1" fill="#FFFFFF"/>
+</svg>

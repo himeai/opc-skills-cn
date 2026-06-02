@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""opc-plan-b: 公司体面下车清单（个体 / 个独 / 一人有限 / 有限公司）.
+"""opc-shutdown: 公司体面注销清单（个体 / 个独 / 一人有限 / 有限公司）.
 
 Input (`|` 分隔，`=` 键值):
   entity=个独|location=杭州|has_employees=no|has_debt=no|has_abnormal=no
@@ -44,7 +44,6 @@ def build_shutdown(fields: dict[str, str]) -> dict:
     entity_key = fields.get("entity", "个独")
     entities = data["entities"]
     if entity_key not in entities:
-        # try fuzzy match
         for key in entities:
             if entity_key in key or key in entity_key:
                 entity_key = key

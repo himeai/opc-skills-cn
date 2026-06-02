@@ -527,13 +527,13 @@
       "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/cn-angel"}
     },
     {
-      "name": "opc-plan-b",
+      "name": "opc-shutdown",
       "version": "0.1.0",
-      "description": "一人公司「下车—回血—再上路」副驾驶（本地规则版）：注销公司、跑外卖、摆摊、续社保、领失业金、半年后再上路。让你亲眼看见——人生的容错率大得可怕。本地推理，不替代律师 / 税务师 / 心理咨询师。",
-      "logo": "skill-logos/opc-plan-b.svg",
-      "icon": "life-buoy",
+      "description": "一人公司「失败篇·注销」副驾驶（本地规则版）：4 类主体（个体 / 个独 / 一人有限 / 有限公司）注销路径，简易 vs 普通 vs 破产清算判定，详细步骤 + 典型周数 + 常见卡点 + 异常状态处理。本地推理，不替代律师 / 税务师。",
+      "logo": "skill-logos/opc-shutdown.svg",
+      "icon": "x-circle",
       "color": "EF4444",
-      "triggers": ["破产", "关门", "注销", "停业", "下车", "回血", "外卖", "摆摊", "网约车", "Plan B", "东山再起", "复业", "失业金", "社保断缴", "个独注销", "灵活就业", "地摊", "跑腿", "众包"],
+      "triggers": ["注销", "关公司", "关门", "停业", "个体注销", "个独注销", "一人有限注销", "简易注销", "普通注销", "破产清算", "解散", "吊销", "清算", "税务注销", "工商注销"],
       "dependencies": {},
       "auth": {
         "required": false,
@@ -541,17 +541,82 @@
         "keys": []
       },
       "install": {
-        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-plan-b -a claude"},
-        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-plan-b"}
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-shutdown -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-shutdown"}
       },
       "commands": [
-        "python3 scripts/shutdown.py \"{input}\"",
-        "python3 scripts/runway.py \"{input}\"",
-        "python3 scripts/gig.py \"{input}\"",
-        "python3 scripts/stall.py \"{input}\"",
-        "python3 scripts/restart.py \"{input}\""
+        "python3 scripts/shutdown.py \"{input}\""
       ],
-      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-plan-b"}
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-shutdown"}
+    },
+    {
+      "name": "opc-dagong",
+      "version": "0.1.0",
+      "description": "一人公司「失败篇·打工」副驾驶（本地规则版）：10 家主流零工平台（外卖 / 网约车 / 跑腿 / 众包 / 家政）按 5 维加权打分排序（earn 35% · barrier 20% · insurance 20% · vehicle_fit 15% · stability 10%），按城市 / 交通工具 / 五险需求 / 偏好类目筛选。本地推理，不爬抓任何招聘 / 平台数据，不教刷单 / 套保险。",
+      "logo": "skill-logos/opc-dagong.svg",
+      "icon": "bike",
+      "color": "3B82F6",
+      "triggers": ["打工", "跑滴滴", "送外卖", "送快递", "跑腿", "众包", "闪送", "美团骑手", "饿了么", "达达", "网约车", "滴滴司机", "副业打工", "灵活用工", "零工"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-dagong -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-dagong"}
+      },
+      "commands": [
+        "python3 scripts/gig.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-dagong"}
+    },
+    {
+      "name": "opc-baitan",
+      "version": "0.1.0",
+      "description": "一人公司「失败篇·摆摊」副驾驶（本地规则版）：10 城（上海 / 北京 / 广州 / 深圳 / 成都 / 杭州 / 重庆 / 武汉 / 西安 / 长沙）夜市政策 + 5 大品类（小吃热食 / 饮品冷食 / 文创手作 / 二手好物 / 轻服务）选品 + ROI 估算 + 设备清单 + 备案要求。本地推理，不教逃避城管 / 占用消防通道。",
+      "logo": "skill-logos/opc-baitan.svg",
+      "icon": "shopping-cart",
+      "color": "F59E0B",
+      "triggers": ["摆摊", "摆地摊", "地摊", "夜市", "烤肠", "小吃车", "文创", "饮品", "集市", "早市", "路边摊", "二手", "街头创业", "夜经济"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-baitan -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-baitan"}
+      },
+      "commands": [
+        "python3 scripts/stall.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-baitan"}
+    },
+    {
+      "name": "opc-tangping",
+      "version": "0.1.0",
+      "description": "一人公司「失败篇·彻底躺平」副驾驶（本地规则版）：个人现金流跑道 4 档红绿灯（绿 ≥ 12 / 黄 6-12 / 橙 3-6 / 红 < 3）+ 失业金估算（10 城）+ 灵活就业养老 / 医疗社保金额 + 征信保护清单（must_do / avoid）+ 必保支出 / 可砍支出。不推荐 P2P / 网贷 / 高利贷；不做「逃废债」/「征信修复」攻略。",
+      "logo": "skill-logos/opc-tangping.svg",
+      "icon": "moon",
+      "color": "6B7280",
+      "triggers": ["躺平", "彻底躺平", "摆烂", "失业金", "低保", "灵活就业社保", "社保断缴", "医保断缴", "征信保护", "个人现金流", "跑道", "月支出", "降本", "待业", "空窗"],
+      "dependencies": {},
+      "auth": {
+        "required": false,
+        "type": "none",
+        "keys": []
+      },
+      "install": {
+        "user": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-tangping -a claude"},
+        "project": {"claude": "npx skills add <YOUR_ORG>/opc-skills-cn --skill opc-tangping"}
+      },
+      "commands": [
+        "python3 scripts/runway.py \"{input}\""
+      ],
+      "links": {"github": "https://github.com/<YOUR_ORG>/opc-skills-cn/tree/main/skills/opc-tangping"}
     },
     {
       "name": "opc-property",

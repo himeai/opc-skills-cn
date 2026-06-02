@@ -35,7 +35,7 @@
 |---|---|---|
 | 中国平台专属能力 | 平台名直接做前缀 | `wechat-mp` / `xiaohongshu-ops` / `douyin-ops` / `bilibili-zhihu` / `wecom-crm` |
 | 中国通用/跨平台能力 | `cn-` 语义前缀 | `cn-city-picker` / `cn-tax` / `cn-geo` / `cn-recruit` / `cn-legal` |
-| OPC 生命周期专属能力 | `opc-` 语义前缀 | `opc-plan-b`（创业失败下车回血） |
+| OPC 生命周期专属能力 | `opc-` 语义前缀 | `opc-shutdown`（失败篇·注销）/ `opc-dagong`（失败篇·打工）/ `opc-baitan`（失败篇·摆摊）/ `opc-tangping`（失败篇·彻底躺平） |
 | 海外/全球通用 | 无前缀 | `feishu-ops`（飞书海外即 Lark） / `stripe-paddle` |
 
 判定规则：

@@ -148,6 +148,6 @@ python3 scripts/cn_city.py "budget_cny=2000w|priority=学区"
 
 - 本 skill **完全本地推理，不调用任何外部 API、不爬抓任何挂牌 / 成交数据**
 - 数据为公开整理，最新口径请咨询当地律师 / 持牌中介 / 银行私行
-- 对应「失败篇」是 `opc-plan-b`，对应「成功篇」另两个 skill 是 `opc-travel`、`opc-experience`
+- 对应「失败篇」是 `opc-shutdown` / `opc-dagong` / `opc-baitan` / `opc-tangping`，对应「成功篇」另两个 skill 是 `opc-travel`、`opc-experience`
 - 本工具不构成投资 / 移民 / 税务 / 法律建议；不教任何规避外汇管制的办法
 - 已知限制：未覆盖港澳台与一带一路沿线国家；未涉及 PE / 不动产基金等机构通道

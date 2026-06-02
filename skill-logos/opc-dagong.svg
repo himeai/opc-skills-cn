@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="opc-dagong logo">
+  <rect width="24" height="24" fill="#3B82F6"/>
+  <circle cx="7" cy="17" r="2.5" fill="#FFFFFF"/>
+  <circle cx="17" cy="17" r="2.5" fill="#FFFFFF"/>
+  <rect x="6" y="9" width="9" height="6" rx="1" fill="#FFFFFF"/>
+  <rect x="8" y="11" width="5" height="2" fill="#3B82F6"/>
+  <path d="M15 9 L18 6 L20 6" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
